@@ -19,7 +19,7 @@ const slides = [
   Slide7Reminder,
 ];
 
-const INTERVAL = 7000;
+const INTERVAL = 12000;
 
 const CorporateSlider = () => {
   const [current, setCurrent] = useState(0);
