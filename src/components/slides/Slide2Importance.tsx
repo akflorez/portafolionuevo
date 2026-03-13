@@ -14,21 +14,21 @@ const cards = [
 const Slide2Importance = () => (
   <SlideLayout bgImage={slide2Bg} overlayStrong>
     <motion.div className="flex-1 flex flex-col justify-center px-20" variants={staggerContainer} initial="hidden" animate="show">
-      <motion.p className="text-primary font-semibold text-sm uppercase tracking-[0.3em] mb-4" variants={fadeUp}>Importancia</motion.p>
-      <motion.h2 className="text-5xl font-bold text-primary-foreground mb-6 leading-tight" variants={fadeUp}>
+      <motion.p className="text-primary font-semibold text-lg uppercase tracking-[0.3em] mb-5" variants={fadeUp}>Importancia</motion.p>
+      <motion.h2 className="text-7xl font-bold text-primary-foreground mb-8 leading-tight" variants={fadeUp}>
         ¿Por qué es clave registrar <span className="text-gradient-green">cada gestión?</span>
       </motion.h2>
-      <motion.p className="text-lg text-primary-foreground/60 max-w-2xl mb-12 font-light" variants={fadeUp}>
+      <motion.p className="text-2xl text-primary-foreground/60 max-w-3xl mb-14 font-light" variants={fadeUp}>
         Registrar todas las gestiones en el CRM permite mantener un control claro, organizado y trazable de cada interacción.
       </motion.p>
-      <motion.div className="grid grid-cols-4 gap-6" variants={staggerContainer}>
+      <motion.div className="grid grid-cols-4 gap-8" variants={staggerContainer}>
         {cards.map((card) => (
-          <motion.div key={card.title} className="card-glass rounded-xl p-6 flex flex-col items-start gap-4" variants={fadeUp}>
-            <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center">
-              <card.icon className="w-6 h-6 text-primary" />
+          <motion.div key={card.title} className="card-glass rounded-xl p-8 flex flex-col items-start gap-5" variants={fadeUp}>
+            <div className="w-16 h-16 rounded-xl bg-primary/20 flex items-center justify-center">
+              <card.icon className="w-9 h-9 text-primary" />
             </div>
-            <h3 className="text-lg font-bold text-primary-foreground">{card.title}</h3>
-            <p className="text-sm text-primary-foreground/50 font-light">{card.desc}</p>
+            <h3 className="text-2xl font-bold text-primary-foreground">{card.title}</h3>
+            <p className="text-lg text-primary-foreground/50 font-light">{card.desc}</p>
           </motion.div>
         ))}
       </motion.div>

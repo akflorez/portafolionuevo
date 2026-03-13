@@ -17,20 +17,20 @@ const channels = [
 const Slide3Action = () => (
   <SlideLayout bgImage={slide3Bg} overlayStrong>
     <motion.div className="flex-1 flex flex-col justify-center px-20" variants={staggerContainer} initial="hidden" animate="show">
-      <motion.div className="flex items-center gap-4 mb-4" variants={fadeUp}>
-        <span className="text-sm font-bold text-noir-foreground bg-primary/20 px-4 py-1.5 rounded-full border-glow">PASO 1</span>
+      <motion.div className="flex items-center gap-4 mb-5" variants={fadeUp}>
+        <span className="text-lg font-bold text-noir-foreground bg-primary/20 px-5 py-2 rounded-full border-glow">PASO 1</span>
       </motion.div>
-      <motion.h2 className="text-5xl font-bold text-primary-foreground mb-4" variants={fadeUp}>Acción</motion.h2>
-      <motion.p className="text-xl text-primary-foreground/60 mb-14 font-light max-w-xl" variants={fadeUp}>
+      <motion.h2 className="text-7xl font-bold text-primary-foreground mb-5" variants={fadeUp}>Acción</motion.h2>
+      <motion.p className="text-2xl text-primary-foreground/60 mb-16 font-light max-w-2xl" variants={fadeUp}>
         Selecciona el medio de comunicación usado para contactar al deudor.
       </motion.p>
-      <motion.div className="grid grid-cols-3 gap-5 max-w-3xl" variants={staggerContainer}>
+      <motion.div className="grid grid-cols-3 gap-6 max-w-4xl" variants={staggerContainer}>
         {channels.map((ch) => (
-          <motion.div key={ch.label} className="card-glass-strong rounded-xl p-6 flex items-center gap-5" variants={scaleIn}>
-            <div className="w-14 h-14 rounded-xl bg-primary/20 flex items-center justify-center flex-shrink-0 glow-green">
-              <ch.icon className="w-7 h-7 text-primary" />
+          <motion.div key={ch.label} className="card-glass-strong rounded-xl p-7 flex items-center gap-6" variants={scaleIn}>
+            <div className="w-18 h-18 rounded-xl bg-primary/20 flex items-center justify-center flex-shrink-0 glow-green" style={{width: '4.5rem', height: '4.5rem'}}>
+              <ch.icon className="w-10 h-10 text-primary" />
             </div>
-            <span className="text-lg font-semibold text-primary-foreground">{ch.label}</span>
+            <span className="text-2xl font-semibold text-primary-foreground">{ch.label}</span>
           </motion.div>
         ))}
       </motion.div>

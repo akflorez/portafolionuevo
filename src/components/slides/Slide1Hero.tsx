@@ -15,23 +15,23 @@ const Slide1Hero = () => (
       <motion.img
         src={logo}
         alt="EMDECOB"
-        className="h-20 mb-10 brightness-0 invert"
+        className="h-28 mb-12 brightness-0 invert"
         variants={fadeUp}
       />
-      <motion.div className="w-20 h-1 bg-primary rounded-full mb-8" variants={fadeUp} />
+      <motion.div className="w-24 h-1.5 bg-primary rounded-full mb-10" variants={fadeUp} />
       <motion.h1
-        className="text-6xl font-extrabold tracking-tight text-primary-foreground leading-tight mb-6"
+        className="text-8xl font-extrabold tracking-tight text-primary-foreground leading-tight mb-8"
         variants={fadeUp}
       >
         TIPIFICACIÓN DE{" "}
         <span className="text-gradient-green">GESTIONES EN CRM</span>
       </motion.h1>
-      <motion.p className="text-xl font-light text-primary-foreground/70 max-w-3xl leading-relaxed" variants={fadeUp}>
+      <motion.p className="text-3xl font-light text-primary-foreground/70 max-w-4xl leading-relaxed" variants={fadeUp}>
         Registro claro, trazable y estratégico para una gestión efectiva
       </motion.p>
-      <motion.div className="mt-12 flex items-center gap-3" variants={fadeUp}>
-        <div className="w-3 h-3 rounded-full bg-primary animate-pulse" />
-        <span className="text-sm font-medium text-primary-foreground/50 uppercase tracking-widest">
+      <motion.div className="mt-14 flex items-center gap-4" variants={fadeUp}>
+        <div className="w-4 h-4 rounded-full bg-primary animate-pulse" />
+        <span className="text-lg font-medium text-primary-foreground/50 uppercase tracking-widest">
           Capacitación corporativa
         </span>
       </motion.div>

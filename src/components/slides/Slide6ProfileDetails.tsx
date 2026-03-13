@@ -17,16 +17,16 @@ const profiles = [
 const Slide6ProfileDetails = () => (
   <SlideLayout bgImage={slide6Bg} overlayStrong>
     <motion.div className="flex-1 flex flex-col justify-center px-20" variants={staggerContainer} initial="hidden" animate="show">
-      <motion.h2 className="text-4xl font-bold text-primary-foreground mb-10" variants={fadeUp}>
+      <motion.h2 className="text-6xl font-bold text-primary-foreground mb-12" variants={fadeUp}>
         Perfiles de <span className="text-gradient-green">gestión</span>
       </motion.h2>
-      <motion.div className="grid grid-cols-2 gap-4 max-w-5xl" variants={staggerFast}>
+      <motion.div className="grid grid-cols-2 gap-5 max-w-6xl" variants={staggerFast}>
         {profiles.map((p) => (
-          <motion.div key={p.title} className="card-glass rounded-xl p-5 flex items-start gap-4" variants={fadeUpSmall}>
-            <div className={`w-3 h-3 rounded-full mt-1.5 flex-shrink-0 ${p.dot}`} />
+          <motion.div key={p.title} className="card-glass rounded-xl p-6 flex items-start gap-5" variants={fadeUpSmall}>
+            <div className={`w-4 h-4 rounded-full mt-2 flex-shrink-0 ${p.dot}`} />
             <div>
-              <h3 className="text-lg font-bold text-primary-foreground mb-1">{p.title}</h3>
-              <p className="text-sm text-primary-foreground/50 font-light">{p.desc}</p>
+              <h3 className="text-2xl font-bold text-primary-foreground mb-1">{p.title}</h3>
+              <p className="text-lg text-primary-foreground/50 font-light">{p.desc}</p>
             </div>
           </motion.div>
         ))}
