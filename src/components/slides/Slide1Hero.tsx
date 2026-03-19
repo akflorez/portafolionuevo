@@ -15,7 +15,7 @@ const Slide1Hero = () => (
       <motion.img
         src={logo}
         alt="EMDECOB"
-        className="h-28 mb-12 brightness-0 invert"
+        className="h-28 mb-12"
         variants={fadeUp}
       />
       <motion.div className="w-24 h-1.5 bg-primary rounded-full mb-10" variants={fadeUp} />
@@ -23,11 +23,10 @@ const Slide1Hero = () => (
         className="text-8xl font-extrabold tracking-tight text-primary-foreground leading-tight mb-8"
         variants={fadeUp}
       >
-        TIPIFICACIÓN DE{" "}
-        <span className="text-gradient-green">GESTIONES EN CRM</span>
+        SEGUIMIENTO DE <span className="text-gradient-green">ACUERDOS</span>
       </motion.h1>
       <motion.p className="text-3xl font-light text-primary-foreground/70 max-w-4xl leading-relaxed" variants={fadeUp}>
-        Registro claro, trazable y estratégico para una gestión efectiva
+        Guía paso a paso para el correcto diligenciamiento del formato
       </motion.p>
       <motion.div className="mt-14 flex items-center gap-4" variants={fadeUp}>
         <div className="w-4 h-4 rounded-full bg-primary animate-pulse" />

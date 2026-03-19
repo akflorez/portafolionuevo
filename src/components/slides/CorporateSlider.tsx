@@ -2,46 +2,48 @@ import { useState, useEffect, useCallback } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Slide1Hero from "./Slide1Hero";
 import Slide2Importance from "./Slide2Importance";
-import Slide3Action from "./Slide3Action";
-import Slide4Contact from "./Slide4Contact";
-import Slide5Profiles from "./Slide5Profiles";
-import Slide6ProfileDetails from "./Slide6ProfileDetails";
-import Slide7Reminder from "./Slide7Reminder";
+import Slide3FormatoP1 from "./Slide3FormatoP1";
+import Slide4FormatoP2 from "./Slide4FormatoP2";
+import Slide5FormatoP3 from "./Slide5FormatoP3";
+import Slide6Reminder from "./Slide6Reminder";
+import Slide7Process from "./Slide7Process";
 import logo from "@/assets/emdecob-logo-wide.png";
+import Slide8Restrictions from "./Slide8Restrictions";
 
 const slides = [
   Slide1Hero,
   Slide2Importance,
-  Slide3Action,
-  Slide4Contact,
-  Slide5Profiles,
-  Slide6ProfileDetails,
-  Slide7Reminder,
+  Slide3FormatoP1,
+  Slide4FormatoP2,
+  Slide5FormatoP3,
+  Slide7Process,
+  Slide8Restrictions,
+  Slide6Reminder,
 ];
-
-const INTERVAL = 20000;
 
 const CorporateSlider = () => {
   const [current, setCurrent] = useState(0);
-  const [progress, setProgress] = useState(0);
 
   const next = useCallback(() => {
     setCurrent((prev) => (prev + 1) % slides.length);
-    setProgress(0);
   }, []);
 
+  const prev = useCallback(() => {
+    setCurrent((prev) => (prev - 1 + slides.length) % slides.length);
+  }, []);
+
+  // Keyboard navigation
   useEffect(() => {
-    const interval = setInterval(() => {
-      setProgress((p) => {
-        if (p >= 100) {
-          next();
-          return 0;
-        }
-        return p + 100 / (INTERVAL / 50);
-      });
-    }, 50);
-    return () => clearInterval(interval);
-  }, [next]);
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "ArrowRight" || e.key === " ") {
+        next();
+      } else if (e.key === "ArrowLeft") {
+        prev();
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [next, prev]);
 
   const CurrentSlide = slides[current];
 
@@ -64,36 +66,34 @@ const CorporateSlider = () => {
       <div className="absolute top-0 left-0 right-0 z-50 flex items-center justify-between px-10 py-5">
         <img src={logo} alt="EMDECOB" className="h-8 brightness-0 invert opacity-60" />
         <span className="text-xs font-medium text-primary-foreground/30 uppercase tracking-[0.25em]">
-          Capacitación CRM
+          Seguimiento de Acuerdos
         </span>
       </div>
+
+      {/* Navigation cues (Left / Right invisible buttons) */}
+      <button onClick={prev} className="absolute left-0 top-0 bottom-0 w-24 z-40 cursor-pointer opacity-0" aria-label="Anterior" />
+      <button onClick={next} className="absolute right-0 top-0 bottom-0 w-24 z-40 cursor-pointer opacity-0" aria-label="Siguiente" />
 
       {/* Progress dots */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-50 flex items-center gap-2">
         {slides.map((_, i) => (
           <button
             key={i}
-            onClick={() => { setCurrent(i); setProgress(0); }}
-            className={`progress-dot ${i === current ? 'progress-dot-active' : 'progress-dot-inactive'}`}
+            onClick={() => setCurrent(i)}
+            className={`progress-dot transition-all duration-300 ${i === current ? 'bg-primary w-8 h-2' : 'bg-primary/20 w-2 h-2 hover:bg-primary/50'}`}
           />
         ))}
       </div>
 
-      {/* Progress bar */}
-      <div className="absolute bottom-0 left-0 right-0 z-50 h-1 bg-primary-foreground/5">
-        <motion.div
-          className="h-full bg-primary/60"
-          style={{ width: `${progress}%` }}
-          transition={{ duration: 0.05 }}
-        />
-      </div>
-
-      {/* Slide counter */}
-      <div className="absolute bottom-8 right-10 z-50">
-        <span className="text-sm font-bold text-primary-foreground/20">
+      {/* Credit and Slide counter */}
+      <div className="absolute bottom-6 right-10 z-50 flex flex-col items-end gap-1">
+        <span className="text-sm font-bold text-primary-foreground/40">
           {String(current + 1).padStart(2, "0")}{" "}
-          <span className="text-primary-foreground/10">/</span>{" "}
+          <span className="text-primary-foreground/20">/</span>{" "}
           {String(slides.length).padStart(2, "0")}
+        </span>
+        <span className="text-[10px] uppercase font-semibold text-primary/60 tracking-wider">
+          Realizado por el área de analítica
         </span>
       </div>
     </div>

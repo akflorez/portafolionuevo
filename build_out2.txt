@@ -1,0 +1,52 @@
+﻿
+> vite_react_shadcn_ts@0.0.0 build
+> vite build
+
+[36mvite v5.4.19 [32mbuilding for production...[36m[39m
+transforming...
+node.exe : 
+Browserslist: browsers 
+data (caniuse-lite) is 
+9 months old. Please 
+run:
+En línea: 1 Carácter: 1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo 
+...
++ ~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~
+    + CategoryInfo     
+         : NotSpecifi  
+  ed: (Browserslist:   
+  b...ld. Please ru    
+n::String) [], Rem    
+oteException
+    + FullyQualifiedEr 
+   rorId : NativeComm  
+  andError
+ 
+  npx update-browsersli
+st-db@latest
+  Why you should do it 
+regularly: https://gith
+ub.com/browserslist/upd
+ate-db#readme
+[32mÔ£ô[39m 2081 modules transformed.
+rendering chunks...
+computing gzip size...
+[2mdist/[22m[32mindex.html                             [39m[1m[2m  1.53 kB[22m[1m[22m[2m Ôöé gzip:   0.62 kB[22m
+[2mdist/[22m[32massets/emdecob-logo-wide-DBGH8BOs.png  [39m[1m[2m 30.90 kB[22m[1m[22m
+[2mdist/[22m[32massets/emdecob-logo-D7QQhxZL.png       [39m[1m[2m 72.35 kB[22m[1m[22m
+[2mdist/[22m[32massets/slide3-channels-Dpqs7E6L.jpg    [39m[1m[2m102.11 kB[22m[1m[22m
+[2mdist/[22m[32massets/slide7-backup-DjTdXf6i.jpg      [39m[1m[2m110.09 kB[22m[1m[22m
+[2mdist/[22m[32massets/slide5-profiles-DVD8BSqj.jpg    [39m[1m[2m115.58 kB[22m[1m[22m
+[2mdist/[22m[32massets/slide4-contact-BQpbRhaU.jpg     [39m[1m[2m120.40 kB[22m[1m[22m
+[2mdist/[22m[32massets/slide2-team-DzMunbqz.jpg        [39m[1m[2m138.13 kB[22m[1m[22m
+[2mdist/[22m[32massets/slide1-hero-vx1C0Pos.jpg        [39m[1m[2m141.86 kB[22m[1m[22m
+[2mdist/[22m[35massets/index-BZFKc8vO.css              [39m[1m[2m 65.28 kB[22m[1m[22m[2m Ôöé gzip:  11.64 kB[22m
+[2mdist/[22m[36massets/index-QXLoxiwU.js               [39m[1m[2m455.43 kB[22m[1m[22m[2m Ôöé gzip: 145.96 kB[22m
+[32mÔ£ô built in 2.76s[39m
