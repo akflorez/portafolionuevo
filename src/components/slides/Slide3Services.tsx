@@ -15,7 +15,7 @@ const services = [
     icon: BarChart3,
     title: "Analítica de Datos",
     desc: "Dashboards estratégicos en tiempo real para decisiones basadas en evidencia.",
-    details: ["Power BI Enterprise", "Minería de procesos", "Reportes dinámicos"],
+    details: ["Power BI Enterprise", "Reportes dinámicos"],
     link: "https://bi.emdecob.com/",
     linkText: "Ver Portafolio BI"
   },
@@ -29,7 +29,7 @@ const services = [
     icon: Zap,
     title: "Integración de Servicios 360",
     desc: "Soluciones a medida que integran tecnología, talento y procesos.",
-    details: ["BPO Personalizado", "Optimización Costos", "Eficiencia Operativa"]
+    details: ["BPO Personalizado"]
   }
 ];
 
