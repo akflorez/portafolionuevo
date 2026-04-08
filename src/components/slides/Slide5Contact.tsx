@@ -56,10 +56,15 @@ const Slide5Contact = () => {
                 <Linkedin className="w-6 h-6" />
                 Síguenos en LinkedIn
               </a>
-              <button className="flex items-center gap-3 px-8 py-4 bg-white/5 text-white font-bold rounded-2xl border border-white/10 hover:bg-white/10 transition-all">
+              <a 
+                href="https://www.instagram.com/emdecob_sas?igsh=MTVwZTlxZHA4ZW81cQ==" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 px-8 py-4 bg-white/5 text-white font-bold rounded-2xl border border-white/10 hover:bg-white/10 transition-all"
+              >
                 <Instagram className="w-6 h-6" />
                 Instagram
-              </button>
+              </a>
             </div>
           </motion.div>
         </div>
