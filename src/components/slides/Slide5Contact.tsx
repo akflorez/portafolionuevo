@@ -7,7 +7,7 @@ const Slide5Contact = () => {
   const contactInfo = [
     { icon: MapPin, label: "Dirección", value: "Cra. 19 #15 Norte-40, Armenia, Quindío", extra: "" },
     { icon: Mail, label: "Correo", value: "gerencia@emdecob.com", extra: "direccionejecutiva@emdecob.com" },
-    { icon: Globe, label: "Sitio Web", value: "www.emdecob.com", extra: "Portal de Analítica" }
+    { icon: Globe, label: "Sitio Web", value: "www.emdecob.com", extra: "" }
   ];
 
   return (
