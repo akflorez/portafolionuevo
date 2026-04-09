@@ -1,24 +1,24 @@
 import { motion } from "framer-motion";
 import SlideLayout from "./SlideLayout";
-import { Shield, BarChart3, Users } from "lucide-react";
+import { Zap, BarChart3, Binary } from "lucide-react";
 import teamBg from "@/assets/slide2-team.jpg";
 
 const Slide2Purpose = () => {
   const pillars = [
     {
-      icon: Shield,
-      title: "Firmeza del derecho",
-      desc: "Actuamos con la rigurosidad legal necesaria para proteger el patrimonio de nuestros clientes."
+      icon: Binary,
+      title: "BPS & Tecnología",
+      desc: "Combinamos la ejecución de procesos operativos con el desarrollo de soluciones tecnológicas basadas en datos e IA."
     },
     {
       icon: BarChart3,
-      title: "Precisión de la analítica",
-      desc: "Convertimos datos en decisiones estratégicas y resultados auditables."
+      title: "Analítica Estratégica",
+      desc: "Diseñamos soluciones que optimizan procesos, automatizan operaciones y convierten los datos en herramientas de decisión."
     },
     {
-      icon: Users,
-      title: "Empatía humana",
-      desc: "Atención personalizada que fortalece las relaciones comerciales a largo plazo."
+      icon: Zap,
+      title: "Evolución Digital",
+      desc: "Desarrollamos soluciones independientes de automatización e IA para modelos eficientes, escalables y en tiempo real."
     }
   ];
 
@@ -29,16 +29,24 @@ const Slide2Purpose = () => {
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
-          className="max-w-4xl"
+          className="max-w-5xl"
         >
           <p className="text-emerald-500 font-bold uppercase tracking-widest mb-4">Nuestra Esencia</p>
           <h2 className="text-7xl font-black text-white mb-8 leading-tight">
             Propósito <span className="text-gradient-green">Institucional</span>
           </h2>
-          <p className="text-2xl text-white/70 font-light leading-relaxed mb-16 max-w-3xl">
-            Protegemos el patrimonio de nuestros clientes, fortalecemos sus relaciones comerciales 
-            y entregamos resultados auditables a través de procesos críticos integrados.
-          </p>
+          
+          <div className="space-y-6 mb-16">
+            <p className="text-2xl text-white/90 font-medium leading-relaxed max-w-4xl">
+              EMDECOB es una empresa de **Business Process Services (BPS)** y transformación digital que combina la ejecución de procesos operativos con el desarrollo de soluciones tecnológicas basadas en datos, analítica e inteligencia artificial.
+            </p>
+            <p className="text-xl text-white/60 font-light leading-relaxed max-w-4xl">
+              Contamos con experiencia en la gestión integral de cartera y servicios jurídicos, lo que nos permite comprender a profundidad los retos operativos de las organizaciones. A partir de ese conocimiento, diseñamos e implementamos soluciones de transformación digital que optimizan procesos, automatizan operaciones y convierten los datos en herramientas estratégicas para la toma de decisiones.
+            </p>
+            <p className="text-xl text-white/60 font-light leading-relaxed max-w-4xl">
+              Como línea independiente, desarrollamos tableros de datos, portales digitales con IA y soluciones de automatización orientadas a diversos sectores, permitiéndoles evolucionar hacia modelos eficientes, escalables y basados en información en tiempo real.
+            </p>
+          </div>
         </motion.div>
 
         <div className="grid grid-cols-3 gap-8">
@@ -54,7 +62,7 @@ const Slide2Purpose = () => {
                 <pillar.icon className="w-8 h-8 text-emerald-500" />
               </div>
               <h3 className="text-2xl font-bold text-white mb-4">{pillar.title}</h3>
-              <p className="text-lg text-white/50 leading-relaxed">{pillar.desc}</p>
+              <p className="text-base text-white/50 leading-relaxed">{pillar.desc}</p>
             </motion.div>
           ))}
         </div>
