@@ -9,7 +9,7 @@ const services = [
     title: "Gestión Legal & Procesal",
     desc: "Plataforma integral para el seguimiento de procesos ante la Rama Judicial. Automatización de consultas y validaciones masivas.",
     details: ["Validación de Procesos", "Filtros de Búsqueda Avanzados", "Control de Estados en Tiempo Real"],
-    link: "https://consultas.emdecob.com/",
+    link: "https://consultasjuridicas.emdecob.com/",
     linkText: "Explorar Aplicativo Legal",
     image: "/assets/apps/legal_cases.png"
   },
