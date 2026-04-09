@@ -5,19 +5,17 @@ import Slide1EmdecobCover from "./Slide1EmdecobCover";
 import Slide2Purpose from "./Slide2Purpose";
 import Slide3History from "./Slide3History";
 import Slide3Services from "./Slide3Services";
-import Slide4Differentiators from "./Slide4Differentiators";
-import Slide4Clients from "./Slide4Clients";
 import Slide5Contact from "./Slide5Contact";
+import Slide9AgentDashboard from "./Slide9AgentDashboard";
 import logo from "@/assets/emdecob-logo-wide.png";
 
 const slides = [
   Slide1EmdecobCover,    // 1. Portada
   Slide2Purpose,         // 2. Propósito Institucional
   Slide3History,         // 3. Conócenos / Historia
-  Slide3Services,        // 4. Servicios Estratégicos
-  Slide4Differentiators, // 5. Diferenciadores
-  Slide4Clients,         // 6. Casos de Éxito
-  Slide5Contact          // 7. Contacto
+  Slide3Services,        // 4. Servicios Estratégicos (Transformación Digital)
+  Slide9AgentDashboard,  // 5. Análisis de Datos (App Real)
+  Slide5Contact          // 6. Contacto
 ];
 
 const CorporateSlider = () => {
@@ -82,19 +80,21 @@ const CorporateSlider = () => {
 
         {/* Barra superior */}
         <div className="absolute top-0 left-0 right-0 z-50 flex items-center justify-between px-10 py-5 no-print">
-          <div className="flex items-center gap-6">
-            <img src={logo} alt="EMDECOB" className="h-8 brightness-0 invert opacity-60" />
-            <button 
-              onClick={() => window.print()}
-              className="flex items-center gap-2 px-3 py-1.5 bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-500/20 rounded-lg text-emerald-400 text-xs font-bold transition-all"
-            >
-              <Download className="w-4 h-4" />
-              Descargar PDF
-            </button>
-          </div>
+          <img src={logo} alt="EMDECOB" className="h-8 brightness-0 invert opacity-60" />
           <span className="text-xs font-medium text-primary-foreground/30 uppercase tracking-[0.25em]">
             Portafolio Corporativo
           </span>
+        </div>
+
+        {/* Botón de descarga - Moved to bottom right for better visibility */}
+        <div className="absolute bottom-6 right-24 z-[100] no-print">
+          <button 
+            onClick={() => window.print()}
+            className="flex items-center gap-2 px-4 py-2 bg-emerald-500 text-noir rounded-xl font-bold shadow-[0_0_20px_rgba(16,185,129,0.4)] hover:bg-emerald-400 hover:scale-105 transition-all"
+          >
+            <Download className="w-5 h-5" />
+            Descargar Brochure PDF
+          </button>
         </div>
 
         {/* Flechas de navegación */}
