@@ -6,16 +6,15 @@ import Slide2Purpose from "./Slide2Purpose";
 import Slide3History from "./Slide3History";
 import Slide3Services from "./Slide3Services";
 import Slide5Contact from "./Slide5Contact";
-import Slide9AgentDashboard from "./Slide9AgentDashboard";
+// import Slide9AgentDashboard from "./Slide9AgentDashboard"; // Removed as requested
 import logo from "@/assets/emdecob-logo-wide.png";
 
 const slides = [
   Slide1EmdecobCover,    // 1. Portada
   Slide2Purpose,         // 2. Propósito Institucional
   Slide3History,         // 3. Conócenos / Historia
-  Slide3Services,        // 4. Servicios Estratégicos (Transformación Digital)
-  Slide9AgentDashboard,  // 5. Análisis de Datos (App Real)
-  Slide5Contact          // 6. Contacto
+  Slide3Services,        // 4. Transformación Digital (Aplicativos)
+  Slide5Contact          // 5. Contacto
 ];
 
 const CorporateSlider = () => {
