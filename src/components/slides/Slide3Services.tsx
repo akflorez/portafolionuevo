@@ -7,26 +7,41 @@ import channelsBg from "@/assets/slide3-channels.jpg";
 const services = [
   {
     icon: Users,
-    title: "Gestión BPO & Cartera 360",
-    desc: "Recuperación integral de cartera (Administrativa, Pre-jurídica y Jurídica) con enfoque estratégico basado en datos.",
-    details: ["Cobro Administrativo", "Cobro Pre-jurídico y Jurídico", "Ventas Remotas", "Servicio al Cliente"],
+    title: "Gestión BPO & BPS 360",
+    desc: "Operación integral de procesos de negocio con enfoque en recuperación de cartera.",
+    details: [
+      "Cobro Administrativo", 
+      "Cobro Pre-jurídico y Jurídico", 
+      "Agendamiento de Citas", 
+      "Servicio al Cliente", 
+      "Ventas Remotas"
+    ],
     image: "/assets/apps/legal_dashboard.png"
   },
   {
     icon: MessageSquare,
     title: "Contact Center Inteligente",
-    desc: "Solución omnicanal para la gestión masiva de comunicaciones y agendamiento de citas.",
+    desc: "Capacidad masiva de comunicación multicanal potenciada por tecnología.",
     details: [
-      "Llamadas Robotizadas", "IVR Interactivo", "WhatsApp Business IA", 
-      "SMS & Correos Masivos", "Mensajes de Voz"
+      "Llamadas Telefónicas Robotizadas", 
+      "Correos Electrónicos Masivos", 
+      "Chat y Mensajes por WhatsApp", 
+      "Mensajes de Voz e IVR Interactivo", 
+      "Mensajes de Texto (SMS)"
     ],
     images: ["/assets/apps/ai_cally_login.png", "/assets/apps/ai_cally_chat.png"]
   },
   {
     icon: BarChart3,
     title: "Transformación Digital",
-    desc: "Ecosistema de soluciones tecnológicas para optimizar procesos y convertir datos en decisiones.",
-    details: ["Portales de Analítica", "Cally IA Generativa", "Automatización RPA", "Tableros BI Real-time"],
+    desc: "Ecosistema tecnológico para optimizar la eficiencia y convertir datos en valor.",
+    details: [
+      "Visualización de Datos (BI)", 
+      "Cally IA: Agente Virtual", 
+      "Portales de Gestión en la Nube", 
+      "Seguimiento de Informes en Tiempo Real", 
+      "Automatización de Procesos (RPA)"
+    ],
     image: "/assets/apps/bi_dashboard.png"
   }
 ];
@@ -42,7 +57,7 @@ const ScreenshotCarousel = ({ images }: { images: string[] }) => {
   }, [images.length]);
 
   return (
-    <div className="relative aspect-video rounded-xl overflow-hidden border border-white/10 shadow-xl">
+    <div className="relative aspect-video rounded-xl overflow-hidden border border-white/10 shadow-xl bg-noir/20">
       <AnimatePresence mode="wait">
         <motion.img
           key={images[index]}
@@ -73,56 +88,53 @@ const ScreenshotCarousel = ({ images }: { images: string[] }) => {
 const Slide3Services = () => {
   return (
     <SlideLayout bgImage={channelsBg} overlayStrong>
-      <div className="flex-1 flex flex-col justify-center px-16 z-20">
+      <div className="flex-1 flex flex-col justify-center px-10 z-20">
         <motion.div
            initial={{ opacity: 0, y: -30 }}
            whileInView={{ opacity: 1, y: 0 }}
-           className="mb-8"
+           className="mb-6 text-center"
         >
-          <p className="text-emerald-500 font-bold uppercase tracking-widest mb-4">Soluciones 360 Integrales</p>
-          <h2 className="text-6xl font-black text-white leading-tight">Servicios <span className="text-gradient-green">Estratégicos</span></h2>
+          <p className="text-emerald-500 font-bold uppercase tracking-widest mb-2 text-sm">Portafolio Modular de Soluciones</p>
+          <h2 className="text-5xl font-black text-white leading-tight">Servicios <span className="text-gradient-green">Integrales</span></h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {services.map((service, index) => (
             <motion.div
               key={service.title}
               initial={{ opacity: 0, scale: 0.95, y: 30 }}
               whileInView={{ opacity: 1, scale: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="card-glass p-6 rounded-[2rem] border border-white/5 hover:border-emerald-500/30 transition-all group overflow-hidden relative flex flex-col h-full"
+              className="card-glass p-5 rounded-[1.5rem] border border-white/5 group relative flex flex-col h-[65vh]"
             >
-              <div className="relative z-10 flex flex-col gap-5 h-full">
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center shrink-0 group-hover:bg-emerald-500/20 transition-all">
-                    <service.icon className="w-6 h-6 text-emerald-500" />
+              <div className="relative z-10 flex flex-col gap-4 h-full">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center shrink-0">
+                    <service.icon className="w-5 h-5 text-emerald-500" />
                   </div>
-                  <h3 className="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors tracking-tight leading-tight">{service.title}</h3>
+                  <h3 className="text-lg font-bold text-white group-hover:text-emerald-400 transition-colors leading-tight">{service.title}</h3>
                 </div>
                 
-                <p className="text-xs text-white/50 font-light leading-relaxed min-h-[2.5rem]">
+                <p className="text-[10px] text-white/50 font-light leading-snug">
                   {service.desc}
                 </p>
                 
-                <div className="flex-1">
-                  <ScreenshotCarousel images={service.images || [service.image!]} />
-                </div>
+                <ScreenshotCarousel images={service.images || [service.image!]} />
 
-                <div className="mt-auto pt-4">
-                  <div className="grid grid-cols-1 gap-2">
-                    {service.details.map((detail) => (
-                      <div key={detail} className="flex items-center gap-2">
-                        <CheckCircle2 className="w-3 h-3 text-emerald-500 shrink-0" />
-                        <span className="text-[10px] text-white/70 font-medium tracking-wide">
-                          {detail}
-                        </span>
-                      </div>
-                    ))}
-                  </div>
+                <div className="mt-2 space-y-1.5 overflow-y-auto pr-2 custom-scrollbar">
+                  <p className="text-[9px] text-emerald-400/80 font-bold uppercase tracking-wide mb-2">Capacidades:</p>
+                  {service.details.map((detail) => (
+                    <div key={detail} className="flex items-start gap-2">
+                      <CheckCircle2 className="w-2.5 h-2.5 text-emerald-500 mt-0.5 shrink-0" />
+                      <span className="text-[10px] text-white/80 font-medium leading-tight">
+                        {detail}
+                      </span>
+                    </div>
+                  ))}
                 </div>
               </div>
               
-              <div className="absolute -right-20 -bottom-20 w-48 h-48 bg-emerald-500/5 rounded-full blur-3xl group-hover:bg-emerald-500/10 transition-all duration-700" />
+              <div className="absolute -right-10 -bottom-10 w-32 h-32 bg-emerald-500/5 rounded-full blur-2xl pointer-events-none" />
             </motion.div>
           ))}
         </div>
