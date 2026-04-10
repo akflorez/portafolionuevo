@@ -1,29 +1,32 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import SlideLayout from "./SlideLayout";
-import { Zap, MessageSquare, BarChart3, Users, Headphones, Cpu } from "lucide-react";
+import { Zap, MessageSquare, BarChart3, Users, Headphones, Cpu, CheckCircle2 } from "lucide-react";
 import channelsBg from "@/assets/slide3-channels.jpg";
 
 const services = [
   {
     icon: Users,
     title: "Gestión BPO & Cartera 360",
-    desc: "Recuperación de cartera con enfoque estratégico. Integramos analítica avanzada para predecir comportamientos de pago y optimizar el recaudo.",
-    details: ["Estrategias Segmentadas", "Analítica Predictiva", "Eficiencia Operativa"],
-    image: "/assets/apps/legal_dashboard.png" // Usamos el dashboard legal como muestra de gestión de datos
+    desc: "Recuperación integral de cartera (Administrativa, Pre-jurídica y Jurídica) con enfoque estratégico basado en datos.",
+    details: ["Cobro Administrativo", "Cobro Pre-jurídico y Jurídico", "Ventas Remotas", "Servicio al Cliente"],
+    image: "/assets/apps/legal_dashboard.png"
   },
   {
     icon: MessageSquare,
-    title: "Experiencia de Cliente con IA",
-    desc: "Contact Center Inteligente potenciado por Cally IA. Automatización de interacciones, agendamiento y soporte omnicanal.",
-    details: ["Cally IA Generativa", "Omnicanalidad", "Contexto CRM"],
+    title: "Contact Center Inteligente",
+    desc: "Solución omnicanal para la gestión masiva de comunicaciones y agendamiento de citas.",
+    details: [
+      "Llamadas Robotizadas", "IVR Interactivo", "WhatsApp Business IA", 
+      "SMS & Correos Masivos", "Mensajes de Voz"
+    ],
     images: ["/assets/apps/ai_cally_login.png", "/assets/apps/ai_cally_chat.png"]
   },
   {
     icon: BarChart3,
     title: "Transformación Digital",
-    desc: "Desarrollo de portales, tableros de BI y soluciones de automatización a medida para transformar datos en activos estratégicos.",
-    details: ["Dashboards en Tiempo Real", "Automatización de Procesos", "Modelos Escalables"],
+    desc: "Ecosistema de soluciones tecnológicas para optimizar procesos y convertir datos en decisiones.",
+    details: ["Portales de Analítica", "Cally IA Generativa", "Automatización RPA", "Tableros BI Real-time"],
     image: "/assets/apps/bi_dashboard.png"
   }
 ];
@@ -97,18 +100,23 @@ const Slide3Services = () => {
                   <h3 className="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors tracking-tight leading-tight">{service.title}</h3>
                 </div>
                 
-                <p className="text-sm text-white/50 font-light leading-relaxed min-h-[3rem]">
+                <p className="text-xs text-white/50 font-light leading-relaxed min-h-[2.5rem]">
                   {service.desc}
                 </p>
                 
-                <div className="mt-auto space-y-5">
+                <div className="flex-1">
                   <ScreenshotCarousel images={service.images || [service.image!]} />
+                </div>
 
-                  <div className="flex flex-wrap gap-2">
+                <div className="mt-auto pt-4">
+                  <div className="grid grid-cols-1 gap-2">
                     {service.details.map((detail) => (
-                      <span key={detail} className="text-[9px] px-2 py-0.5 rounded-md bg-emerald-500/5 border border-emerald-500/10 text-emerald-400/70 uppercase font-bold tracking-wider">
-                        {detail}
-                      </span>
+                      <div key={detail} className="flex items-center gap-2">
+                        <CheckCircle2 className="w-3 h-3 text-emerald-500 shrink-0" />
+                        <span className="text-[10px] text-white/70 font-medium tracking-wide">
+                          {detail}
+                        </span>
+                      </div>
                     ))}
                   </div>
                 </div>
