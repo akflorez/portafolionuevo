@@ -59,13 +59,12 @@ const Slide3ServicesBPO = () => {
           whileInView={{ opacity: 1, scale: 1 }}
           className="flex-1 relative"
         >
-          <div className="relative rounded-[3rem] overflow-hidden border border-white/10 shadow-2xl">
+          <div className="relative rounded-[3rem] overflow-hidden border border-white/20 shadow-2xl aspect-[4/5] bg-noir/20">
             <img 
-              src="/assets/apps/legal_dashboard.png" 
-              alt="BPO Dashboard" 
-              className="w-full h-auto object-cover"
+              src="/assets/apps/bpo_team.png" 
+              alt="Executive BPO Team" 
+              className="w-full h-full object-contain"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-noir/60 via-transparent to-transparent"></div>
           </div>
           
           {/* Decorative Elements */}
