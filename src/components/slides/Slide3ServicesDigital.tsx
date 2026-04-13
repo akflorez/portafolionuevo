@@ -38,20 +38,20 @@ const ScreenshotCarousel = () => {
   }, []);
 
   return (
-    <div className="relative aspect-[16/10] rounded-[2.5rem] overflow-hidden border border-white/10 shadow-2xl bg-noir/20 group">
+    <div className="relative aspect-video rounded-[3rem] overflow-hidden border border-white/10 shadow-2xl bg-noir/20 group">
       <AnimatePresence mode="wait">
         <motion.img
           key={appImages[index]}
           src={appImages[index]}
           alt="EMDECOB App"
-          initial={{ opacity: 0, scale: 1.05, rotate: -1 }}
-          animate={{ opacity: 1, scale: 1, rotate: 0 }}
-          exit={{ opacity: 0, scale: 0.95, rotate: 1 }}
+          initial={{ opacity: 0, scale: 1.02 }}
+          animate={{ opacity: 1, scale: 1 }}
+          exit={{ opacity: 0, scale: 0.98 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-contain bg-noir/40"
         />
       </AnimatePresence>
-      <div className="absolute inset-0 bg-gradient-to-t from-noir/50 via-transparent to-transparent"></div>
+      <div className="absolute inset-0 bg-gradient-to-t from-noir/60 via-transparent to-transparent pointer-events-none"></div>
       
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 px-3 py-1.5 rounded-full bg-noir/60 backdrop-blur-xl border border-white/10">
         {appImages.map((_, i) => (
@@ -124,18 +124,18 @@ const Slide3ServicesDigital = () => {
           <div className="relative scale-110 origin-right">
              <ScreenshotCarousel />
              
-             {/* Floating Badge */}
+             {/* Raising the Badge higher as requested */}
              <motion.div 
                animate={{ y: [0, -20, 0] }}
                transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-               className="absolute -top-16 -right-16 p-12 card-glass border border-emerald-500/40 rounded-[3rem] shadow-2xl flex items-center gap-10 backdrop-blur-3xl z-30"
+               className="absolute -top-24 -right-16 p-10 card-glass border border-emerald-500/40 rounded-[2.5rem] shadow-2xl flex items-center gap-8 backdrop-blur-3xl z-30"
              >
-                <div className="w-24 h-24 rounded-[2rem] bg-gradient-to-br from-emerald-400 to-emerald-600 flex items-center justify-center shadow-2xl shadow-emerald-500/30">
-                  <BarChart3 className="text-noir w-12 h-12" />
+                <div className="w-20 h-20 rounded-3xl bg-gradient-to-br from-emerald-400 to-emerald-600 flex items-center justify-center shadow-2xl shadow-emerald-500/20">
+                  <BarChart3 className="text-noir w-10 h-10" />
                 </div>
                 <div>
-                   <p className="text-base text-emerald-400 font-black uppercase tracking-[0.4em] mb-2">Analytics AI</p>
-                   <p className="text-4xl font-black text-white">Ecosistema Cloud</p>
+                   <p className="text-sm text-emerald-400 font-black uppercase tracking-[0.3em] mb-1">Analytics AI</p>
+                   <p className="text-3xl font-black text-white">Ecosistema Cloud</p>
                 </div>
              </motion.div>
              
