@@ -4,7 +4,9 @@ import { Download } from "lucide-react";
 import Slide1EmdecobCover from "./Slide1EmdecobCover";
 import Slide2Purpose from "./Slide2Purpose";
 import Slide3History from "./Slide3History";
-import Slide3Services from "./Slide3Services";
+import Slide3ServicesBPO from "./Slide3ServicesBPO";
+import Slide3ServicesContact from "./Slide3ServicesContact";
+import Slide3ServicesDigital from "./Slide3ServicesDigital";
 import Slide5Contact from "./Slide5Contact";
 // import Slide9AgentDashboard from "./Slide9AgentDashboard"; // Removed as requested
 import logo from "@/assets/emdecob-logo-wide.png";
@@ -13,8 +15,10 @@ const slides = [
   Slide1EmdecobCover,    // 1. Portada
   Slide2Purpose,         // 2. Propósito Institucional
   Slide3History,         // 3. Conócenos / Historia
-  Slide3Services,        // 4. Transformación Digital (Aplicativos)
-  Slide5Contact          // 5. Contacto
+  Slide3ServicesBPO,     // 4. BPO & BPS 360
+  Slide3ServicesContact, // 5. Contact Center Inteligente
+  Slide3ServicesDigital, // 6. Transformación Digital
+  Slide5Contact          // 7. Contacto
 ];
 
 const CorporateSlider = () => {
