@@ -8,7 +8,7 @@ const services = [
   {
     icon: Users,
     title: "Gestión BPO & BPS 360",
-    desc: "Operación integral de procesos de negocio con enfoque en recuperación de cartera.",
+    desc: "Operación integral de procesos de negocio con enfoque en recuperación estratégica.",
     details: [
       "Cobro Administrativo", 
       "Cobro Pre-jurídico y Jurídico", 
@@ -21,15 +21,15 @@ const services = [
   {
     icon: MessageSquare,
     title: "Contact Center Inteligente",
-    desc: "Capacidad masiva de comunicación multicanal potenciada por tecnología.",
+    desc: "Gestión masiva de comunicaciones multicanal con equipo especializado.",
     details: [
       "Llamadas Telefónicas Robotizadas", 
-      "Correos Electrónicos Masivos", 
+      "Correos Electrónicos", 
       "Chat y Mensajes por WhatsApp", 
       "Mensajes de Voz e IVR Interactivo", 
-      "Mensajes de Texto (SMS)"
+      "Seguimiento e Informes Continuos"
     ],
-    images: ["/assets/apps/ai_cally_login.png", "/assets/apps/ai_cally_chat.png"]
+    image: "/assets/apps/contact_center.png"
   },
   {
     icon: BarChart3,
@@ -37,10 +37,10 @@ const services = [
     desc: "Ecosistema tecnológico para optimizar la eficiencia y convertir datos en valor.",
     details: [
       "Visualización de Datos (BI)", 
-      "Cally IA: Agente Virtual", 
+      "Cally IA: Agentes Virtuales", 
       "Portales de Gestión en la Nube", 
-      "Seguimiento de Informes en Tiempo Real", 
-      "Automatización de Procesos (RPA)"
+      "Automatización de Procesos (RPA)",
+      "Análisis de Información Real-time"
     ],
     image: "/assets/apps/bi_dashboard.png"
   }
@@ -119,7 +119,7 @@ const Slide3Services = () => {
                   {service.desc}
                 </p>
                 
-                <ScreenshotCarousel images={service.images || [service.image!]} />
+                <ScreenshotCarousel images={"images" in service ? service.images : [service.image!]} />
 
                 <div className="mt-2 space-y-1.5 overflow-y-auto pr-2 custom-scrollbar">
                   <p className="text-[9px] text-emerald-400/80 font-bold uppercase tracking-wide mb-2">Capacidades:</p>
