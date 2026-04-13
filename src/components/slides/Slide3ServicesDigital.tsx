@@ -14,8 +14,8 @@ const digitalServices = [
     items: ["Agentes Virtuales Generativos", "Integración Omnicanal (WhatsApp)", "Contexto Dinámico CRM"]
   },
   {
-    title: "Aplicativos & Integraciones",
-    items: ["Consulta Judicial Automatizada", "Estandarización de Procesos", "Escalabilidad Tecnológica"]
+    title: "Aplicativos a la Medida",
+    items: ["Desarrollo de Software Web & Mobile", "Estandarización de Workflows", "Escalabilidad Tecnológica"]
   }
 ];
 
