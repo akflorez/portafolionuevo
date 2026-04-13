@@ -59,7 +59,7 @@ const Slide3ServicesBPO = () => {
           whileInView={{ opacity: 1, scale: 1 }}
           className="flex-1 relative"
         >
-          <div className="relative rounded-[3rem] overflow-hidden border border-white/20 shadow-2xl bg-noir/20 flex items-center justify-center">
+          <div className="relative rounded-[3rem] overflow-hidden bg-noir/20 flex items-center justify-center">
             <img 
               src="/assets/apps/bps_service.png" 
               alt="BPO & BPS Services" 
@@ -71,19 +71,6 @@ const Slide3ServicesBPO = () => {
           <div className="absolute -top-10 -right-10 w-40 h-40 bg-emerald-500/10 rounded-full blur-3xl" />
           <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-emerald-500/5 rounded-full blur-3xl" />
           
-          <motion.div 
-            animate={{ y: [0, -10, 0] }}
-            transition={{ duration: 4, repeat: Infinity }}
-            className="absolute -bottom-8 -right-8 p-8 card-glass border border-emerald-500/40 rounded-[2rem] shadow-2xl flex items-center gap-6"
-          >
-            <div className="w-16 h-16 bg-emerald-500 rounded-2xl flex items-center justify-center shadow-lg">
-              <TrendingUp className="text-noir w-8 h-8" />
-            </div>
-            <div>
-              <p className="text-xs text-emerald-400 uppercase font-black tracking-[0.2em] mb-1">Optimización</p>
-              <p className="text-2xl font-black text-white">Resultados Reales</p>
-            </div>
-          </motion.div>
         </motion.div>
       </div>
     </SlideLayout>
