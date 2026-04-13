@@ -59,7 +59,7 @@ const Slide3ServicesBPO = () => {
             </div>
             <p className="text-emerald-500 font-black uppercase tracking-[0.4em] text-xs">Operaciones de Alto Impacto</p>
           </div>
-          <h2 className="text-7xl font-black text-white leading-tight mb-6">
+          <h2 className="text-8xl font-black text-white leading-[0.8] mb-6 tracking-tighter">
             Gestión BPO <span className="text-gradient-green">& BPS 360</span>
           </h2>
           <p className="text-xl text-white/50 font-light max-w-4xl mx-auto leading-relaxed">
@@ -79,8 +79,8 @@ const Slide3ServicesBPO = () => {
             >
               <div className="absolute -inset-0.5 bg-gradient-to-b from-emerald-500/20 to-transparent rounded-[2.5rem] blur opacity-0 group-hover:opacity-100 transition duration-500"></div>
               <div className="relative h-full p-6 card-glass border border-white/10 rounded-[2rem] flex flex-col items-center text-center transition-all duration-500 group-hover:bg-emerald-500/5 group-hover:border-emerald-500/30">
-                <div className="w-16 h-16 rounded-3xl bg-emerald-500/10 flex items-center justify-center mb-5 group-hover:bg-emerald-500 group-hover:text-noir transition-all duration-500">
-                  <service.icon className="w-8 h-8 group-hover:scale-110 transition-transform" />
+                <div className="w-18 h-18 rounded-3xl bg-emerald-500/10 flex items-center justify-center mb-5 group-hover:bg-emerald-500 group-hover:text-noir transition-all duration-500">
+                  <service.icon className="w-9 h-9 group-hover:scale-110 transition-transform" />
                 </div>
                 <h3 className="text-lg font-black text-white mb-2 leading-tight uppercase tracking-tight">
                   {service.title}

@@ -35,7 +35,7 @@ const Slide3ServicesContact = () => {
               </div>
               <p className="text-emerald-500 font-bold uppercase tracking-[0.3em] text-xs">Comunicación Estratégica</p>
             </div>
-            <h2 className="text-7xl font-black text-white leading-[0.9] mb-6">
+            <h2 className="text-8xl font-black text-white leading-[0.8] mb-6 tracking-tighter">
               Contact Center <br />
               <span className="text-gradient-green">Inteligente</span>
             </h2>

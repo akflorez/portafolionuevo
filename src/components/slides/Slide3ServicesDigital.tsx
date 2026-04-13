@@ -72,16 +72,16 @@ const Slide3ServicesDigital = () => {
         <motion.div 
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
-          className="flex-1 space-y-8"
+          className="flex-1 space-y-7"
         >
           <div>
-            <div className="flex items-center gap-4 mb-6">
+            <div className="flex items-center gap-4 mb-4">
               <div className="w-14 h-14 rounded-2xl bg-emerald-500/20 flex items-center justify-center shadow-lg shadow-emerald-500/10 border border-emerald-500/20">
                 <Cpu className="w-7 h-7 text-emerald-500" />
               </div>
               <p className="text-emerald-500 font-black uppercase tracking-[0.4em] text-xs">El Motor de Innovación</p>
             </div>
-            <h2 className="text-7xl font-black text-white leading-[0.9] mb-6">
+            <h2 className="text-8xl font-black text-white leading-[0.8] mb-6 tracking-tighter">
               Transformación <br />
               <span className="text-gradient-green">Digital & Datos</span>
             </h2>
@@ -90,7 +90,7 @@ const Slide3ServicesDigital = () => {
             </p>
           </div>
 
-          <div className="space-y-6">
+          <div className="space-y-5">
             {digitalServices.map((service, sIndex) => (
               <motion.div 
                 key={service.title}
@@ -100,14 +100,14 @@ const Slide3ServicesDigital = () => {
                 className="space-y-4"
               >
                 <div className="flex items-center gap-4">
-                  <div className="w-2 h-6 bg-emerald-500 rounded-full shadow-[0_0_10px_rgba(16,185,129,0.3)]" />
-                  <h3 className="text-xl font-black text-white tracking-tight uppercase tracking-widest">{service.title}</h3>
+                  <div className="w-2 h-7 bg-emerald-500 rounded-full shadow-[0_0_10px_rgba(16,185,129,0.3)]" />
+                  <h3 className="text-2xl font-black text-white tracking-tight uppercase tracking-widest">{service.title}</h3>
                 </div>
-                <div className="grid grid-cols-1 gap-2 pl-6">
+                <div className="grid grid-cols-1 gap-1.5 pl-6">
                   {service.items.map((item) => (
-                    <div key={item} className="flex items-center gap-3 group">
-                      <CheckCircle2 className="w-4 h-4 text-emerald-500/60 group-hover:text-emerald-500 transition-colors" />
-                      <span className="text-base text-white/60 group-hover:text-white transition-colors">{item}</span>
+                    <div key={item} className="flex items-center gap-4 group">
+                      <CheckCircle2 className="w-5 h-5 text-emerald-500/60 group-hover:text-emerald-500 transition-colors" />
+                      <span className="text-lg text-white/60 group-hover:text-white transition-colors font-medium">{item}</span>
                     </div>
                   ))}
                 </div>
