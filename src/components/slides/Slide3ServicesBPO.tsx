@@ -27,28 +27,28 @@ const Slide3ServicesBPO = () => {
               </div>
               <p className="text-emerald-500 font-bold uppercase tracking-[0.3em] text-sm">Operaciones de Alto Impacto</p>
             </div>
-            <h2 className="text-7xl font-black text-white leading-tight mb-6">
+            <h2 className="text-8xl font-black text-white leading-[0.9] mb-8">
               Gestión BPO <br />
               <span className="text-gradient-green">& BPS 360</span>
             </h2>
-            <p className="text-xl text-white/60 font-light max-w-xl leading-relaxed">
+            <p className="text-2xl text-white/50 font-light max-w-2xl leading-relaxed">
               Optimizamos la recuperación de cartera y la gestión de procesos operativos mediante estrategias segmentadas y talento humano especializado.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 gap-4">
+          <div className="grid grid-cols-1 gap-6">
             {capabilities.map((item, index) => (
               <motion.div
                 key={item}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
-                className="flex items-center gap-4 group"
+                className="flex items-center gap-6 group"
               >
-                <div className="w-10 h-10 rounded-full bg-emerald-500/10 flex items-center justify-center border border-emerald-500/20 group-hover:bg-emerald-500 group-hover:text-noir transition-all duration-300">
-                  <CheckCircle2 className="w-5 h-5" />
+                <div className="w-14 h-14 rounded-full bg-emerald-500/10 flex items-center justify-center border border-emerald-500/20 group-hover:bg-emerald-500 group-hover:text-noir transition-all duration-300">
+                  <CheckCircle2 className="w-7 h-7" />
                 </div>
-                <span className="text-lg text-white/80 group-hover:text-white transition-colors">{item}</span>
+                <span className="text-2xl text-white/80 group-hover:text-white transition-colors font-medium">{item}</span>
               </motion.div>
             ))}
           </div>
@@ -75,14 +75,14 @@ const Slide3ServicesBPO = () => {
           <motion.div 
             animate={{ y: [0, -10, 0] }}
             transition={{ duration: 4, repeat: Infinity }}
-            className="absolute -bottom-6 -right-6 p-6 card-glass border border-emerald-500/30 rounded-2xl shadow-xl flex items-center gap-4"
+            className="absolute -bottom-8 -right-8 p-8 card-glass border border-emerald-500/40 rounded-[2rem] shadow-2xl flex items-center gap-6"
           >
-            <div className="w-12 h-12 bg-emerald-500 rounded-xl flex items-center justify-center">
-              <TrendingUp className="text-noir w-6 h-6" />
+            <div className="w-16 h-16 bg-emerald-500 rounded-2xl flex items-center justify-center shadow-lg">
+              <TrendingUp className="text-noir w-8 h-8" />
             </div>
             <div>
-              <p className="text-[10px] text-emerald-400 uppercase font-bold tracking-widest">Optimización</p>
-              <p className="text-lg font-bold text-white">Resultados Basados en Datos</p>
+              <p className="text-xs text-emerald-400 uppercase font-black tracking-[0.2em] mb-1">Optimización</p>
+              <p className="text-2xl font-black text-white">Resultados Reales</p>
             </div>
           </motion.div>
         </motion.div>

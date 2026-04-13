@@ -36,31 +36,31 @@ const Slide3ServicesContact = () => {
               </div>
               <p className="text-emerald-500 font-bold uppercase tracking-[0.3em] text-xs">Comunicación Estratégica</p>
             </div>
-            <h2 className="text-6xl font-black text-white leading-tight mb-4">
+            <h2 className="text-8xl font-black text-white leading-[0.9] mb-6">
               Contact Center <br />
               <span className="text-gradient-green">Inteligente</span>
             </h2>
-            <p className="text-lg text-white/50 font-light max-w-xl leading-relaxed">
+            <p className="text-2xl text-white/50 font-light max-w-2xl leading-relaxed">
               Omnicanalidad y respuesta inmediata. Combinamos tecnología de punta con un equipo altamente capacitado para gestionar sus comunicaciones.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3">
-             <div className="space-y-3">
-                <p className="text-[10px] text-emerald-400 uppercase font-black tracking-widest mb-2 px-3 py-1 bg-emerald-500/10 rounded-lg inline-block">Servicios Core</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
+             <div className="space-y-4">
+                <p className="text-xs text-emerald-400 uppercase font-black tracking-widest mb-4 px-4 py-2 bg-emerald-500/10 rounded-xl inline-block border border-emerald-500/20">Servicios Core</p>
                 {coreServices.map((item, index) => (
-                  <div key={item} className="flex items-center gap-3">
-                    <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0" />
-                    <span className="text-sm text-white/70">{item}</span>
+                  <div key={item} className="flex items-center gap-4 group">
+                    <CheckCircle2 className="w-6 h-6 text-emerald-500 shrink-0" />
+                    <span className="text-xl text-white/80 group-hover:text-white transition-colors font-medium">{item}</span>
                   </div>
                 ))}
              </div>
-             <div className="space-y-3">
-                <p className="text-[10px] text-emerald-400 uppercase font-black tracking-widest mb-2 px-3 py-1 bg-emerald-500/10 rounded-lg inline-block">¿Qué hacemos?</p>
+             <div className="space-y-4 pt-0">
+                <p className="text-xs text-emerald-400 uppercase font-black tracking-widest mb-4 px-4 py-2 bg-emerald-500/10 rounded-xl inline-block border border-emerald-500/20">Capacidades</p>
                 {techCapabilities.map((item, index) => (
-                  <div key={item} className="flex items-center gap-3">
-                    <Zap className="w-3 h-3 text-emerald-500 shrink-0" />
-                    <span className="text-xs text-white/60">{item}</span>
+                  <div key={item} className="flex items-center gap-4 group">
+                    <Zap className="w-4 h-4 text-emerald-500 shrink-0" />
+                    <span className="text-lg text-white/60 group-hover:text-white transition-colors">{item}</span>
                   </div>
                 ))}
              </div>
@@ -86,10 +86,10 @@ const Slide3ServicesContact = () => {
             <motion.div 
               animate={{ opacity: [0.7, 1, 0.7] }}
               transition={{ duration: 3, repeat: Infinity }}
-              className="absolute top-6 left-6 p-4 rounded-2xl bg- noir/80 backdrop-blur-md border border-white/10 flex items-center gap-3"
+              className="absolute top-8 left-8 p-6 rounded-3xl bg-noir/90 backdrop-blur-xl border border-white/20 flex items-center gap-4 shadow-2xl"
             >
-              <div className="w-3 h-3 rounded-full bg-emerald-500 animate-pulse" />
-              <span className="text-[10px] text-white/80 font-bold uppercase tracking-widest">Operación En Vivo</span>
+              <div className="w-4 h-4 rounded-full bg-emerald-500 animate-pulse shadow-[0_0_15px_rgba(16,185,129,0.5)]" />
+              <span className="text-xs text-white/90 font-black uppercase tracking-[0.2em]">Operación En Vivo</span>
             </motion.div>
           </div>
         </motion.div>
