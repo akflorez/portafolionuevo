@@ -74,23 +74,15 @@ const Slide3ServicesContact = () => {
         >
           <div className="relative group">
             <div className="absolute -inset-1 bg-gradient-to-r from-emerald-500/30 to-blue-500/30 rounded-[3rem] blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
-            <div className="relative rounded-[3rem] overflow-hidden border border-white/10 shadow-2xl aspect-[4/3]">
+            <div className="relative rounded-[3rem] overflow-hidden border border-white/20 shadow-2xl aspect-[4/3] bg-noir/20">
               <img 
-                src="/assets/apps/contact_center.png" 
+                src="/assets/apps/contact_center.jpg" 
                 alt="Contact Center Operations" 
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
               />
-              <div className="absolute inset-0 bg-gradient-to-tr from-noir/40 via-transparent to-noir/10"></div>
+              <div className="absolute inset-0 bg-gradient-to-tr from-noir/40 via-transparent to-noir/5"></div>
             </div>
             
-            <motion.div 
-              animate={{ opacity: [0.7, 1, 0.7] }}
-              transition={{ duration: 3, repeat: Infinity }}
-              className="absolute top-8 left-8 p-6 rounded-3xl bg-noir/90 backdrop-blur-xl border border-white/20 flex items-center gap-4 shadow-2xl"
-            >
-              <div className="w-4 h-4 rounded-full bg-emerald-500 animate-pulse shadow-[0_0_15px_rgba(16,185,129,0.5)]" />
-              <span className="text-xs text-white/90 font-black uppercase tracking-[0.2em]">Operación En Vivo</span>
-            </motion.div>
           </div>
         </motion.div>
       </div>
