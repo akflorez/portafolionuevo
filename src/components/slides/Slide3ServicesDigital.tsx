@@ -119,23 +119,22 @@ const Slide3ServicesDigital = () => {
         <motion.div 
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          className="flex-1 w-full max-w-3xl"
+          className="flex-1 w-full max-w-5xl"
         >
-          <div className="relative scale-100 origin-right">
+          <div className="relative scale-110 origin-right">
              <ScreenshotCarousel />
              
-             {/* Raising the Badge higher as requested */}
              <motion.div 
-               animate={{ y: [0, -10, 0] }}
-               transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-               className="absolute -top-16 -right-8 p-6 card-glass border border-emerald-500/40 rounded-[2rem] shadow-2xl flex items-center gap-6 backdrop-blur-3xl z-30"
+                animate={{ y: [0, -15, 0] }}
+                transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+                className="absolute -top-32 -right-8 p-10 card-glass border border-emerald-500/50 rounded-[3rem] shadow-2xl flex items-center gap-10 backdrop-blur-3xl z-30"
              >
-                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-emerald-400 to-emerald-600 flex items-center justify-center shadow-2xl shadow-emerald-500/20">
-                  <BarChart3 className="text-noir w-8 h-8" />
+                <div className="w-24 h-24 rounded-[2rem] bg-gradient-to-br from-emerald-400 to-emerald-600 flex items-center justify-center shadow-2xl shadow-emerald-500/20">
+                  <BarChart3 className="text-noir w-12 h-12" />
                 </div>
                 <div>
-                   <p className="text-xs text-emerald-400 font-black uppercase tracking-[0.3em] mb-1">Analytics AI</p>
-                   <p className="text-2xl font-black text-white">Ecosistema Cloud</p>
+                   <p className="text-sm text-emerald-400 font-black uppercase tracking-[0.4em] mb-2">Analytics AI</p>
+                   <p className="text-4xl font-black text-white">Ecosistema Cloud</p>
                 </div>
              </motion.div>
              
