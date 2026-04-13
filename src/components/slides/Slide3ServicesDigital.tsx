@@ -72,25 +72,25 @@ const Slide3ServicesDigital = () => {
         <motion.div 
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
-          className="flex-1 space-y-12"
+          className="flex-1 space-y-8"
         >
           <div>
-            <div className="flex items-center gap-5 mb-8">
-              <div className="w-16 h-16 rounded-2xl bg-emerald-500/20 flex items-center justify-center shadow-lg shadow-emerald-500/10 border border-emerald-500/20">
-                <Cpu className="w-8 h-8 text-emerald-500" />
+            <div className="flex items-center gap-4 mb-6">
+              <div className="w-14 h-14 rounded-2xl bg-emerald-500/20 flex items-center justify-center shadow-lg shadow-emerald-500/10 border border-emerald-500/20">
+                <Cpu className="w-7 h-7 text-emerald-500" />
               </div>
-              <p className="text-emerald-500 font-black uppercase tracking-[0.4em] text-sm">El Motor de Innovación</p>
+              <p className="text-emerald-500 font-black uppercase tracking-[0.4em] text-xs">El Motor de Innovación</p>
             </div>
-            <h2 className="text-8xl font-black text-white leading-[0.85] mb-8">
+            <h2 className="text-7xl font-black text-white leading-[0.9] mb-6">
               Transformación <br />
               <span className="text-gradient-green">Digital & Datos</span>
             </h2>
-            <p className="text-2xl text-white/50 font-light max-w-2xl leading-relaxed">
+            <p className="text-xl text-white/50 font-light max-w-2xl leading-relaxed">
               Convertimos los datos en una ventaja competitiva diferencial con soluciones enfocadas en la eficiencia y escalabilidad.
             </p>
           </div>
 
-          <div className="space-y-10">
+          <div className="space-y-6">
             {digitalServices.map((service, sIndex) => (
               <motion.div 
                 key={service.title}
@@ -100,14 +100,14 @@ const Slide3ServicesDigital = () => {
                 className="space-y-4"
               >
                 <div className="flex items-center gap-4">
-                  <div className="w-2.5 h-8 bg-emerald-500 rounded-full shadow-[0_0_10px_rgba(16,185,129,0.3)]" />
-                  <h3 className="text-2xl font-black text-white tracking-tight uppercase tracking-widest">{service.title}</h3>
+                  <div className="w-2 h-6 bg-emerald-500 rounded-full shadow-[0_0_10px_rgba(16,185,129,0.3)]" />
+                  <h3 className="text-xl font-black text-white tracking-tight uppercase tracking-widest">{service.title}</h3>
                 </div>
-                <div className="grid grid-cols-1 gap-2.5 pl-7">
+                <div className="grid grid-cols-1 gap-2 pl-6">
                   {service.items.map((item) => (
-                    <div key={item} className="flex items-center gap-4 group">
-                      <CheckCircle2 className="w-5 h-5 text-emerald-500/60 group-hover:text-emerald-500 transition-colors" />
-                      <span className="text-lg text-white/60 group-hover:text-white transition-colors">{item}</span>
+                    <div key={item} className="flex items-center gap-3 group">
+                      <CheckCircle2 className="w-4 h-4 text-emerald-500/60 group-hover:text-emerald-500 transition-colors" />
+                      <span className="text-base text-white/60 group-hover:text-white transition-colors">{item}</span>
                     </div>
                   ))}
                 </div>
@@ -119,23 +119,23 @@ const Slide3ServicesDigital = () => {
         <motion.div 
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          className="flex-1 w-full max-w-4xl"
+          className="flex-1 w-full max-w-3xl"
         >
-          <div className="relative scale-110 origin-right">
+          <div className="relative scale-100 origin-right">
              <ScreenshotCarousel />
              
              {/* Raising the Badge higher as requested */}
              <motion.div 
-               animate={{ y: [0, -20, 0] }}
+               animate={{ y: [0, -10, 0] }}
                transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-               className="absolute -top-24 -right-16 p-10 card-glass border border-emerald-500/40 rounded-[2.5rem] shadow-2xl flex items-center gap-8 backdrop-blur-3xl z-30"
+               className="absolute -top-16 -right-8 p-6 card-glass border border-emerald-500/40 rounded-[2rem] shadow-2xl flex items-center gap-6 backdrop-blur-3xl z-30"
              >
-                <div className="w-20 h-20 rounded-3xl bg-gradient-to-br from-emerald-400 to-emerald-600 flex items-center justify-center shadow-2xl shadow-emerald-500/20">
-                  <BarChart3 className="text-noir w-10 h-10" />
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-emerald-400 to-emerald-600 flex items-center justify-center shadow-2xl shadow-emerald-500/20">
+                  <BarChart3 className="text-noir w-8 h-8" />
                 </div>
                 <div>
-                   <p className="text-sm text-emerald-400 font-black uppercase tracking-[0.3em] mb-1">Analytics AI</p>
-                   <p className="text-3xl font-black text-white">Ecosistema Cloud</p>
+                   <p className="text-xs text-emerald-400 font-black uppercase tracking-[0.3em] mb-1">Analytics AI</p>
+                   <p className="text-2xl font-black text-white">Ecosistema Cloud</p>
                 </div>
              </motion.div>
              

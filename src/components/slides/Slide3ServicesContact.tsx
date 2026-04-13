@@ -35,11 +35,11 @@ const Slide3ServicesContact = () => {
               </div>
               <p className="text-emerald-500 font-bold uppercase tracking-[0.3em] text-xs">Comunicación Estratégica</p>
             </div>
-            <h2 className="text-8xl font-black text-white leading-[0.9] mb-6">
+            <h2 className="text-7xl font-black text-white leading-[0.9] mb-6">
               Contact Center <br />
               <span className="text-gradient-green">Inteligente</span>
             </h2>
-            <p className="text-2xl text-white/50 font-light max-w-2xl leading-relaxed">
+            <p className="text-xl text-white/50 font-light max-w-2xl leading-relaxed">
               Omnicanalidad y respuesta inmediata. Combinamos tecnología de punta con un equipo altamente capacitado para gestionar sus comunicaciones.
             </p>
           </div>
@@ -49,8 +49,8 @@ const Slide3ServicesContact = () => {
                 <p className="text-xs text-emerald-400 uppercase font-black tracking-widest mb-4 px-4 py-2 bg-emerald-500/10 rounded-xl inline-block border border-emerald-500/20">Servicios Core</p>
                 {coreServices.map((item, index) => (
                   <div key={item} className="flex items-center gap-4 group">
-                    <CheckCircle2 className="w-6 h-6 text-emerald-500 shrink-0" />
-                    <span className="text-xl text-white/80 group-hover:text-white transition-colors font-medium">{item}</span>
+                    <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0" />
+                    <span className="text-lg text-white/80 group-hover:text-white transition-colors font-medium">{item}</span>
                   </div>
                 ))}
              </div>
