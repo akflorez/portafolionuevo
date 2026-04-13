@@ -13,7 +13,7 @@ const slides = [
   Slide1EmdecobCover,    // 1. Portada
   Slide2Purpose,         // 2. Propósito Institucional
   Slide3History,         // 3. Conócenos / Historia
-  Slide3ServicesBPO,     // 4. BPO & BPS 360
+  // Slide3ServicesBPO,     // 4. BPO & BPS 360 (Hidden per request)
   Slide3ServicesContact, // 5. Contact Center Inteligente
   Slide3ServicesDigital, // 6. Transformación Digital
   Slide5Contact          // 7. Contacto

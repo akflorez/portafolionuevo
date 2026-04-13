@@ -5,8 +5,6 @@ import contactBg from "@/assets/slide4-contact.jpg";
 
 const Slide3ServicesContact = () => {
   const coreServices = [
-    "Cobro Administrativo Masivo",
-    "Cobro Pre-jurídico y Jurídico",
     "Agendamiento de Citas",
     "Servicio al Cliente",
     "Ventas Remotas (Outbound)"

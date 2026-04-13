@@ -10,7 +10,7 @@ const digitalServices = [
     items: ["Tableros de Control Real-time", "Modelado de Datos (Power BI)", "Analítica Predictiva de Recaudo"]
   },
   {
-    title: "Cally IA: Ecosistema Conversacional",
+    title: "Ecosistema Conversacional",
     items: ["Agentes Virtuales Generativos", "Integración Omnicanal (WhatsApp)", "Contexto Dinámico CRM"]
   },
   {
