@@ -13,7 +13,6 @@ const Slide3ServicesContact = () => {
   ];
 
   const techCapabilities = [
-    "Llamadas Telefónicas Robotizadas",
     "Correos Electrónicos Automatizados",
     "Chat y Mensajería por WhatsApp Business",
     "Mensajes de Voz e IVR Interactivo",
