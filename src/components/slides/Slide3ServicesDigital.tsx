@@ -123,20 +123,6 @@ const Slide3ServicesDigital = () => {
         >
           <div className="relative scale-110 origin-right">
              <ScreenshotCarousel />
-             
-             <motion.div 
-                animate={{ y: [0, -10, 0] }}
-                transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute -top-20 -right-4 p-7 card-glass border border-emerald-500/40 rounded-[2.5rem] shadow-2xl flex items-center gap-7 backdrop-blur-3xl z-30"
-             >
-                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-emerald-400 to-emerald-600 flex items-center justify-center shadow-2xl shadow-emerald-500/20">
-                  <BarChart3 className="text-noir w-8 h-8" />
-                </div>
-                <div>
-                   <p className="text-xs text-emerald-400 font-black uppercase tracking-[0.3em] mb-1">Analytics AI</p>
-                   <p className="text-2xl font-black text-white">Ecosistema Cloud</p>
-                </div>
-             </motion.div>
           </div>
         </motion.div>
       </div>
