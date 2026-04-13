@@ -14,8 +14,8 @@ const digitalServices = [
     items: ["Agentes Virtuales Generativos", "Integración Omnicanal (WhatsApp)", "Contexto Dinámico CRM"]
   },
   {
-    title: "Automatización & RPA",
-    items: ["Robots de Consulta Judicial", "Automatización de Procesos Operativos", "Escalabilidad Tecnológica"]
+    title: "Aplicativos & Integraciones",
+    items: ["Consulta Judicial Automatizada", "Estandarización de Procesos", "Escalabilidad Tecnológica"]
   }
 ];
 
