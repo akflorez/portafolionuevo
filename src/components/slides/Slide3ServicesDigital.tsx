@@ -119,33 +119,33 @@ const Slide3ServicesDigital = () => {
         <motion.div 
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          className="flex-1 w-full max-w-2xl"
+          className="flex-1 w-full max-w-4xl"
         >
-          <div className="relative">
+          <div className="relative scale-110 origin-right">
              <ScreenshotCarousel />
              
              {/* Floating Badge */}
              <motion.div 
                animate={{ y: [0, -20, 0] }}
                transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-               className="absolute -top-12 -right-12 p-10 card-glass border border-emerald-500/40 rounded-[2.5rem] shadow-2xl flex items-center gap-8 backdrop-blur-3xl"
+               className="absolute -top-16 -right-16 p-12 card-glass border border-emerald-500/40 rounded-[3rem] shadow-2xl flex items-center gap-10 backdrop-blur-3xl z-30"
              >
-                <div className="w-20 h-20 rounded-3xl bg-gradient-to-br from-emerald-400 to-emerald-600 flex items-center justify-center shadow-2xl shadow-emerald-500/20">
-                  <BarChart3 className="text-noir w-10 h-10" />
+                <div className="w-24 h-24 rounded-[2rem] bg-gradient-to-br from-emerald-400 to-emerald-600 flex items-center justify-center shadow-2xl shadow-emerald-500/30">
+                  <BarChart3 className="text-noir w-12 h-12" />
                 </div>
                 <div>
-                   <p className="text-sm text-emerald-400 font-black uppercase tracking-[0.3em] mb-1">Analytics AI</p>
-                   <p className="text-3xl font-black text-white">Ecosistema Cloud</p>
+                   <p className="text-base text-emerald-400 font-black uppercase tracking-[0.4em] mb-2">Analytics AI</p>
+                   <p className="text-4xl font-black text-white">Ecosistema Cloud</p>
                 </div>
              </motion.div>
              
              {/* Tech Stack Decoration */}
-             <div className="absolute -bottom-10 -left-10 flex gap-3">
-                <div className="w-12 h-12 rounded-xl bg-noir/80 border border-white/10 flex items-center justify-center shadow-xl">
-                    <Zap className="text-emerald-500 w-5 h-5" />
+             <div className="absolute -bottom-12 -left-12 flex gap-4 z-30">
+                <div className="w-16 h-16 rounded-2xl bg-noir/80 border border-white/20 flex items-center justify-center shadow-2xl">
+                    <Zap className="text-emerald-500 w-7 h-7" />
                 </div>
-                <div className="w-12 h-12 rounded-xl bg-noir/80 border border-white/10 flex items-center justify-center shadow-xl">
-                    <AppWindow className="text-emerald-500 w-5 h-5" />
+                <div className="w-16 h-16 rounded-2xl bg-noir/80 border border-white/20 flex items-center justify-center shadow-2xl">
+                    <AppWindow className="text-emerald-500 w-7 h-7" />
                 </div>
              </div>
           </div>
