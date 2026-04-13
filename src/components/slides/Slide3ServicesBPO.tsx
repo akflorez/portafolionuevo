@@ -47,22 +47,22 @@ const services = [
 const Slide3ServicesBPO = () => {
   return (
     <SlideLayout bgImage={teamBg} overlayStrong>
-      <div className="flex-1 flex flex-col justify-center px-16 z-20 w-full max-w-7xl mx-auto py-20">
+      <div className="flex-1 flex flex-col justify-center px-24 z-20 w-full max-w-[140rem] mx-auto py-20">
         <motion.div 
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          className="text-center mb-10"
+          className="text-center mb-12"
         >
-          <div className="flex items-center justify-center gap-4 mb-5">
-            <div className="w-14 h-14 rounded-2xl bg-emerald-500/20 flex items-center justify-center shadow-lg shadow-emerald-500/10 border border-emerald-500/20">
-              <Users className="w-7 h-7 text-emerald-500" />
+          <div className="flex items-center justify-center gap-5 mb-6">
+            <div className="w-16 h-16 rounded-2xl bg-emerald-500/20 flex items-center justify-center shadow-lg shadow-emerald-500/10 border border-emerald-500/20">
+              <Users className="w-8 h-8 text-emerald-500" />
             </div>
-            <p className="text-emerald-500 font-black uppercase tracking-[0.4em] text-xs">Operaciones de Alto Impacto</p>
+            <p className="text-emerald-500 font-black uppercase tracking-[0.4em] text-sm">Operaciones de Alto Impacto</p>
           </div>
-          <h2 className="text-8xl font-black text-white leading-[0.8] mb-6 tracking-tighter">
+          <h2 className="text-[6rem] font-black text-white leading-[0.8] mb-8 tracking-tighter shadow-noir">
             Gestión BPO <span className="text-gradient-green">& BPS 360</span>
           </h2>
-          <p className="text-xl text-white/50 font-light max-w-4xl mx-auto leading-relaxed">
+          <p className="text-2xl text-white/50 font-light max-w-5xl mx-auto leading-relaxed">
             Optimizamos la recuperación de cartera y la gestión de procesos operativos mediante estrategias segmentadas y talento humano especializado.
           </p>
         </motion.div>
@@ -78,11 +78,11 @@ const Slide3ServicesBPO = () => {
               className="group relative"
             >
               <div className="absolute -inset-0.5 bg-gradient-to-b from-emerald-500/20 to-transparent rounded-[2.5rem] blur opacity-0 group-hover:opacity-100 transition duration-500"></div>
-              <div className="relative h-full p-6 card-glass border border-white/10 rounded-[2rem] flex flex-col items-center text-center transition-all duration-500 group-hover:bg-emerald-500/5 group-hover:border-emerald-500/30">
-                <div className="w-18 h-18 rounded-3xl bg-emerald-500/10 flex items-center justify-center mb-5 group-hover:bg-emerald-500 group-hover:text-noir transition-all duration-500">
-                  <service.icon className="w-9 h-9 group-hover:scale-110 transition-transform" />
+              <div className="relative h-full p-10 card-glass border border-white/10 rounded-[3rem] flex flex-col items-center text-center transition-all duration-500 group-hover:bg-emerald-500/5 group-hover:border-emerald-500/30">
+                <div className="w-24 h-24 rounded-[2rem] bg-emerald-500/10 flex items-center justify-center mb-8 group-hover:bg-emerald-500 group-hover:text-noir transition-all duration-500">
+                  <service.icon className="w-12 h-12 group-hover:scale-110 transition-transform" />
                 </div>
-                <h3 className="text-lg font-black text-white mb-2 leading-tight uppercase tracking-tight">
+                <h3 className="text-2xl font-black text-white mb-3 leading-tight uppercase tracking-tight">
                   {service.title}
                 </h3>
                 <p className="text-xs text-emerald-400 font-black uppercase tracking-widest mb-4">
@@ -101,19 +101,19 @@ const Slide3ServicesBPO = () => {
            initial={{ opacity: 0 }}
            whileInView={{ opacity: 1 }}
            transition={{ delay: 0.6 }}
-           className="mt-10 flex items-center justify-center gap-10"
+           className="mt-16 flex items-center justify-center gap-16"
         >
-           <div className="flex items-center gap-3">
-              <CheckCircle2 className="text-emerald-500 w-4 h-4" />
-              <span className="text-white/40 text-[10px] font-bold uppercase tracking-widest">Tecnología de Punta</span>
+           <div className="flex items-center gap-4">
+              <CheckCircle2 className="text-emerald-500 w-6 h-6 border-2 border-emerald-500/20 rounded-full" />
+              <span className="text-white/60 text-xs font-black uppercase tracking-[0.2em]">Tecnología de Punta</span>
            </div>
-           <div className="flex items-center gap-3">
-              <CheckCircle2 className="text-emerald-500 w-4 h-4" />
-              <span className="text-white/40 text-[10px] font-bold uppercase tracking-widest">Talento Especializado</span>
+           <div className="flex items-center gap-4">
+              <CheckCircle2 className="text-emerald-500 w-6 h-6 border-2 border-emerald-500/20 rounded-full" />
+              <span className="text-white/60 text-xs font-black uppercase tracking-[0.2em]">Talento Especializado</span>
            </div>
-           <div className="flex items-center gap-3">
-              <CheckCircle2 className="text-emerald-500 w-4 h-4" />
-              <span className="text-white/40 text-[10px] font-bold uppercase tracking-widest">Escalabilidad Regional</span>
+           <div className="flex items-center gap-4">
+              <CheckCircle2 className="text-emerald-500 w-6 h-6 border-2 border-emerald-500/20 rounded-full" />
+              <span className="text-white/60 text-xs font-black uppercase tracking-[0.2em]">Escalabilidad Regional</span>
            </div>
         </motion.div>
       </div>
