@@ -59,11 +59,11 @@ const Slide3ServicesBPO = () => {
           whileInView={{ opacity: 1, scale: 1 }}
           className="flex-1 relative"
         >
-          <div className="relative rounded-[3rem] overflow-hidden border border-white/20 shadow-2xl aspect-[4/5] bg-noir/20">
+          <div className="relative rounded-[3rem] overflow-hidden border border-white/20 shadow-2xl bg-noir/20 flex items-center justify-center">
             <img 
-              src="/assets/apps/bpo_team.png" 
-              alt="Executive BPO Team" 
-              className="w-full h-full object-contain"
+              src="/assets/apps/bps_service.png" 
+              alt="BPO & BPS Services" 
+              className="w-full h-auto max-h-[70vh] object-contain group-hover:scale-105 transition-transform duration-1000"
             />
           </div>
           
