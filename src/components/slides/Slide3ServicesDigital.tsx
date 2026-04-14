@@ -7,7 +7,7 @@ import channelsBg from "@/assets/slide3-channels.jpg";
 const digitalServices = [
   {
     title: "Portales de Analítica & BI",
-    items: ["Tableros de Control Real-time", "Modelado de Datos (Power BI)", "Analítica Predictiva de Recaudo"]
+    items: ["Tableros de Control Real-time", "Modelado de Datos (Power BI)"]
   },
   {
     title: "Ecosistema Conversacional",
