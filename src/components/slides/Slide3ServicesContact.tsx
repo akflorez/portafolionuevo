@@ -7,7 +7,7 @@ const Slide3ServicesContact = () => {
   const coreServices = [
     "Agendamiento de Citas",
     "Servicio al Cliente",
-    "Ventas Remotas (Outbound)"
+    "Ventas Remotas"
   ];
 
   const techCapabilities = [
