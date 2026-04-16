@@ -8,6 +8,8 @@ import Slide3ServicesContact from "./Slide3ServicesContact";
 import Slide3ServicesDigital from "./Slide3ServicesDigital";
 import Slide5Contact from "./Slide5Contact";
 import logo from "@/assets/emdecob-logo-wide.png";
+import { useLanguage } from "../../contexts/LanguageContext";
+import { Languages } from "lucide-react";
 
 const slides = [
   Slide1EmdecobCover,    // 1. Portada
@@ -20,6 +22,7 @@ const slides = [
 ];
 
 const CorporateSlider = () => {
+  const { t, toggleLanguage } = useLanguage();
   const [current, setCurrent] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
   const [direction, setDirection] = useState(0);
@@ -89,9 +92,20 @@ const CorporateSlider = () => {
         {/* Top Navbar */}
         <div className="absolute top-0 left-0 right-0 z-50 flex items-center justify-between px-10 py-8 no-print bg-gradient-to-b from-noir/80 to-transparent">
           <img src={logo} alt="EMDECOB" className="h-10 brightness-0 invert opacity-60" />
-          <span className="text-sm font-bold text-white/40 uppercase tracking-[0.4em]">
-            Portafolio Corporativo
-          </span>
+          <div className="flex items-center gap-6">
+            <span className="text-sm font-bold text-white/40 uppercase tracking-[0.4em]">
+              {t("navbar.portfolio")}
+            </span>
+            <button 
+              onClick={toggleLanguage}
+              className="group flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 hover:bg-emerald-500/20 hover:border-emerald-500/40 transition-all"
+            >
+              <Languages className="w-4 h-4 text-emerald-500" />
+              <span className="text-xs font-black text-white/60 group-hover:text-white uppercase tracking-widest">
+                {t("navbar.languageToggle")}
+              </span>
+            </button>
+          </div>
         </div>
 
         {/* Vertical Progress Indicators (Right Side) */}
@@ -126,8 +140,8 @@ const CorporateSlider = () => {
       </div>
 
       {/* Printing is disabled per user request to remove Download button and vertical behavior */}
-      <div className="hidden print:block bg-noir h-screen flex items-center justify-center text-white text-3xl">
-          Visualización Web 360
+      <div className="hidden print:block bg-noir h-screen flex items-center justify-center text-white text-3xl text-center px-20">
+          {t("print_view")}
       </div>
     </div>
   );

@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
 import heroImage from "@/assets/slide1-hero.jpg";
+import { useLanguage } from "../../contexts/LanguageContext";
 
 const Slide1EmdecobCover = () => {
+  const { t } = useLanguage();
   return (
     <div className="relative w-full h-full overflow-hidden bg-noir">
       {/* Imagen de fondo corporativa original */}
@@ -55,7 +57,7 @@ const Slide1EmdecobCover = () => {
             transition={{ delay: 1.2, duration: 1 }}
             className="text-2xl text-emerald-400 font-bold uppercase"
           >
-            Tu aliado estratégico en tercerización de servicios
+            {t("slide1.subtitle")}
           </motion.p>
         </motion.div>
       </div>

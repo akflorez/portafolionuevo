@@ -1,21 +1,24 @@
 import { motion } from "framer-motion";
 import SlideLayout from "./SlideLayout";
-import { Headphones, CheckCircle2, MessageSquare, Zap } from "lucide-react";
+import { Headphones, CheckCircle2, Zap } from "lucide-react";
 import contactBg from "@/assets/slide4-contact.jpg";
+import { useLanguage } from "../../contexts/LanguageContext";
 
 const Slide3ServicesContact = () => {
+  const { t } = useLanguage();
+
   const coreServices = [
-    "Agendamiento de Citas",
-    "Servicio al Cliente",
-    "Ventas Remotas"
+    t("slide3Contact.services.appointments"),
+    t("slide3Contact.services.customer_service"),
+    t("slide3Contact.services.remote_sales")
   ];
 
   const techCapabilities = [
-    "Correos Electrónicos Automatizados",
-    "Chat y Mensajería por WhatsApp Business",
-    "Mensajes de Voz e IVR Interactivo",
-    "Mensajes de Texto (SMS) Masivos",
-    "Seguimiento, Informes y Acompañamiento Continuo"
+    t("slide3Contact.services.automated_emails"),
+    t("slide3Contact.services.whatsapp"),
+    t("slide3Contact.services.ivr"),
+    t("slide3Contact.services.sms"),
+    t("slide3Contact.services.tracking")
   ];
 
   return (
@@ -31,20 +34,20 @@ const Slide3ServicesContact = () => {
               <div className="w-14 h-14 rounded-2xl bg-emerald-500/20 flex items-center justify-center">
                 <Headphones className="w-7 h-7 text-emerald-500" />
               </div>
-              <p className="text-emerald-500 font-bold uppercase tracking-[0.3em] text-xs">Comunicación Estratégica</p>
+              <p className="text-emerald-500 font-bold uppercase tracking-[0.3em] text-xs font-black">{t("slide3Contact.strategic_comm")}</p>
             </div>
             <h2 className="text-8xl font-black text-white leading-[0.8] mb-6 tracking-tighter">
-              Contact Center <br />
-              <span className="text-gradient-green">Inteligente</span>
+              {t("slide3Contact.title_main")} <br />
+              <span className="text-gradient-green">{t("slide3Contact.title_gradient")}</span>
             </h2>
             <p className="text-xl text-white/50 font-light max-w-2xl leading-relaxed">
-              Omnicanalidad y respuesta inmediata. Combinamos tecnología de punta con un equipo altamente capacitado para gestionar sus comunicaciones.
+              {t("slide3Contact.desc")}
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
              <div className="space-y-4">
-                <p className="text-xs text-emerald-400 uppercase font-black tracking-widest mb-4 px-4 py-2 bg-emerald-500/10 rounded-xl inline-block border border-emerald-500/20">Servicios Core</p>
+                <p className="text-xs text-emerald-400 uppercase font-black tracking-widest mb-4 px-4 py-2 bg-emerald-500/10 rounded-xl inline-block border border-emerald-500/20">{t("slide3Contact.core_services")}</p>
                 {coreServices.map((item, index) => (
                   <div key={item} className="flex items-center gap-4 group">
                     <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0" />
@@ -53,7 +56,7 @@ const Slide3ServicesContact = () => {
                 ))}
              </div>
              <div className="space-y-4 pt-0">
-                <p className="text-xs text-emerald-400 uppercase font-black tracking-widest mb-4 px-4 py-2 bg-emerald-500/10 rounded-xl inline-block border border-emerald-500/20">Capacidades</p>
+                <p className="text-xs text-emerald-400 uppercase font-black tracking-widest mb-4 px-4 py-2 bg-emerald-500/10 rounded-xl inline-block border border-emerald-500/20">{t("slide3Contact.capabilities")}</p>
                 {techCapabilities.map((item, index) => (
                   <div key={item} className="flex items-center gap-4 group">
                     <Zap className="w-4 h-4 text-emerald-500 shrink-0" />

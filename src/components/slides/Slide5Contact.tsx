@@ -2,12 +2,15 @@ import { motion } from "framer-motion";
 import SlideLayout from "./SlideLayout";
 import { Mail, Phone, MapPin, Globe, Linkedin, Instagram } from "lucide-react";
 import contactBg from "@/assets/slide4-contact.jpg";
+import { useLanguage } from "../../contexts/LanguageContext";
 
 const Slide5Contact = () => {
+  const { t } = useLanguage();
+
   const contactInfo = [
-    { icon: MapPin, label: "Dirección", value: "Cra. 19 #15 Norte-40, Armenia, Quindío", extra: "" },
-    { icon: Mail, label: "Correo", value: "gerencia@emdecob.com", extra: "direccionejecutiva@emdecob.com" },
-    { icon: Globe, label: "Sitio Web", value: "www.emdecob.com", extra: "" }
+    { icon: MapPin, label: t("slide5Contact.address_label"), value: "Cra. 19 #15 Norte-40, Armenia, Quindío", extra: "" },
+    { icon: Mail, label: t("slide5Contact.email_label"), value: "gerencia@emdecob.com", extra: "direccionejecutiva@emdecob.com" },
+    { icon: Globe, label: t("slide5Contact.web_label"), value: "www.emdecob.com", extra: "" }
   ];
 
   return (
@@ -18,17 +21,17 @@ const Slide5Contact = () => {
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
           >
-            <p className="text-emerald-500 font-bold uppercase tracking-widest mb-4">¿Hablamos?</p>
-            <h2 className="text-8xl font-black text-white mb-12">Contacto</h2>
+            <p className="text-emerald-500 font-bold uppercase tracking-widest mb-4">{t("slide5Contact.talk")}</p>
+            <h2 className="text-8xl font-black text-white mb-12">{t("slide5Contact.title")}</h2>
             
             <div className="space-y-10">
               {contactInfo.map((info, i) => (
                 <motion.div 
-                  key={info.label}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ delay: i * 0.1 }}
-                  className="flex items-start gap-6"
+                   key={info.label}
+                   initial={{ opacity: 0, y: 20 }}
+                   whileInView={{ opacity: 1, y: 0 }}
+                   transition={{ delay: i * 0.1 }}
+                   className="flex items-start gap-6"
                 >
                   <div className="w-14 h-14 rounded-2xl bg-emerald-500/10 flex items-center justify-center shrink-0 border border-emerald-500/20">
                     <info.icon className="w-7 h-7 text-emerald-500" />
@@ -37,7 +40,7 @@ const Slide5Contact = () => {
                     <p className="text-sm text-emerald-500 font-bold uppercase tracking-tighter mb-1">{info.label}</p>
                     <p className="text-2xl text-white font-bold mb-1">{info.value}</p>
                     {info.extra && (
-                      <p className={info.label === "Correo" ? "text-2xl text-white font-bold" : "text-lg text-white/40"}>
+                      <p className={info.label === t("slide5Contact.email_label") ? "text-2xl text-white font-bold" : "text-lg text-white/40"}>
                         {info.extra}
                       </p>
                     )}
@@ -54,7 +57,7 @@ const Slide5Contact = () => {
                 className="flex items-center gap-3 px-8 py-4 bg-emerald-500 text-noir font-bold rounded-2xl hover:bg-emerald-400 transition-all group"
               >
                 <Linkedin className="w-6 h-6" />
-                Síguenos en LinkedIn
+                {t("slide5Contact.follow")}
               </a>
               <a 
                 href="https://www.instagram.com/emdecob_sas?igsh=MTVwZTlxZHA4ZW81cQ==" 
@@ -63,7 +66,7 @@ const Slide5Contact = () => {
                 className="flex items-center gap-3 px-8 py-4 bg-white/5 text-white font-bold rounded-2xl border border-white/10 hover:bg-white/10 transition-all"
               >
                 <Instagram className="w-6 h-6" />
-                Instagram
+                {t("slide5Contact.instagram")}
               </a>
             </div>
           </motion.div>
@@ -76,26 +79,26 @@ const Slide5Contact = () => {
         >
           <div className="card-glass p-8 rounded-[40px] border border-white/10 w-full relative overflow-hidden text-center">
              <div className="absolute top-0 left-0 w-full h-1 bg-emerald-500"></div>
-             <p className="text-emerald-400 font-bold uppercase tracking-widest mb-8">Escanea para conectar</p>
+             <p className="text-emerald-400 font-bold uppercase tracking-widest mb-8">{t("slide5Contact.scan")}</p>
              
              <div className="flex justify-center gap-12 mb-12">
                <div className="space-y-4">
                  <div className="w-48 h-48 bg-white p-4 rounded-3xl">
                    <img src="/qr-gerencia.png" alt="QR Gerencia" className="w-full h-full object-contain" />
                  </div>
-                 <p className="text-white font-bold">Gerencia General</p>
+                 <p className="text-white font-bold">{t("slide5Contact.general_manager")}</p>
                </div>
                <div className="space-y-4">
                  <div className="w-48 h-48 bg-white p-4 rounded-3xl">
                    <img src="/qr-direccion.png" alt="QR Dirección" className="w-full h-full object-contain" />
                  </div>
-                 <p className="text-white font-bold">Dirección Ejecutiva</p>
+                 <p className="text-white font-bold">{t("slide5Contact.exec_director")}</p>
                </div>
              </div>
 
              <div className="p-6 bg-emerald-500/10 rounded-2xl border border-emerald-500/20 inline-block">
                 <p className="text-emerald-400 text-lg font-medium italic">
-                  "Soluciones efectivas para los retos de hoy y mañana"
+                  "{t("slide5Contact.footer_quote")}"
                 </p>
              </div>
           </div>

@@ -2,13 +2,16 @@ import { motion } from "framer-motion";
 import SlideLayout from "./SlideLayout";
 import { Star, TrendingUp, Award, Clock } from "lucide-react";
 import analysisBg from "@/assets/slide6-analysis.jpg";
+import { useLanguage } from "../../contexts/LanguageContext";
 
 const Slide3History = () => {
+  const { t } = useLanguage();
+
   const stats = [
-    { icon: Clock, label: "Trayectoria", value: "+15 Años", suffix: "Desde 2009" },
-    { icon: Star, label: "Especialización", value: "BPS", suffix: "Procesos Críticos" },
-    { icon: Award, label: "Calidad", value: "100%", suffix: "Resultados Auditables" },
-    { icon: TrendingUp, label: "Crecimiento", value: "Sostenido", suffix: "Mercado Nacional" }
+    { icon: Clock, label: t("slide3History.stats.track_record"), value: t("slide3History.stats.years"), suffix: t("slide3History.stats.since") },
+    { icon: Star, label: t("slide3History.stats.specialization"), value: t("slide3History.stats.specialization"), valueOverride: "BPS", suffix: t("slide3History.stats.critical") },
+    { icon: Award, label: t("slide3History.stats.quality"), value: "100%", suffix: t("slide3History.stats.auditable") },
+    { icon: TrendingUp, label: t("slide3History.stats.growth"), value: t("slide3History.stats.sustained"), suffix: t("slide3History.stats.market") }
   ];
 
   return (
@@ -28,8 +31,8 @@ const Slide3History = () => {
               className="relative rounded-2xl w-full h-auto object-contain border border-white/10"
             />
             <div className="relative card-glass p-6 rounded-2xl border border-white/10 shadow-xl">
-              <p className="text-emerald-400 font-bold mb-2 uppercase tracking-tighter">Liderazgo y Propósito</p>
-              <p className="text-white text-lg italic">"Nuestra misión es transformar procesos en soluciones precisas con un toque humano inigualable."</p>
+              <p className="text-emerald-400 font-bold mb-2 uppercase tracking-tighter">{t("slide3History.leadership")}</p>
+              <p className="text-white text-lg italic">"{t("slide3History.mission")}"</p>
             </div>
           </div>
         </motion.div>
@@ -40,14 +43,14 @@ const Slide3History = () => {
             whileInView={{ opacity: 1 }}
             className="text-emerald-500 font-bold uppercase tracking-widest mb-4"
           >
-            Trayectoria y Experiencia
+            {t("slide3History.trayectoria")}
           </motion.p>
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             className="text-7xl font-black text-white mb-8"
           >
-            Conócenos
+            {t("slide3History.conocenos")}
           </motion.h2>
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
@@ -56,13 +59,10 @@ const Slide3History = () => {
             className="space-y-6 text-xl text-white font-bold leading-relaxed mb-12 drop-shadow-md"
           >
             <p>
-              Somos una empresa quindiana de <span className="text-white font-bold italic">Business Process Services (BPS)</span>, 
-              con experiencia sólida desde el 2009.
+              {t("slide3History.p1")}
             </p>
             <p>
-              Nos especializamos en procesos críticos que requieren trazabilidad exhaustiva, 
-              sensibilidad humana y precisión absoluta. Nuestra estructura nos permite integrar 
-              soluciones 360 para los retos más complejos del mercado actual.
+              {t("slide3History.p2")}
             </p>
           </motion.div>
 
@@ -77,7 +77,7 @@ const Slide3History = () => {
               >
                 <stat.icon className="w-10 h-10 text-emerald-500" />
                 <div>
-                  <p className="text-2xl font-bold text-white">{stat.value}</p>
+                  <p className="text-2xl font-bold text-white">{stat.valueOverride || stat.value}</p>
                   <p className="text-sm text-white/40 uppercase tracking-tighter">{stat.label}</p>
                 </div>
               </motion.div>

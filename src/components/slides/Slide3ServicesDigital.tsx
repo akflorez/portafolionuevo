@@ -1,33 +1,19 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import SlideLayout from "./SlideLayout";
-import { Cpu, CheckCircle2, Zap, BarChart3, AppWindow } from "lucide-react";
+import { Cpu, CheckCircle2 } from "lucide-react";
 import channelsBg from "@/assets/slide3-channels.jpg";
-
-const digitalServices = [
-  {
-    title: "Portales de Analítica & BI",
-    items: ["Tableros de Control Real-time", "Modelado de Datos (Power BI)"]
-  },
-  {
-    title: "Ecosistema Conversacional",
-    items: ["Agentes Virtuales Generativos", "Integración Omnicanal (WhatsApp)", "Contexto Dinámico CRM"]
-  },
-  {
-    title: "Aplicativos a la Medida",
-    items: ["Desarrollo de Software Web & Mobile", "Estandarización de Workflows", "Escalabilidad Tecnológica"]
-  }
-];
-
-const appImages = [
-  "/assets/apps/bi_dashboard.png",
-  "/assets/apps/legal_login.png",
-  "/assets/apps/legal_dashboard.png",
-  "/assets/apps/ai_cally_login.png",
-  "/assets/apps/ai_cally_chat.png"
-];
+import { useLanguage } from "../../contexts/LanguageContext";
 
 const ScreenshotCarousel = () => {
+  const appImages = [
+    "/assets/apps/bi_dashboard.png",
+    "/assets/apps/legal_login.png",
+    "/assets/apps/legal_dashboard.png",
+    "/assets/apps/ai_cally_login.png",
+    "/assets/apps/ai_cally_chat.png"
+  ];
+  
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -35,7 +21,7 @@ const ScreenshotCarousel = () => {
       setIndex((prev) => (prev + 1) % appImages.length);
     }, 4000);
     return () => clearInterval(timer);
-  }, []);
+  }, [appImages.length]);
 
   return (
     <div className="relative aspect-video rounded-[3rem] overflow-hidden border border-white/10 shadow-2xl bg-noir/20 group">
@@ -66,6 +52,23 @@ const ScreenshotCarousel = () => {
 };
 
 const Slide3ServicesDigital = () => {
+  const { t } = useLanguage();
+
+  const digitalServices = [
+    {
+      title: t("slide3Digital.services.bi"),
+      items: t("slide3Digital.services.bi_items")
+    },
+    {
+      title: t("slide3Digital.services.conv"),
+      items: t("slide3Digital.services.conv_items")
+    },
+    {
+      title: t("slide3Digital.services.custom"),
+      items: t("slide3Digital.services.custom_items")
+    }
+  ];
+
   return (
     <SlideLayout bgImage={channelsBg} overlayStrong>
       <div className="flex-1 flex flex-col md:flex-row items-center justify-center px-16 gap-16 z-20">
@@ -79,14 +82,14 @@ const Slide3ServicesDigital = () => {
               <div className="w-14 h-14 rounded-2xl bg-emerald-500/20 flex items-center justify-center shadow-lg shadow-emerald-500/10 border border-emerald-500/20">
                 <Cpu className="w-7 h-7 text-emerald-500" />
               </div>
-              <p className="text-emerald-500 font-black uppercase tracking-[0.4em] text-xs">El Motor de Innovación</p>
+              <p className="text-emerald-500 font-black uppercase tracking-[0.4em] text-xs leading-none">{t("slide3Digital.innovation")}</p>
             </div>
             <h2 className="text-8xl font-black text-white leading-[0.8] mb-6 tracking-tighter">
-              Transformación <br />
-              <span className="text-gradient-green">Digital & Datos</span>
+              {t("slide3Digital.title_main")} <br />
+              <span className="text-gradient-green">{t("slide3Digital.title_gradient")}</span>
             </h2>
             <p className="text-xl text-white/50 font-light max-w-2xl leading-relaxed">
-              Convertimos los datos en una ventaja competitiva diferencial con soluciones enfocadas en la eficiencia y escalabilidad.
+              {t("slide3Digital.desc")}
             </p>
           </div>
 
@@ -101,10 +104,10 @@ const Slide3ServicesDigital = () => {
               >
                 <div className="flex items-center gap-4">
                   <div className="w-2 h-7 bg-emerald-500 rounded-full shadow-[0_0_10px_rgba(16,185,129,0.3)]" />
-                  <h3 className="text-2xl font-black text-white tracking-tight uppercase tracking-widest">{service.title}</h3>
+                  <h3 className="text-2xl font-black text-white tracking-tight uppercase tracking-widest leading-none">{service.title}</h3>
                 </div>
                 <div className="grid grid-cols-1 gap-1.5 pl-6">
-                  {service.items.map((item) => (
+                  {service.items.map((item: string) => (
                     <div key={item} className="flex items-center gap-4 group">
                       <CheckCircle2 className="w-5 h-5 text-emerald-500/60 group-hover:text-emerald-500 transition-colors" />
                       <span className="text-lg text-white/60 group-hover:text-white transition-colors font-medium">{item}</span>
