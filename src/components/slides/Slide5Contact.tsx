@@ -54,7 +54,7 @@ const Slide5Contact = () => {
                 href="https://www.linkedin.com/in/emdecob-s-a-s-42a54520b/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 px-8 py-4 bg-emerald-500 text-noir font-bold rounded-2xl hover:bg-emerald-400 transition-all group"
+                className="flex items-center gap-3 px-8 py-4 btn-stellar-gradient text-white font-bold rounded-2xl transition-all group"
               >
                 <Linkedin className="w-6 h-6" />
                 {t("slide5Contact.follow")}
@@ -63,7 +63,7 @@ const Slide5Contact = () => {
                 href="https://www.instagram.com/emdecob_sas?igsh=MTVwZTlxZHA4ZW81cQ==" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 px-8 py-4 bg-white/5 text-white font-bold rounded-2xl border border-white/10 hover:bg-white/10 transition-all"
+                className="flex items-center gap-3 px-8 py-4 btn-glass-morphism text-white font-bold rounded-2xl transition-all"
               >
                 <Instagram className="w-6 h-6" />
                 {t("slide5Contact.instagram")}

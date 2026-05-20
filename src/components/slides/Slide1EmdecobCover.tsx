@@ -25,7 +25,7 @@ const Slide1EmdecobCover = () => {
         >
           {/* Logo de EMDECOB con efecto de respiración */}
           <motion.img
-            src="/emdecob-logo-blanco.png"
+            src="/favicon.png"
             alt="Logo EMDECOB"
             className="w-56 h-56 object-contain mb-12 drop-shadow-[0_0_50px_rgba(16,185,129,0.3)]"
             initial={{ scale: 0.8, opacity: 0 }}

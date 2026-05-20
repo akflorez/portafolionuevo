@@ -7,7 +7,7 @@ import Slide3ServicesBPO from "./Slide3ServicesBPO";
 import Slide3ServicesContact from "./Slide3ServicesContact";
 import Slide3ServicesDigital from "./Slide3ServicesDigital";
 import Slide5Contact from "./Slide5Contact";
-import logo from "@/assets/emdecob-logo-wide.png";
+import logo from "/favicon.png";
 import { useLanguage } from "../../contexts/LanguageContext";
 import { Languages } from "lucide-react";
 
@@ -91,17 +91,17 @@ const CorporateSlider = () => {
 
         {/* Top Navbar */}
         <div className="absolute top-0 left-0 right-0 z-50 flex items-center justify-between px-10 py-8 no-print bg-gradient-to-b from-noir/80 to-transparent">
-          <img src={logo} alt="EMDECOB" className="h-10 brightness-0 invert opacity-60" />
+          <img src={logo} alt="EMDECOB" className="h-12 opacity-90 drop-shadow-lg" />
           <div className="flex items-center gap-6">
             <span className="text-sm font-bold text-white/40 uppercase tracking-[0.4em]">
               {t("navbar.portfolio")}
             </span>
             <button 
               onClick={toggleLanguage}
-              className="group flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 hover:bg-emerald-500/20 hover:border-emerald-500/40 transition-all"
+              className="group flex items-center gap-2 px-5 py-2.5 rounded-full btn-glass-morphism hover:bg-emerald-500/10 transition-all active:scale-95"
             >
-              <Languages className="w-4 h-4 text-emerald-500" />
-              <span className="text-xs font-black text-white/60 group-hover:text-white uppercase tracking-widest">
+              <Languages className="w-4 h-4 text-emerald-400 group-hover:text-emerald-300 transition-colors" />
+              <span className="text-[10px] font-black text-white/70 group-hover:text-white uppercase tracking-[0.2em] transition-colors">
                 {t("navbar.languageToggle")}
               </span>
             </button>
@@ -122,7 +122,7 @@ const CorporateSlider = () => {
                <span className={`absolute right-6 text-[10px] font-black uppercase tracking-widest text-emerald-400 opacity-0 group-hover:opacity-100 transition-all ${i === current ? 'opacity-100 pr-2' : ''}`}>
                   0{i + 1}
                </span>
-               <div className={`w-1 transition-all duration-500 rounded-full ${i === current ? 'bg-emerald-500 h-10 shadow-[0_0_15px_rgba(16,185,129,0.5)]' : 'bg-white/20 h-2 hover:bg-white/50'}`} />
+               <div className={`w-1 transition-all duration-500 rounded-full ${i === current ? 'bg-emerald-500 h-10 shadow-[0_0_20px_rgba(16,185,129,0.8)]' : 'bg-white/20 h-2 hover:bg-white/50'}`} />
             </button>
           ))}
         </div>
