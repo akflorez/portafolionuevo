@@ -40,13 +40,13 @@ const Slide2Purpose = () => {
           </h2>
           
           <div className="space-y-6 mb-16">
-            <p className="text-2xl text-white/90 font-medium leading-relaxed max-w-4xl">
+            <p className="text-3xl text-white/95 font-semibold leading-relaxed max-w-4xl">
               {t("slide2.p1")}
             </p>
-            <p className="text-xl text-white/60 font-light leading-relaxed max-w-4xl">
+            <p className="text-2xl text-white/80 font-medium leading-relaxed max-w-4xl">
               {t("slide2.p2")}
             </p>
-            <p className="text-xl text-white/60 font-light leading-relaxed max-w-4xl">
+            <p className="text-2xl text-white/80 font-medium leading-relaxed max-w-4xl">
               {t("slide2.p3")}
             </p>
           </div>
@@ -65,7 +65,7 @@ const Slide2Purpose = () => {
                 <pillar.icon className="w-8 h-8 text-emerald-500" />
               </div>
               <h3 className="text-2xl font-bold text-white mb-4">{pillar.title}</h3>
-              <p className="text-base text-white/50 leading-relaxed">{pillar.desc}</p>
+              <p className="text-lg text-white/80 font-medium leading-relaxed">{pillar.desc}</p>
             </motion.div>
           ))}
         </div>

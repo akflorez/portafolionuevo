@@ -77,8 +77,8 @@ const Slide3History = () => {
               >
                 <stat.icon className="w-10 h-10 text-emerald-500" />
                 <div>
-                  <p className="text-2xl font-bold text-white">{stat.valueOverride || stat.value}</p>
-                  <p className="text-sm text-white/40 uppercase tracking-tighter">{stat.label}</p>
+                  <p className="text-2xl font-black text-white">{stat.valueOverride || stat.value}</p>
+                  <p className="text-xs font-black text-white/70 uppercase tracking-wider">{stat.label}</p>
                 </div>
               </motion.div>
             ))}

@@ -76,6 +76,82 @@ export const translations = {
         custom_items: ["Web & Mobile Software Development", "Workflow Standardization", "Technological Scalability"],
       }
     },
+    slide3Services: {
+      portfolio: "Modular Portfolio of Solutions",
+      title_main: "Comprehensive",
+      title_gradient: "Services",
+      desc: "We offer integrated and personalized solutions designed to optimize your business operations and maximize efficiency.",
+      items: {
+        legal: "Comprehensive Legal Services",
+        legal_desc: "We manage current and write-off portfolios in preventive, administrative, and pre-legal stages.",
+        contact: "Omnichannel Contact Center",
+        contact_desc: "We operate campaigns for customer service, sales, appointments, support, and retention.",
+        data: "Digital Transformation & Data Analytics",
+        data_desc: "We design and automate key performance indicators with real-time dynamic reporting.",
+        ph: "Horizontal Property Collection",
+        ph_desc: "Recovery and management of overdue fees for administrators and coproperties.",
+        integration: "360 Service Integration",
+        integration_desc: "Personalized services integrating contact center, legal advisory, and analytics."
+      }
+    },
+    slide3Legal: {
+      tagline: "Legal Protection & Recovery",
+      title_main: "Comprehensive",
+      title_gradient: "Legal Services",
+      desc: "We manage current and write-off portfolios in their preventive, administrative, and pre-legal stages, protecting our clients' assets and commercial relationships.",
+      areas_label: "Specialty Areas",
+      civil: "Civil Law",
+      commercial: "Commercial Law",
+      labor: "Labor Law",
+      administrative: "Administrative Law",
+      family: "Family Law",
+      stages_label: "Stages & Approach",
+      judicial: "Judicial Representation",
+      extrajudicial: "Extrajudicial Advisory & Negotiation",
+    },
+    slide3PH: {
+      tagline: "Financial Health for Coproperties",
+      title_main: "Horizontal Property",
+      title_gradient: "Debt Collection",
+      desc: "Strategic recovery of condominium fees, ensuring resources for security, maintenance, and community coexistence.",
+      features: [
+        "Recovery and management of overdue owner fees.",
+        "Detailed analysis of accounts receivable and aging.",
+        "Preventive and persuasive contact to encourage payment.",
+        "Negotiation and formalization of payment agreements.",
+        "Continuous monitoring of acquired commitments.",
+        "Pre-legal and legal actions when required.",
+        "Elaborate, clear, and periodic performance reports.",
+        "Constant support for the building manager's financial goals."
+      ]
+    },
+    slide3360: {
+      tagline: "Synergistic Integration",
+      title_main: "360 Service",
+      title_gradient: "Integration",
+      desc: "We design custom-tailored solutions integrating our three core axes to cover your company's specific needs.",
+      pillars: {
+        contact: "Contact Center",
+        contact_desc: "Omnichannel customer care, persuasive debt collection, loyalty campaigns, surveys, and remote sales.",
+        legal: "Legal Advisory",
+        legal_desc: "Judicial representation, legal consulting, and contract management across specialties.",
+        data: "Data Analytics",
+        data_desc: "Power BI tracking technology to measure, control, and optimize performance in real time."
+      }
+    },
+    slide3Data: {
+      tagline: "Business Intelligence",
+      title_main: "Data",
+      title_gradient: "Analytics",
+      desc: "We build smart dashboards in Power BI that allow visualizing, analyzing, and understanding key business information in real time.",
+      sources_title: "Information Sources We Integrate",
+      sources: [
+        "Excel & flat files (.csv, .xlsx)",
+        "Cloud storage & online sources",
+        "Databases & local servers (SQL, etc.)",
+        "APIs & external third-party systems"
+      ]
+    },
     slide5Contact: {
       talk: "Shall we talk?",
       title: "Contact",
@@ -164,6 +240,82 @@ export const translations = {
         custom: "Aplicativos a la Medida",
         custom_items: ["Desarrollo de Software Web & Mobile", "Estandarización de Workflows", "Escalabilidad Tecnológica"],
       }
+    },
+    slide3Services: {
+      portfolio: "Portafolio Modular de Soluciones",
+      title_main: "Servicios",
+      title_gradient: "Integrales",
+      desc: "Ofrecemos soluciones integradas y personalizadas diseñadas para optimizar las operaciones de su empresa y maximizar la eficiencia.",
+      items: {
+        legal: "Servicios Jurídicos Integrales",
+        legal_desc: "Gestionamos carteras vigentes y castigadas en sus etapas preventivas, administrativas y prejurídicas.",
+        contact: "Contact Center Multicanal",
+        contact_desc: "Operamos campañas de atención, ventas, asignación de citas, soporte técnico y retención.",
+        data: "Transformación Digital y Analítica de Datos",
+        data_desc: "Diseño y automatización de indicadores clave con integración de datos y reportes dinámicos.",
+        ph: "Gestión Cobro Propiedad Horizontal",
+        ph_desc: "Gestión y recuperación de cuotas vencidas para administradores y copropietarios.",
+        integration: "Integración de Servicios 360",
+        integration_desc: "Servicios personalizados que integran contact center, asesoría jurídica y analítica."
+      }
+    },
+    slide3Legal: {
+      tagline: "Protección y Recuperación Legal",
+      title_main: "Servicios Jurídicos",
+      title_gradient: "Integrales",
+      desc: "Gestionamos carteras vigentes y castigadas en sus etapas preventivas, administrativas y prejurídicas, protegiendo el patrimonio de nuestros clientes y sus relaciones comerciales.",
+      areas_label: "Áreas de Especialidad",
+      civil: "Derecho Civil",
+      commercial: "Derecho Comercial",
+      labor: "Derecho Laboral",
+      administrative: "Derecho Administrativo",
+      family: "Derecho de Familia",
+      stages_label: "Etapas y Enfoque",
+      judicial: "Representación Judicial",
+      extrajudicial: "Asesoría y Conciliación Extrajudicial",
+    },
+    slide3PH: {
+      tagline: "Salud Financiera para Copropiedades",
+      title_main: "Gestión de Cobro",
+      title_gradient: "Propiedad Horizontal",
+      desc: "Recuperación estratégica de cuotas de administración vencidas, asegurando los recursos para la copropiedad y la sana convivencia.",
+      features: [
+        "Gestión y recuperación de cuotas vencidas de copropietarios.",
+        "Análisis detallado de la cartera y su antigüedad.",
+        "Contacto preventivo y persuasivo para incentivar el pago.",
+        "Negociación y formalización de acuerdos de pago.",
+        "Seguimiento constante a los compromisos adquiridos.",
+        "Acciones prejurídicas o jurídicas cuando se requieren.",
+        "Elaboración de reportes claros y periódicos.",
+        "Acompañamiento al administrador para mantener la salud financiera del conjunto."
+      ]
+    },
+    slide3360: {
+      tagline: "Integración Sinérgica",
+      title_main: "Integración de",
+      title_gradient: "Servicios 360",
+      desc: "Diseñamos servicios personalizados que integran nuestros tres ejes de servicio para cubrir las necesidades específicas de tu empresa.",
+      pillars: {
+        contact: "Contact Center",
+        contact_desc: "Atención multicanal, gestión de cartera y cobro persuasivo, fidelización, encuestas y ventas remotas.",
+        legal: "Asesoría Jurídica",
+        legal_desc: "Gestión judicial y consultoría legal especializada en diversas especialidades del derecho.",
+        data: "Analítica de Datos",
+        data_desc: "Tecnología de visualización para medir, controlar y optimizar resultados operativos en tiempo real."
+      }
+    },
+    slide3Data: {
+      tagline: "Inteligencia de Negocios",
+      title_main: "Analítica",
+      title_gradient: "de Datos",
+      desc: "Construimos dashboards inteligentes en Power BI que permiten visualizar, analizar y entender la información clave del negocio en tiempo real.",
+      sources_title: "Orígenes de información que integramos",
+      sources: [
+        "Excel y archivos planos (.csv, .xlsx)",
+        "Fuentes de datos en la nube",
+        "Bases de datos y servidores locales (SQL, etc.)",
+        "APIs y sistemas externos de terceros"
+      ]
     },
     slide5Contact: {
       talk: "¿Hablamos?",

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import SlideLayout from "./SlideLayout";
-import { Cpu, CheckCircle2 } from "lucide-react";
+import { BarChart3, CheckCircle2 } from "lucide-react";
 import channelsBg from "@/assets/slide3-channels.jpg";
 import { useLanguage } from "../../contexts/LanguageContext";
 
@@ -29,7 +29,7 @@ const ScreenshotCarousel = () => {
         <motion.img
           key={appImages[index]}
           src={appImages[index]}
-          alt="EMDECOB App"
+          alt="EMDECOB Analytics"
           initial={{ opacity: 0, scale: 1.02 }}
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0.98 }}
@@ -54,71 +54,94 @@ const ScreenshotCarousel = () => {
 const Slide3ServicesDigital = () => {
   const { t } = useLanguage();
 
-  const digitalServices = [
-    {
-      title: t("slide3Digital.services.bi"),
-      items: t("slide3Digital.services.bi_items")
-    },
-    {
-      title: t("slide3Digital.services.conv"),
-      items: t("slide3Digital.services.conv_items")
-    },
-    {
-      title: t("slide3Digital.services.custom"),
-      items: t("slide3Digital.services.custom_items")
-    }
-  ];
+  const biItems = t("slide3Digital.services.bi_items") as unknown as string[];
+  const convItems = t("slide3Digital.services.conv_items") as unknown as string[];
+  const customItems = t("slide3Digital.services.custom_items") as unknown as string[];
 
   return (
     <SlideLayout bgImage={channelsBg} overlayStrong>
-      <div className="flex-1 flex flex-col md:flex-row items-center justify-center px-16 gap-16 z-20">
+      <div className="flex-1 flex flex-col md:flex-row items-center justify-center px-16 gap-16 z-20 w-full max-w-[140rem] mx-auto py-16">
+        
+        {/* Left Side Content */}
         <motion.div 
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
-          className="flex-1 space-y-7"
+          className="flex-1 space-y-6"
         >
           <div>
-            <div className="flex items-center gap-4 mb-4">
-              <div className="w-14 h-14 rounded-2xl bg-emerald-500/20 flex items-center justify-center shadow-lg shadow-emerald-500/10 border border-emerald-500/20">
-                <Cpu className="w-7 h-7 text-emerald-500" />
+            <div className="flex items-center gap-4 mb-3">
+              <div className="w-12 h-12 rounded-2xl bg-emerald-500/20 flex items-center justify-center shadow-lg shadow-emerald-500/10 border border-emerald-500/20">
+                <BarChart3 className="w-6 h-6 text-emerald-400" />
               </div>
-              <p className="text-emerald-500 font-black uppercase tracking-[0.4em] text-xs leading-none">{t("slide3Digital.innovation")}</p>
+              <p className="text-emerald-500 font-bold uppercase tracking-[0.4em] text-xs leading-none">
+                {t("slide3Digital.innovation")}
+              </p>
             </div>
-            <h2 className="text-8xl font-black text-white leading-[0.8] mb-6 tracking-tighter">
+            <h2 className="text-8xl font-black text-white leading-[0.8] mb-4 tracking-tighter">
               {t("slide3Digital.title_main")} <br />
               <span className="text-gradient-green">{t("slide3Digital.title_gradient")}</span>
             </h2>
-            <p className="text-xl text-white/50 font-light max-w-2xl leading-relaxed">
+            <p className="text-2xl text-white/85 font-medium max-w-2xl leading-relaxed">
               {t("slide3Digital.desc")}
             </p>
           </div>
 
-          <div className="space-y-5">
-            {digitalServices.map((service, sIndex) => (
-              <motion.div 
-                key={service.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: sIndex * 0.1 }}
-                className="space-y-4"
-              >
-                <div className="flex items-center gap-4">
-                  <div className="w-2 h-7 bg-emerald-500 rounded-full shadow-[0_0_10px_rgba(16,185,129,0.3)]" />
-                  <h3 className="text-2xl font-black text-white tracking-tight uppercase tracking-widest leading-none">{service.title}</h3>
-                </div>
-                <div className="grid grid-cols-1 gap-1.5 pl-6">
-                  {service.items.map((item: string) => (
-                    <div key={item} className="flex items-center gap-4 group">
-                      <CheckCircle2 className="w-5 h-5 text-emerald-500/60 group-hover:text-emerald-500 transition-colors" />
-                      <span className="text-lg text-white/60 group-hover:text-white transition-colors font-medium">{item}</span>
-                    </div>
-                  ))}
-                </div>
-              </motion.div>
-            ))}
+          {/* 3 Sections list */}
+          <div className="space-y-6">
+            {/* Section 1 */}
+            <div className="space-y-2">
+              <h3 className="text-xl text-white font-black uppercase tracking-wider border-l-4 border-emerald-500 pl-3 flex items-center">
+                {t("slide3Digital.services.bi")}
+              </h3>
+              <div className="space-y-1.5 pl-4">
+                {biItems.map((item) => (
+                  <div key={item} className="flex items-center gap-3 group">
+                    <CheckCircle2 className="w-6 h-6 text-emerald-500 shrink-0" />
+                    <span className="text-lg text-white/95 group-hover:text-white transition-colors font-semibold">
+                      {item}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Section 2 */}
+            <div className="space-y-2">
+              <h3 className="text-xl text-white font-black uppercase tracking-wider border-l-4 border-emerald-500 pl-3 flex items-center">
+                {t("slide3Digital.services.conv")}
+              </h3>
+              <div className="space-y-1.5 pl-4">
+                {convItems.map((item) => (
+                  <div key={item} className="flex items-center gap-3 group">
+                    <CheckCircle2 className="w-6 h-6 text-emerald-500 shrink-0" />
+                    <span className="text-lg text-white/95 group-hover:text-white transition-colors font-semibold">
+                      {item}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Section 3 */}
+            <div className="space-y-2">
+              <h3 className="text-xl text-white font-black uppercase tracking-wider border-l-4 border-emerald-500 pl-3 flex items-center">
+                {t("slide3Digital.services.custom")}
+              </h3>
+              <div className="space-y-1.5 pl-4">
+                {customItems.map((item) => (
+                  <div key={item} className="flex items-center gap-3 group">
+                    <CheckCircle2 className="w-6 h-6 text-emerald-500 shrink-0" />
+                    <span className="text-lg text-white/95 group-hover:text-white transition-colors font-semibold">
+                      {item}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </motion.div>
 
+        {/* Right Side Carousel */}
         <motion.div 
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}

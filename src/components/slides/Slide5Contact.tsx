@@ -40,7 +40,7 @@ const Slide5Contact = () => {
                     <p className="text-sm text-emerald-500 font-bold uppercase tracking-tighter mb-1">{info.label}</p>
                     <p className="text-2xl text-white font-bold mb-1">{info.value}</p>
                     {info.extra && (
-                      <p className={info.label === t("slide5Contact.email_label") ? "text-2xl text-white font-bold" : "text-lg text-white/40"}>
+                      <p className={info.label === t("slide5Contact.email_label") ? "text-2xl text-white font-bold" : "text-lg text-white/80 font-medium"}>
                         {info.extra}
                       </p>
                     )}

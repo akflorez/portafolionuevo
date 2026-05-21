@@ -3,27 +3,35 @@ import { AnimatePresence, motion } from "framer-motion";
 import Slide1EmdecobCover from "./Slide1EmdecobCover";
 import Slide2Purpose from "./Slide2Purpose";
 import Slide3History from "./Slide3History";
-import Slide3ServicesBPO from "./Slide3ServicesBPO";
+import Slide3Services from "./Slide3Services";
 import Slide3ServicesContact from "./Slide3ServicesContact";
 import Slide3ServicesDigital from "./Slide3ServicesDigital";
+import Slide3ServicesLegal from "./Slide3ServicesLegal";
+import Slide3ServicesPH from "./Slide3ServicesPH";
+import Slide3Services360 from "./Slide3Services360";
+import Slide4Clients from "./Slide4Clients";
 import Slide5Contact from "./Slide5Contact";
-import logo from "/favicon.png";
 import { useLanguage } from "../../contexts/LanguageContext";
-import { Languages } from "lucide-react";
+import { Languages, Sun, Moon } from "lucide-react";
 
 const slides = [
-  Slide1EmdecobCover,    // 1. Portada
-  Slide2Purpose,         // 2. Propósito Institucional
-  Slide3History,         // 3. Conócenos / Historia
-  // Slide3ServicesBPO,     // 4. BPO & BPS 360 (Hidden per request)
-  Slide3ServicesContact, // 5. Contact Center Inteligente
-  Slide3ServicesDigital, // 6. Transformación Digital
-  Slide5Contact          // 7. Contacto
+  Slide1EmdecobCover,     // 1. Portada
+  Slide2Purpose,          // 2. Propósito Institucional
+  Slide3History,          // 3. Conócenos / Historia
+  Slide3Services,         // 4. Portafolio de Servicios (Index)
+  Slide3ServicesContact,  // 5. Contact Center Inteligente
+  Slide3ServicesDigital,  // 6. Analítica de Datos
+  Slide3ServicesLegal,    // 7. Servicios Jurídicos Integrales
+  Slide3ServicesPH,       // 8. Gestión Cobro Propiedad Horizontal
+  Slide3Services360,      // 9. Integración de Servicios 360
+  Slide4Clients,          // 10. Casos de Éxito
+  Slide5Contact           // 11. Contacto
 ];
 
 const CorporateSlider = () => {
   const { t, toggleLanguage } = useLanguage();
   const [current, setCurrent] = useState(0);
+  const [isLightTheme, setIsLightTheme] = useState(false);
   const [isPaused, setIsPaused] = useState(false);
   const [direction, setDirection] = useState(0);
 
@@ -70,7 +78,7 @@ const CorporateSlider = () => {
 
   return (
     <div
-      className="relative w-screen h-screen overflow-hidden bg-noir font-montserrat"
+      className={`relative w-screen h-screen overflow-hidden font-jost transition-colors duration-500 ${isLightTheme ? 'light-theme bg-white' : 'bg-noir'}`}
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
@@ -90,12 +98,23 @@ const CorporateSlider = () => {
         </AnimatePresence>
 
         {/* Top Navbar */}
-        <div className="absolute top-0 left-0 right-0 z-50 flex items-center justify-between px-10 py-8 no-print bg-gradient-to-b from-noir/80 to-transparent">
-          <img src={logo} alt="EMDECOB" className="h-12 opacity-90 drop-shadow-lg" />
+        <div className={`absolute top-0 left-0 right-0 z-50 flex items-center justify-between px-10 py-8 no-print bg-gradient-to-b ${isLightTheme ? 'from-white/80' : 'from-noir/80'} to-transparent`}>
+          <img src={isLightTheme ? "/favicon.png" : "/emdecob-logo-blanco.png"} alt="EMDECOB" className="h-12 opacity-90 drop-shadow-lg" />
           <div className="flex items-center gap-6">
             <span className="text-sm font-bold text-white/40 uppercase tracking-[0.4em]">
               {t("navbar.portfolio")}
             </span>
+            <button 
+              onClick={() => setIsLightTheme(!isLightTheme)}
+              className="group flex items-center justify-center p-2.5 rounded-full btn-glass-morphism hover:bg-emerald-500/10 transition-all active:scale-95"
+              title="Alternar modo claro/oscuro"
+            >
+              {isLightTheme ? (
+                <Moon className="w-5 h-5 text-emerald-500 group-hover:text-emerald-400 transition-colors" />
+              ) : (
+                <Sun className="w-5 h-5 text-emerald-400 group-hover:text-emerald-300 transition-colors" />
+              )}
+            </button>
             <button 
               onClick={toggleLanguage}
               className="group flex items-center gap-2 px-5 py-2.5 rounded-full btn-glass-morphism hover:bg-emerald-500/10 transition-all active:scale-95"
