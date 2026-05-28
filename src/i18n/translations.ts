@@ -84,7 +84,7 @@ export const translations = {
       desc: "We offer integrated and personalized solutions designed to optimize your business operations and maximize efficiency.",
       items: {
         legal: "Comprehensive Legal Services",
-        legal_desc: "Representation in all types of litigation, lawsuits, corporate advisory, and portfolio recovery.",
+        legal_desc: "Legal advisory and representation in any type of lawsuit and litigation, corporate law, and specialized portfolio recovery.",
         contact: "Omnichannel Contact Center",
         contact_desc: "We operate campaigns for customer service, sales, appointments, support, and retention.",
         data: "Digital Transformation & Data Analytics",
@@ -96,10 +96,10 @@ export const translations = {
       }
     },
     slide3Legal: {
-      tagline: "Representation, Litigation & Portfolio",
+      tagline: "Litigation, Lawsuits & Portfolio Recovery",
       title_main: "Comprehensive",
       title_gradient: "Legal Services",
-      desc: "We provide specialized legal advice and representation in all types of lawsuits and litigation, comprehensive corporate consulting, and judicial or extrajudicial portfolio recovery.",
+      desc: "We specialize in legal representation and advice for any type of lawsuit or litigation across multiple legal areas, alongside corporate consulting and extrajudicial or judicial portfolio recovery.",
       areas_label: "Specialty Areas",
       civil: "Civil Law",
       commercial: "Commercial Law",
@@ -321,7 +321,7 @@ export const translations = {
       desc: "Ofrecemos soluciones integradas y personalizadas diseñadas para optimizar las operaciones de su empresa y maximizar la eficiencia.",
       items: {
         legal: "Servicios Jurídicos Integrales",
-        legal_desc: "Representación judicial en todo tipo de litigios, demandas, asesoría corporativa y recuperación de cartera.",
+        legal_desc: "Asesoría y representación legal en cualquier tipo de demanda y litigio, derecho corporativo integral y recuperación especializada de cartera.",
         contact: "Contact Center Multicanal",
         contact_desc: "Operamos campañas de atención, ventas, asignación de citas, soporte técnico y retención.",
         data: "Transformación Digital y Analítica de Datos",
@@ -333,10 +333,10 @@ export const translations = {
       }
     },
     slide3Legal: {
-      tagline: "Representación, Litigios y Cartera",
+      tagline: "Litigios, Demandas y Recuperación de Cartera",
       title_main: "Servicios Jurídicos",
       title_gradient: "Integrales",
-      desc: "Brindamos asesoría y representación legal especializada en todo tipo de litigios, demandas, derecho corporativo integral y recuperación judicial o extrajudicial de cartera.",
+      desc: "Nos especializamos en la representación y asesoría legal para cualquier tipo de demanda o litigio en múltiples áreas del derecho, consultoría empresarial corporativa y la recuperación judicial o extrajudicial de cartera.",
       areas_label: "Áreas de Especialidad",
       civil: "Derecho Civil",
       commercial: "Derecho Comercial",

@@ -24,9 +24,9 @@ const slides = [
   Slide3ServicesDigital,  // 6. Analítica de Datos
   Slide3ServicesLegal,    // 7. Servicios Jurídicos Integrales
   Slide3ServicesPH,       // 8. Gestión Cobro Propiedad Horizontal
-  Slide3Services360,      // 9. Integración de Servicios 360
+  Slide4SuccessCases,     // 9. Operación Inteligente de Cartera
   Slide4Clients,          // 10. Casos de Éxito
-  Slide4SuccessCases,     // 11. Casos de éxito (CREDIORBE / FNA)
+  Slide3Services360,      // 11. Integración de Servicios 360
   Slide5Contact           // 12. Contacto
 ];
 
