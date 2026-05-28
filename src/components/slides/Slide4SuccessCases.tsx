@@ -385,14 +385,14 @@ const Slide4SuccessCases = () => {
                 <div className="flex items-baseline justify-between">
                   <span className="text-sm font-bold text-white uppercase tracking-wider">{t("slide4SuccessCases.kpi1_title")}</span>
                   <div className="flex items-baseline text-emerald-400 font-black">
-                    <CountUp value={84} decimals={0} isSpanish={isSpanish} delay={1.3} className="text-3xl font-black tracking-tight" />
+                    <CountUp value={68} decimals={0} isSpanish={isSpanish} delay={1.3} className="text-3xl font-black tracking-tight" />
                     <span className="text-sm ml-0.5">%</span>
                   </div>
                 </div>
                 <div className="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
                   <motion.div
                     initial={{ width: 0 }}
-                    whileInView={{ width: "84%" }}
+                    whileInView={{ width: "68%" }}
                     transition={{ duration: 1.5, delay: 1.3, ease: "easeOut" }}
                     className="h-full bg-gradient-to-r from-emerald-500 to-teal-400 rounded-full shadow-[0_0_10px_rgba(16,185,129,0.5)]"
                   />
@@ -405,14 +405,14 @@ const Slide4SuccessCases = () => {
                 <div className="flex items-baseline justify-between">
                   <span className="text-sm font-bold text-white uppercase tracking-wider">{t("slide4SuccessCases.kpi2_title")}</span>
                   <div className="flex items-baseline text-emerald-400 font-black">
-                    <CountUp value={68} decimals={0} isSpanish={isSpanish} delay={1.5} className="text-3xl font-black tracking-tight" />
+                    <CountUp value={84} decimals={0} isSpanish={isSpanish} delay={1.5} className="text-3xl font-black tracking-tight" />
                     <span className="text-sm ml-0.5">%</span>
                   </div>
                 </div>
                 <div className="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
                   <motion.div
                     initial={{ width: 0 }}
-                    whileInView={{ width: "68%" }}
+                    whileInView={{ width: "84%" }}
                     transition={{ duration: 1.5, delay: 1.5, ease: "easeOut" }}
                     className="h-full bg-gradient-to-r from-emerald-500 to-teal-400 rounded-full shadow-[0_0_10px_rgba(16,185,129,0.5)]"
                   />
