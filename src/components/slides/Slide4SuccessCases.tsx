@@ -467,10 +467,10 @@ const Slide4SuccessCases = () => {
                 <span className="text-[10px] font-black text-white/40 uppercase tracking-widest leading-none block mt-1 transition-colors group-hover:text-white/60">
                   {t("slide4SuccessCases.support_kpi2_title")}
                 </span>
-                <div className="text-xl md:text-2xl font-black text-emerald-400 flex items-baseline justify-center leading-none mt-2">
-                  <span>$</span>
-                  <CountUp value={443.5} decimals={1} isSpanish={isSpanish} delay={2.1} />
-                  <span className="text-xs font-black ml-0.5">M</span>
+                <div className="text-sm md:text-base font-black text-emerald-400 flex items-baseline justify-center leading-none mt-2.5">
+                  <span className="text-[10px] font-bold mr-0.5 text-white/60">{isSpanish ? "Aprox. $" : "Approx. $"}</span>
+                  <CountUp value={1500} decimals={0} isSpanish={isSpanish} delay={2.1} className="text-lg md:text-xl font-black text-emerald-400" />
+                  <span className="text-[10px] font-bold ml-1 text-white/60">{isSpanish ? "Mil Millones" : "Billion"}</span>
                 </div>
               </motion.div>
 
