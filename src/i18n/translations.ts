@@ -46,8 +46,8 @@ export const translations = {
     },
     slide3Contact: {
       strategic_comm: "Strategic Communication",
-      title_main: "Intelligent",
-      title_gradient: "Contact Center",
+      title_main: "Contact",
+      title_gradient: "Center",
       desc: "Omnichannel and immediate response. We combine cutting-edge technology with a highly trained team to manage your communications.",
       core_services: "Core Services",
       capabilities: "Capabilities",
@@ -259,8 +259,8 @@ export const translations = {
     },
     slide3Contact: {
       strategic_comm: "Comunicación Estratégica",
-      title_main: "Contact Center",
-      title_gradient: "Inteligente",
+      title_main: "Contact",
+      title_gradient: "Center",
       desc: "Omnicanalidad y respuesta inmediata. Combinamos tecnología de punta con un equipo altamente capacitado para gestionar sus comunicaciones.",
       core_services: "Servicios Core",
       capabilities: "Capacidades",

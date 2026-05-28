@@ -20,7 +20,7 @@ const slides = [
   Slide2Purpose,          // 2. Propósito Institucional
   Slide3History,          // 3. Conócenos / Historia
   Slide3Services,         // 4. Portafolio de Servicios (Index)
-  Slide3ServicesContact,  // 5. Contact Center Inteligente
+  Slide3ServicesContact,  // 5. Contact Center
   Slide3ServicesDigital,  // 6. Analítica de Datos
   Slide3ServicesLegal,    // 7. Servicios Jurídicos Integrales
   Slide3ServicesPH,       // 8. Gestión Cobro Propiedad Horizontal
