@@ -32,32 +32,32 @@ const Slide3ServicesPH = () => {
                 {t("slide3PH.tagline")}
               </p>
             </div>
-            <h2 className="text-8xl font-black text-white leading-[0.8] mb-6 tracking-tighter">
+            <h2 className="text-5xl font-black text-white leading-tight mb-4 tracking-tighter">
               {t("slide3PH.title_main")} <br />
               <span className="text-gradient-green">{t("slide3PH.title_gradient")}</span>
             </h2>
-            <p className="text-2xl text-white/85 font-medium max-w-3xl leading-relaxed">
+            <p className="text-base text-white/85 font-medium max-w-3xl leading-relaxed">
               {t("slide3PH.desc")}
             </p>
           </div>
 
           {/* 2-Column Checklist */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-5">
-            <div className="space-y-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3">
+            <div className="space-y-3">
               {firstCol.map((item) => (
-                <div key={item} className="flex items-start gap-4 group">
-                  <CheckCircle2 className="w-6 h-6 text-emerald-500 shrink-0 mt-1" />
-                  <span className="text-xl text-white/95 group-hover:text-white transition-colors font-semibold leading-snug">
+                <div key={item} className="flex items-start gap-3 group">
+                  <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0 mt-1" />
+                  <span className="text-sm text-white/95 group-hover:text-white transition-colors font-semibold leading-snug">
                     {item}
                   </span>
                 </div>
               ))}
             </div>
-            <div className="space-y-4">
+            <div className="space-y-3">
               {secondCol.map((item) => (
-                <div key={item} className="flex items-start gap-4 group">
-                  <CheckCircle2 className="w-6 h-6 text-emerald-500 shrink-0 mt-1" />
-                  <span className="text-xl text-white/95 group-hover:text-white transition-colors font-semibold leading-snug">
+                <div key={item} className="flex items-start gap-3 group">
+                  <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0 mt-1" />
+                  <span className="text-sm text-white/95 group-hover:text-white transition-colors font-semibold leading-snug">
                     {item}
                   </span>
                 </div>

@@ -55,10 +55,10 @@ const Slide3Services = () => {
           <p className="text-emerald-500 font-bold uppercase tracking-widest mb-2 text-xs">
             {t("slide3Services.portfolio")}
           </p>
-          <h2 className="text-6xl font-black text-white leading-tight uppercase tracking-tight">
+          <h2 className="text-4xl font-black text-white leading-tight uppercase tracking-tight">
             {t("slide3Services.title_main")} <span className="text-gradient-green">{t("slide3Services.title_gradient")}</span>
           </h2>
-          <p className="text-white/50 font-light text-lg max-w-3xl mx-auto mt-2">
+          <p className="text-white/50 font-light text-base max-w-3xl mx-auto mt-2">
             {t("slide3Services.desc")}
           </p>
         </motion.div>
@@ -79,11 +79,11 @@ const Slide3Services = () => {
                   <div className="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center group-hover:bg-emerald-500 group-hover:text-noir transition-all duration-300">
                     <service.icon className="w-6 h-6 text-emerald-400 group-hover:text-noir" />
                   </div>
-                  <h3 className="text-2xl font-bold text-white tracking-tight uppercase leading-tight group-hover:text-emerald-400 transition-colors">
+                  <h3 className="text-lg font-bold text-white tracking-tight uppercase leading-tight group-hover:text-emerald-400 transition-colors">
                     {service.title}
                   </h3>
                 </div>
-                <p className="text-base text-white/70 font-medium leading-relaxed">
+                <p className="text-sm text-white/70 font-medium leading-relaxed">
                   {service.desc}
                 </p>
               </div>
@@ -109,11 +109,11 @@ const Slide3Services = () => {
                   <div className="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center group-hover:bg-emerald-500 group-hover:text-noir transition-all duration-300">
                     <service.icon className="w-6 h-6 text-emerald-400 group-hover:text-noir" />
                   </div>
-                  <h3 className="text-2xl font-bold text-white tracking-tight uppercase leading-tight group-hover:text-emerald-400 transition-colors">
+                  <h3 className="text-lg font-bold text-white tracking-tight uppercase leading-tight group-hover:text-emerald-400 transition-colors">
                     {service.title}
                   </h3>
                 </div>
-                <p className="text-base text-white/70 font-medium leading-relaxed">
+                <p className="text-sm text-white/70 font-medium leading-relaxed">
                   {service.desc}
                 </p>
               </div>

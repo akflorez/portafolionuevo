@@ -77,27 +77,27 @@ const Slide3ServicesDigital = () => {
                 {t("slide3Digital.innovation")}
               </p>
             </div>
-            <h2 className="text-8xl font-black text-white leading-[0.8] mb-4 tracking-tighter">
+            <h2 className="text-5xl font-black text-white leading-tight mb-4 tracking-tighter">
               {t("slide3Digital.title_main")} <br />
               <span className="text-gradient-green">{t("slide3Digital.title_gradient")}</span>
             </h2>
-            <p className="text-2xl text-white/85 font-medium max-w-2xl leading-relaxed">
+            <p className="text-base text-white/85 font-medium max-w-2xl leading-relaxed">
               {t("slide3Digital.desc")}
             </p>
           </div>
 
           {/* 3 Sections list */}
-          <div className="space-y-6">
+          <div className="space-y-4">
             {/* Section 1 */}
-            <div className="space-y-2">
-              <h3 className="text-xl text-white font-black uppercase tracking-wider border-l-4 border-emerald-500 pl-3 flex items-center">
+            <div className="space-y-1.5">
+              <h3 className="text-base text-white font-black uppercase tracking-wider border-l-4 border-emerald-500 pl-3 flex items-center">
                 {t("slide3Digital.services.bi")}
               </h3>
-              <div className="space-y-1.5 pl-4">
+              <div className="space-y-1 pl-4">
                 {biItems.map((item) => (
-                  <div key={item} className="flex items-center gap-3 group">
-                    <CheckCircle2 className="w-6 h-6 text-emerald-500 shrink-0" />
-                    <span className="text-lg text-white/95 group-hover:text-white transition-colors font-semibold">
+                  <div key={item} className="flex items-center gap-2.5 group">
+                    <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0" />
+                    <span className="text-sm text-white/95 group-hover:text-white transition-colors font-semibold">
                       {item}
                     </span>
                   </div>
@@ -106,15 +106,15 @@ const Slide3ServicesDigital = () => {
             </div>
 
             {/* Section 2 */}
-            <div className="space-y-2">
-              <h3 className="text-xl text-white font-black uppercase tracking-wider border-l-4 border-emerald-500 pl-3 flex items-center">
+            <div className="space-y-1.5">
+              <h3 className="text-base text-white font-black uppercase tracking-wider border-l-4 border-emerald-500 pl-3 flex items-center">
                 {t("slide3Digital.services.conv")}
               </h3>
-              <div className="space-y-1.5 pl-4">
+              <div className="space-y-1 pl-4">
                 {convItems.map((item) => (
-                  <div key={item} className="flex items-center gap-3 group">
-                    <CheckCircle2 className="w-6 h-6 text-emerald-500 shrink-0" />
-                    <span className="text-lg text-white/95 group-hover:text-white transition-colors font-semibold">
+                  <div key={item} className="flex items-center gap-2.5 group">
+                    <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0" />
+                    <span className="text-sm text-white/95 group-hover:text-white transition-colors font-semibold">
                       {item}
                     </span>
                   </div>
@@ -123,15 +123,15 @@ const Slide3ServicesDigital = () => {
             </div>
 
             {/* Section 3 */}
-            <div className="space-y-2">
-              <h3 className="text-xl text-white font-black uppercase tracking-wider border-l-4 border-emerald-500 pl-3 flex items-center">
+            <div className="space-y-1.5">
+              <h3 className="text-base text-white font-black uppercase tracking-wider border-l-4 border-emerald-500 pl-3 flex items-center">
                 {t("slide3Digital.services.custom")}
               </h3>
-              <div className="space-y-1.5 pl-4">
+              <div className="space-y-1 pl-4">
                 {customItems.map((item) => (
-                  <div key={item} className="flex items-center gap-3 group">
-                    <CheckCircle2 className="w-6 h-6 text-emerald-500 shrink-0" />
-                    <span className="text-lg text-white/95 group-hover:text-white transition-colors font-semibold">
+                  <div key={item} className="flex items-center gap-2.5 group">
+                    <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0" />
+                    <span className="text-sm text-white/95 group-hover:text-white transition-colors font-semibold">
                       {item}
                     </span>
                   </div>

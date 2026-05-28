@@ -36,31 +36,31 @@ const Slide3ServicesContact = () => {
               </div>
               <p className="text-emerald-500 font-bold uppercase tracking-[0.3em] text-xs font-black">{t("slide3Contact.strategic_comm")}</p>
             </div>
-            <h2 className="text-8xl font-black text-white leading-[0.8] mb-6 tracking-tighter">
+            <h2 className="text-5xl font-black text-white leading-tight mb-4 tracking-tighter">
               {t("slide3Contact.title_main")} <br />
               <span className="text-gradient-green">{t("slide3Contact.title_gradient")}</span>
             </h2>
-            <p className="text-2xl text-white/85 font-medium leading-relaxed">
+            <p className="text-base text-white/85 font-medium leading-relaxed">
               {t("slide3Contact.desc")}
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
-             <div className="space-y-4">
-                <p className="text-sm text-emerald-400 uppercase font-black tracking-widest mb-4 px-4 py-2 bg-emerald-500/10 rounded-xl inline-block border border-emerald-500/20">{t("slide3Contact.core_services")}</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+             <div className="space-y-3">
+                <p className="text-xs text-emerald-400 uppercase font-black tracking-widest mb-2 px-3 py-1 bg-emerald-500/10 rounded-lg inline-block border border-emerald-500/20">{t("slide3Contact.core_services")}</p>
                 {coreServices.map((item) => (
-                  <div key={item} className="flex items-center gap-4 group">
-                    <CheckCircle2 className="w-6 h-6 text-emerald-500 shrink-0" />
-                    <span className="text-xl text-white/95 group-hover:text-white transition-colors font-semibold">{item}</span>
+                  <div key={item} className="flex items-center gap-3 group">
+                    <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0" />
+                    <span className="text-sm text-white/90 group-hover:text-white transition-colors font-semibold">{item}</span>
                   </div>
                 ))}
              </div>
-             <div className="space-y-4 pt-0">
-                <p className="text-sm text-emerald-400 uppercase font-black tracking-widest mb-4 px-4 py-2 bg-emerald-500/10 rounded-xl inline-block border border-emerald-500/20">{t("slide3Contact.capabilities")}</p>
+             <div className="space-y-3 pt-0">
+                <p className="text-xs text-emerald-400 uppercase font-black tracking-widest mb-2 px-3 py-1 bg-emerald-500/10 rounded-lg inline-block border border-emerald-500/20">{t("slide3Contact.capabilities")}</p>
                 {techCapabilities.map((item) => (
-                  <div key={item} className="flex items-center gap-4 group">
-                    <Zap className="w-5 h-5 text-emerald-500 shrink-0" />
-                    <span className="text-xl text-white/90 group-hover:text-white transition-colors font-semibold">{item}</span>
+                  <div key={item} className="flex items-center gap-3 group">
+                    <Zap className="w-4 h-4 text-emerald-500 shrink-0" />
+                    <span className="text-sm text-white/90 group-hover:text-white transition-colors font-semibold">{item}</span>
                   </div>
                 ))}
              </div>
