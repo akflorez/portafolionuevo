@@ -184,6 +184,26 @@ export const translations = {
       card4_title: "Management Productivity",
       card4_desc: "Monitoring of operational performance per agent, accounts worked, actions executed, and completion of key activities.",
       footnote: "Estimated results for the CREDIORBE case, subject to data quality, process maturity, management strategy, and portfolio behavior."
+    },
+    slide4FNA: {
+      tagline: "Success Case: FNA",
+      title_main: "Success Case:",
+      title_gradient: "FNA",
+      subtitle: "Applied analytics to strengthen portfolio management, optimize operational tracking, and improve goal achievement.",
+      desc: "At FNA, portfolio management was reinforced through analytical dashboards, indicator monitoring, and operational control. The solution improved process visibility, tracked team performance, controlled goal compliance, and facilitated decision-making with clear, timely, and actionable information.",
+      card1_val: "91.8",
+      card1_title: "Effective Conversion Rate",
+      card1_desc: "Result obtained against opportunities worked, commitments generated, and effective management actions on the portfolio.",
+      card2_val: "100",
+      card2_title: "Operational Coverage",
+      card2_desc: "Comprehensive tracking of the assigned database, strengthening the control of accounts, agents, and recovery results.",
+      card3_val: "98.7",
+      card3_title: "Goal Achievement",
+      card3_desc: "Constant monitoring of progress against defined goals, facilitating timely adjustments and corrective actions.",
+      card4_val: "93.2",
+      card4_title: "Management Productivity",
+      card4_desc: "Monitoring of operational performance per agent, accounts worked, actions executed, and compliance level of key activities.",
+      footnote: "Estimated results for the FNA case, subject to data quality, process maturity, management strategy, and portfolio behavior."
     }
   },
   es: {
@@ -369,6 +389,26 @@ export const translations = {
       card4_title: "Productividad de gestión",
       card4_desc: "Seguimiento del rendimiento operativo por gestor, cuentas trabajadas, acciones ejecutadas y cumplimiento de actividades clave.",
       footnote: "Resultados estimados para el caso CREDIORBE, sujetos a la calidad de la información, madurez del proceso, estrategia de gestión y comportamiento del portafolio."
+    },
+    slide4FNA: {
+      tagline: "Caso de éxito: FNA",
+      title_main: "Caso de éxito:",
+      title_gradient: "FNA",
+      subtitle: "Analítica aplicada para fortalecer la gestión de cartera, optimizar el seguimiento operativo y mejorar el cumplimiento de metas.",
+      desc: "En FNA, la gestión de cartera se fortaleció mediante tableros analíticos, monitoreo de indicadores y control operativo. La solución permitió mejorar la visibilidad del proceso, hacer seguimiento al desempeño de los equipos, controlar el cumplimiento frente a las metas y facilitar la toma de decisiones con información clara, oportuna y accionable.",
+      card1_val: "91.8",
+      card1_title: "Tasa de conversión efectiva",
+      card1_desc: "Resultado obtenido frente a las oportunidades trabajadas, compromisos generados y acciones efectivas de gestión sobre la cartera.",
+      card2_val: "100",
+      card2_title: "Cobertura operativa",
+      card2_desc: "Seguimiento integral sobre la base asignada, fortaleciendo el control de cuentas, gestores y resultados de recuperación.",
+      card3_val: "98.7",
+      card3_title: "Cumplimiento frente a meta",
+      card3_desc: "Monitoreo constante del avance frente a los objetivos definidos, facilitando ajustes oportunos y acciones correctivas.",
+      card4_val: "93.2",
+      card4_title: "Productividad de gestión",
+      card4_desc: "Seguimiento al rendimiento operativo por gestor, cuentas trabajadas, acciones ejecutadas y nivel de cumplimiento de actividades clave.",
+      footnote: "Resultados estimados para el caso FNA, sujetos a la calidad de la información, madurez del proceso, estrategia de gestión y comportamiento del portafolio."
     }
   }
 };
