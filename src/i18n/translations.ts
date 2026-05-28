@@ -84,7 +84,7 @@ export const translations = {
       desc: "We offer integrated and personalized solutions designed to optimize your business operations and maximize efficiency.",
       items: {
         legal: "Comprehensive Legal Services",
-        legal_desc: "We manage current and write-off portfolios in preventive, administrative, and pre-legal stages.",
+        legal_desc: "Representation in all types of litigation, lawsuits, corporate advisory, and portfolio recovery.",
         contact: "Omnichannel Contact Center",
         contact_desc: "We operate campaigns for customer service, sales, appointments, support, and retention.",
         data: "Digital Transformation & Data Analytics",
@@ -96,10 +96,10 @@ export const translations = {
       }
     },
     slide3Legal: {
-      tagline: "Legal Protection & Recovery",
+      tagline: "Representation, Litigation & Portfolio",
       title_main: "Comprehensive",
       title_gradient: "Legal Services",
-      desc: "We manage current and write-off portfolios in their preventive, administrative, and pre-legal stages, protecting our clients' assets and commercial relationships.",
+      desc: "We provide specialized legal advice and representation in all types of lawsuits and litigation, comprehensive corporate consulting, and judicial or extrajudicial portfolio recovery.",
       areas_label: "Specialty Areas",
       civil: "Civil Law",
       commercial: "Commercial Law",
@@ -321,7 +321,7 @@ export const translations = {
       desc: "Ofrecemos soluciones integradas y personalizadas diseñadas para optimizar las operaciones de su empresa y maximizar la eficiencia.",
       items: {
         legal: "Servicios Jurídicos Integrales",
-        legal_desc: "Gestionamos carteras vigentes y castigadas en sus etapas preventivas, administrativas y prejurídicas.",
+        legal_desc: "Representación judicial en todo tipo de litigios, demandas, asesoría corporativa y recuperación de cartera.",
         contact: "Contact Center Multicanal",
         contact_desc: "Operamos campañas de atención, ventas, asignación de citas, soporte técnico y retención.",
         data: "Transformación Digital y Analítica de Datos",
@@ -333,10 +333,10 @@ export const translations = {
       }
     },
     slide3Legal: {
-      tagline: "Protección y Recuperación Legal",
+      tagline: "Representación, Litigios y Cartera",
       title_main: "Servicios Jurídicos",
       title_gradient: "Integrales",
-      desc: "Gestionamos carteras vigentes y castigadas en sus etapas preventivas, administrativas y prejurídicas, protegiendo el patrimonio de nuestros clientes y sus relaciones comerciales.",
+      desc: "Brindamos asesoría y representación legal especializada en todo tipo de litigios, demandas, derecho corporativo integral y recuperación judicial o extrajudicial de cartera.",
       areas_label: "Áreas de Especialidad",
       civil: "Derecho Civil",
       commercial: "Derecho Comercial",
