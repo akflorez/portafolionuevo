@@ -204,6 +204,14 @@ export const translations = {
       card4_title: "Management Productivity",
       card4_desc: "Monitoring of operational performance per agent, accounts worked, actions executed, and compliance level of key activities.",
       footnote: "Estimated results for the FNA case, subject to data quality, process maturity, management strategy, and portfolio behavior."
+    },
+    slide4SuccessCases: {
+      tagline: "Success Cases",
+      title_main: "Strategy &",
+      title_gradient: "Results",
+      subtitle: "Operational control, analytics, and strategic management applied to large portfolios.",
+      desc: "Success in portfolio recovery lies in transforming data into decisions. Through a structured strategy of tracking, goal control, and portfolio visibility, we reinforced the operations of our partners, optimizing team performance and exceeding business objectives.",
+      footnote: "Estimated results, subject to data quality, process maturity, management strategy, and portfolio behavior."
     }
   },
   es: {
@@ -409,6 +417,14 @@ export const translations = {
       card4_title: "Productividad de gestión",
       card4_desc: "Seguimiento al rendimiento operativo por gestor, cuentas trabajadas, acciones ejecutadas y nivel de cumplimiento de actividades clave.",
       footnote: "Resultados estimados para el caso FNA, sujetos a la calidad de la información, madurez del proceso, estrategia de gestión y comportamiento del portafolio."
+    },
+    slide4SuccessCases: {
+      tagline: "Casos de éxito",
+      title_main: "Estrategia y",
+      title_gradient: "Resultados",
+      subtitle: "Control operativo, analítica y gestión estratégica aplicados a grandes portafolios.",
+      desc: "El éxito en la recuperación de cartera radica en transformar datos en decisiones. Mediante una estrategia estructurada de seguimiento, control de metas y visibilidad del portafolio, fortalecimos la operación de nuestros aliados, optimizando el rendimiento de sus equipos y superando objetivos de negocio.",
+      footnote: "Resultados estimados, sujetos a la calidad de la información, madurez del proceso, estrategia de gestión y comportamiento del portafolio."
     }
   }
 };

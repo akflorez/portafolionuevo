@@ -10,8 +10,7 @@ import Slide3ServicesLegal from "./Slide3ServicesLegal";
 import Slide3ServicesPH from "./Slide3ServicesPH";
 import Slide3Services360 from "./Slide3Services360";
 import Slide4Clients from "./Slide4Clients";
-import Slide4Crediorbe from "./Slide4Crediorbe";
-import Slide4FNA from "./Slide4FNA";
+import Slide4SuccessCases from "./Slide4SuccessCases";
 import Slide5Contact from "./Slide5Contact";
 import { useLanguage } from "../../contexts/LanguageContext";
 import { Languages, Sun, Moon } from "lucide-react";
@@ -27,9 +26,8 @@ const slides = [
   Slide3ServicesPH,       // 8. Gestión Cobro Propiedad Horizontal
   Slide3Services360,      // 9. Integración de Servicios 360
   Slide4Clients,          // 10. Casos de Éxito
-  Slide4Crediorbe,        // 11. Caso de éxito: CREDIORBE
-  Slide4FNA,              // 12. Caso de éxito: FNA
-  Slide5Contact           // 13. Contacto
+  Slide4SuccessCases,     // 11. Casos de éxito (CREDIORBE / FNA)
+  Slide5Contact           // 12. Contacto
 ];
 
 const CorporateSlider = () => {
