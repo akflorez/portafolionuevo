@@ -164,6 +164,26 @@ export const translations = {
       general_manager: "General Management",
       exec_director: "Executive Direction",
       footer_quote: "Effective solutions for today's and tomorrow's challenges",
+    },
+    slide4Crediorbe: {
+      tagline: "Success Case: CREDIORBE",
+      title_main: "Success Case:",
+      title_gradient: "CREDIORBE",
+      subtitle: "Applied analytics to strengthen portfolio management, operational control, and goal achievement.",
+      desc: "At CREDIORBE, portfolio management was reinforced through analytical dashboards, indicator tracking, and operational control. The solution improved management visibility, monitored team performance, controlled goal compliance, and enabled decision-making with clear and timely information.",
+      card1_val: "88.6",
+      card1_title: "Effective Conversion Rate",
+      card1_desc: "Result obtained against opportunities worked, commitments generated, and effective management actions.",
+      card2_val: "100",
+      card2_title: "Operational Coverage",
+      card2_desc: "Complete tracking of the assigned database, strengthening the control of accounts, agents, and results.",
+      card3_val: "99.19",
+      card3_title: "Goal Achievement",
+      card3_desc: "Close monitoring of the defined objective, with gap analysis and timely decision-making.",
+      card4_val: "92.4",
+      card4_title: "Management Productivity",
+      card4_desc: "Monitoring of operational performance per agent, accounts worked, actions executed, and completion of key activities.",
+      footnote: "Estimated results for the CREDIORBE case, subject to data quality, process maturity, management strategy, and portfolio behavior."
     }
   },
   es: {
@@ -329,6 +349,26 @@ export const translations = {
       general_manager: "Gerencia General",
       exec_director: "Dirección Ejecutiva",
       footer_quote: "Soluciones efectivas para los retos de hoy y mañana",
+    },
+    slide4Crediorbe: {
+      tagline: "Caso de éxito: CREDIORBE",
+      title_main: "Caso de éxito:",
+      title_gradient: "CREDIORBE",
+      subtitle: "Analítica aplicada para fortalecer la gestión de cartera, el control operativo y el cumplimiento de metas.",
+      desc: "En CREDIORBE, la gestión de cartera se fortaleció mediante tableros analíticos, seguimiento de indicadores y control operativo. La solución permitió mejorar la visibilidad de la gestión, monitorear el desempeño de los equipos, controlar el cumplimiento frente a las metas y tomar decisiones con información clara y oportuna.",
+      card1_val: "88.6",
+      card1_title: "Tasa de conversión efectiva",
+      card1_desc: "Resultado obtenido frente a las oportunidades trabajadas, compromisos generados y acciones efectivas de gestión.",
+      card2_val: "100",
+      card2_title: "Cobertura operativa",
+      card2_desc: "Seguimiento completo sobre la base asignada, fortaleciendo el control de cuentas, gestores y resultados.",
+      card3_val: "99.19",
+      card3_title: "Cumplimiento frente a meta",
+      card3_desc: "Control cercano al objetivo definido, con seguimiento de brechas y toma de decisiones oportunas.",
+      card4_val: "92.4",
+      card4_title: "Productividad de gestión",
+      card4_desc: "Seguimiento del rendimiento operativo por gestor, cuentas trabajadas, acciones ejecutadas y cumplimiento de actividades clave.",
+      footnote: "Resultados estimados para el caso CREDIORBE, sujetos a la calidad de la información, madurez del proceso, estrategia de gestión y comportamiento del portafolio."
     }
   }
 };

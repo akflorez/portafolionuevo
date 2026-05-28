@@ -379,6 +379,12 @@
 .light-theme .text-emerald-500 {
   color: #047857 !important;
 }
+.light-theme .text-blue-400 {
+  color: #2563eb !important;
+}
+.light-theme .text-blue-500 {
+  color: #1d4ed8 !important;
+}
 .light-theme .text-gradient-green {
   -webkit-text-fill-color: transparent;
 }
