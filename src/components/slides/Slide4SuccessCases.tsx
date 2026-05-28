@@ -232,7 +232,7 @@ const Slide4SuccessCases = () => {
         >
           {/* "Casos de éxito" badge was removed per user request */}
           
-          <h2 className="text-5xl md:text-7xl font-black text-white mt-2 mb-4 tracking-tight uppercase leading-none">
+          <h2 className="text-4xl md:text-5.5xl font-black text-white mt-2 mb-4 tracking-tight uppercase leading-none">
             {t("slide4SuccessCases.concept")}
           </h2>
           <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto font-semibold leading-relaxed">
@@ -441,8 +441,8 @@ const Slide4SuccessCases = () => {
               </div>
             </div>
 
-            {/* 3 Secondary Supporting indicators with staggered entries */}
-            <div className="grid grid-cols-3 gap-2 border-t border-white/10 pt-6 mt-8">
+            {/* 4 Secondary Supporting indicators with staggered entries */}
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 border-t border-white/10 pt-6 mt-8">
               <motion.div 
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
@@ -484,8 +484,22 @@ const Slide4SuccessCases = () => {
                   {t("slide4SuccessCases.support_kpi3_title")}
                 </span>
                 <div className="text-2xl md:text-3xl font-black text-white flex items-baseline justify-center leading-none mt-2">
+                  <CountUp value={12} decimals={0} isSpanish={isSpanish} delay={2.3} />
+                </div>
+              </motion.div>
+
+              <motion.div 
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 2.4, duration: 0.5 }}
+                className="text-center border-l border-white/10 group cursor-pointer"
+              >
+                <span className="text-[11px] md:text-xs font-black text-white/40 uppercase tracking-widest leading-none block mt-1 transition-colors group-hover:text-white/60">
+                  {t("slide4SuccessCases.support_kpi4_title")}
+                </span>
+                <div className="text-2xl md:text-3xl font-black text-white flex items-baseline justify-center leading-none mt-2">
                   <span className="text-lg md:text-xl mr-0.5 text-white/70">+</span>
-                  <CountUp value={400} decimals={0} isSpanish={isSpanish} delay={2.3} />
+                  <CountUp value={400} decimals={0} isSpanish={isSpanish} delay={2.5} />
                 </div>
               </motion.div>
             </div>
@@ -503,7 +517,7 @@ const Slide4SuccessCases = () => {
           <p className="text-base md:text-lg font-black text-emerald-400 tracking-wide uppercase">
             {t("slide4SuccessCases.closing_phrase")}
           </p>
-          <p className="text-[10.5px] text-white/40 font-medium italic mt-2.5 max-w-5xl leading-relaxed">
+          <p className="text-xs md:text-sm text-white/40 font-medium italic mt-2.5 max-w-5xl leading-relaxed">
             {t("slide4SuccessCases.footnote")}
           </p>
         </motion.div>

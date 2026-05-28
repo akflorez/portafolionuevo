@@ -233,7 +233,8 @@ export const translations = {
       support_kpi1_title: "Assigned clients",
       support_kpi2_val: "$443.5 M",
       support_kpi2_title: "Recovered capital",
-      support_kpi3_title: "Monthly lawsuits (overdue >120 days)",
+      support_kpi3_title: "Attorneys for lawsuits",
+      support_kpi4_title: "Monthly lawsuits (overdue >120 days)",
       closing_phrase: "Data that connects. Management that converts. Results that are measured.",
       footnote: "Internal performance indicators for portfolio management. Results may vary based on operational strategy, data quality, and portfolio behavior."
     }
@@ -470,7 +471,8 @@ export const translations = {
       support_kpi1_title: "Clientes asignados",
       support_kpi2_val: "$443,5 M",
       support_kpi2_title: "Capital recaudado",
-      support_kpi3_title: "Demandas mensuales (mora >120 días)",
+      support_kpi3_title: "Abogados para demandas",
+      support_kpi4_title: "Demandas mensuales (mora >120 días)",
       closing_phrase: "Datos que conectan. Gestión que convierte. Resultados que se miden.",
       footnote: "Indicadores internos de seguimiento para la gestión de cartera. Los resultados pueden variar según la estrategia operativa, la calidad de la información y el comportamiento del portafolio."
     }
