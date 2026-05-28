@@ -136,17 +136,17 @@ const Slide4SuccessCases = () => {
           transition={{ duration: 1 }}
           className="flex-1 flex flex-col justify-center max-w-xl text-left lg:pr-4"
         >
-          <p className="text-emerald-500 font-bold uppercase tracking-widest mb-3 text-sm md:text-base">
+          <p className="text-emerald-500 font-extrabold uppercase tracking-[0.25em] mb-4 text-base md:text-lg lg:text-xl">
             {t("slide4SuccessCases.tagline")}
           </p>
           <h2 className="text-4xl md:text-6xl font-black text-white mb-5 leading-tight">
             {t("slide4SuccessCases.title_main")} <br className="hidden md:inline" />
             <span className="text-gradient-green">{t("slide4SuccessCases.title_gradient")}</span>
           </h2>
-          <p className="text-lg md:text-xl text-white/90 font-semibold mb-5 leading-relaxed">
+          <p className="text-xl md:text-2xl text-white/95 font-bold mb-5 leading-relaxed">
             {t("slide4SuccessCases.subtitle")}
           </p>
-          <p className="text-base md:text-lg text-white/80 font-medium leading-relaxed mb-6">
+          <p className="text-lg md:text-xl text-white/80 font-semibold leading-relaxed mb-8">
             {t("slide4SuccessCases.desc")}
           </p>
           
@@ -155,7 +155,7 @@ const Slide4SuccessCases = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.6 }}
-            className="hidden lg:block text-xs text-white/40 font-medium italic leading-relaxed"
+            className="hidden lg:block text-xs md:text-sm text-white/45 font-medium italic leading-relaxed mt-4"
           >
             {t("slide4SuccessCases.footnote")}
           </motion.p>
@@ -284,7 +284,7 @@ const Slide4SuccessCases = () => {
         <motion.p 
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          className="block lg:hidden text-[10px] text-white/40 font-medium italic mt-4 text-center leading-relaxed"
+          className="block lg:hidden text-xs text-white/45 font-medium italic mt-6 text-center leading-relaxed"
         >
           {t("slide4SuccessCases.footnote")}
         </motion.p>
