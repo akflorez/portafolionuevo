@@ -74,11 +74,11 @@ const Slide4SuccessCases = () => {
 
   // Block 2 Surrounding pills (Operación Inteligente)
   const block2Pills = [
-    { text: t("slide4SuccessCases.block2_surround1"), color: "text-emerald-300 border-emerald-500/30" },
-    { text: t("slide4SuccessCases.block2_surround2"), color: "text-teal-300 border-teal-500/30" },
-    { text: t("slide4SuccessCases.block2_surround3"), color: "text-cyan-300 border-cyan-500/30" },
-    { text: t("slide4SuccessCases.block2_surround4"), color: "text-emerald-300 border-emerald-500/30" },
-    { text: t("slide4SuccessCases.block2_surround5"), color: "text-green-300 border-green-500/30" }
+    { text: t("slide4SuccessCases.block2_surround1"), color: "text-emerald-300 border-emerald-500/10" },
+    { text: t("slide4SuccessCases.block2_surround2"), color: "text-teal-300 border-teal-500/10" },
+    { text: t("slide4SuccessCases.block2_surround3"), color: "text-cyan-300 border-cyan-500/10" },
+    { text: t("slide4SuccessCases.block2_surround4"), color: "text-emerald-300 border-emerald-500/10" },
+    { text: t("slide4SuccessCases.block2_surround5"), color: "text-green-300 border-green-500/10" }
   ];
 
   return (
@@ -228,15 +228,9 @@ const Slide4SuccessCases = () => {
           initial={{ opacity: 0, y: -30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
-          className="text-center mb-6 md:mb-12 max-w-4xl mx-auto"
+          className="text-center mb-10 md:mb-16 max-w-4xl mx-auto"
         >
-          {/* Elevate "Casos de éxito" with an ultra-premium layout */}
-          <div className="inline-flex items-center gap-2.5 px-5 py-2 bg-emerald-500/10 rounded-full border border-emerald-500/25 mb-4 shadow-[0_0_25px_rgba(16,185,129,0.15)] backdrop-blur-md">
-            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shadow-[0_0_10px_rgba(52,211,153,0.8)]" />
-            <span className="text-emerald-400 font-black uppercase tracking-[0.3em] text-[11px] leading-none">
-              {t("slide4SuccessCases.tagline")}
-            </span>
-          </div>
+          {/* "Casos de éxito" badge was removed per user request */}
           
           <h2 className="text-4xl md:text-6xl font-black text-white mt-2 mb-4 tracking-tight uppercase leading-none">
             {t("slide4SuccessCases.concept")}
@@ -246,41 +240,44 @@ const Slide4SuccessCases = () => {
           </p>
         </motion.div>
 
-        {/* 3 Blocks Grid (Choreographed Storytelling Entrance) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 w-full items-stretch z-10">
+        {/* 3 Columns Layout (Borderless Premium Redesign) */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16 w-full items-stretch z-10">
           
           {/* BLOCK 1: BASE DE CARTERA (Left Column) */}
           <motion.div
-            initial={{ opacity: 0, x: -80, filter: "blur(8px)" }}
+            initial={{ opacity: 0, x: -50, filter: "blur(8px)" }}
             whileInView={{ opacity: 1, x: 0, filter: "blur(0px)" }}
             transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
-            className="card-glass border border-white/5 rounded-[2.5rem] p-6 md:p-8 flex flex-col justify-between min-h-[400px] lg:min-h-[460px] hover:border-blue-500/30 hover:shadow-[0_0_40px_rgba(59,130,246,0.05)] transition-all duration-500"
+            className="flex flex-col justify-between py-4"
           >
-            <div className="mb-5 border-b border-white/10 pb-4 flex items-center gap-3">
-              <div className="w-11 h-11 rounded-xl bg-blue-500/10 flex items-center justify-center border border-blue-500/25 shadow-[0_0_15px_rgba(59,130,246,0.15)]">
-                <Layers className="w-5.5 h-5.5 text-blue-400" />
-              </div>
-              <h3 className="text-xl font-black text-white uppercase tracking-wider">
-                {t("slide4SuccessCases.block1_title")}
-              </h3>
+            <div className="mb-6 flex items-center gap-3">
+              <div className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse shadow-[0_0_8px_rgba(59,130,246,0.8)]" />
+              <span className="text-[11px] font-black uppercase tracking-[0.25em] text-blue-400">
+                01. {t("slide4SuccessCases.block1_title")}
+              </span>
             </div>
 
-            <div className="grid grid-cols-2 gap-4 flex-1 items-center">
+            <div className="space-y-6 flex-1 flex flex-col justify-center">
               {block1Items.map((item, idx) => (
                 <motion.div 
                   key={idx} 
-                  initial={{ opacity: 0, scale: 0.9, y: 10 }}
-                  whileInView={{ opacity: 1, scale: 1, y: 0 }}
+                  initial={{ opacity: 0, x: -30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.15 + (0.1 * idx), duration: 0.5, ease: "easeOut" }}
-                  whileHover={{ scale: 1.04, borderColor: "rgba(59,130,246,0.4)", backgroundColor: "rgba(59,130,246,0.02)" }}
-                  className="card-glass p-5 rounded-2xl border border-white/10 flex flex-col gap-3.5 transition-all duration-300 group cursor-pointer"
+                  whileHover={{ x: 6 }}
+                  className="flex items-center gap-4 group cursor-pointer"
                 >
-                  <div className={`w-10 h-10 rounded-lg ${item.bg} ${item.border} flex items-center justify-center border`}>
-                    <item.icon className={`w-5 h-5 ${item.color} group-hover:scale-110 transition-transform duration-300`} />
+                  <div className={`w-12 h-12 rounded-2xl ${item.bg} ${item.border} flex items-center justify-center border shadow-lg transition-all duration-300 group-hover:scale-110`}>
+                    <item.icon className={`w-5.5 h-5.5 ${item.color}`} />
                   </div>
-                  <span className="text-sm font-bold text-white/90 leading-relaxed group-hover:text-white transition-colors">
-                    {item.text}
-                  </span>
+                  <div className="flex flex-col">
+                    <span className="text-base font-bold text-white group-hover:text-blue-400 transition-colors leading-tight">
+                      {item.text}
+                    </span>
+                    <span className="text-[10px] font-medium text-white/40 uppercase tracking-widest mt-1">
+                      {idx === 0 ? "Filtros demográficos" : idx === 1 ? "Multicanalidad activa" : idx === 2 ? "Trazabilidad completa" : "Algoritmos predictivos"}
+                    </span>
+                  </div>
                 </motion.div>
               ))}
             </div>
@@ -288,56 +285,42 @@ const Slide4SuccessCases = () => {
 
           {/* BLOCK 2: OPERACIÓN INTELIGENTE (Central Column - Nucleus) */}
           <motion.div
-            initial={{ opacity: 0, y: 80, filter: "blur(8px)" }}
+            initial={{ opacity: 0, y: 50, filter: "blur(8px)" }}
             whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-            transition={{ duration: 0.9, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
-            className="card-glass border border-emerald-500/10 rounded-[2.5rem] p-6 md:p-8 flex flex-col justify-between items-center min-h-[400px] lg:min-h-[460px] relative overflow-hidden"
+            transition={{ duration: 0.9, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+            className="flex flex-col justify-between items-center py-4 relative"
           >
-            {/* Background cyber grid effect */}
-            <div className="absolute inset-0 bg-[radial-gradient(rgba(16,185,129,0.04)_1.5px,transparent_1.5px)] [background-size:20px_20px] pointer-events-none" />
-
-            <div className="w-full mb-5 border-b border-white/10 pb-4 flex items-center gap-3 z-10">
-              <div className="w-11 h-11 rounded-xl bg-emerald-500/10 flex items-center justify-center border border-emerald-500/25 shadow-[0_0_15px_rgba(16,185,129,0.15)]">
-                <Brain className="w-5.5 h-5.5 text-emerald-400 animate-pulse" />
-              </div>
-              <h3 className="text-xl font-black text-white uppercase tracking-wider">
-                {t("slide4SuccessCases.block2_title")}
-              </h3>
+            <div className="w-full mb-6 flex items-center justify-center gap-3">
+              <div className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse shadow-[0_0_8px_rgba(16,185,129,0.8)]" />
+              <span className="text-[11px] font-black uppercase tracking-[0.25em] text-emerald-400">
+                02. {t("slide4SuccessCases.block2_title")}
+              </span>
             </div>
 
-            <div className="flex-1 flex flex-col justify-center items-center w-full z-10 py-4">
+            <div className="flex-1 flex flex-col justify-center items-center w-full py-4">
               
               {/* QUANTUM CPU NUCLEUS ENGINE */}
               <div className="relative flex flex-col items-center mb-8">
                 
-                {/* 1st Ring: Clockwise Outer Dotted Tech Dashboard */}
+                {/* Rings Rotating */}
                 <motion.div 
                   animate={{ rotate: 360 }} 
                   transition={{ duration: 24, repeat: Infinity, ease: "linear" }}
                   className="absolute -inset-11 rounded-full border border-dotted border-emerald-500/25 pointer-events-none shadow-[0_0_15px_rgba(16,185,129,0.05)]" 
                 />
 
-                {/* 2nd Ring: Counter-Clockwise Glowing Dash Indicator */}
                 <motion.div 
                   animate={{ rotate: -360 }} 
                   transition={{ duration: 14, repeat: Infinity, ease: "linear" }}
                   className="absolute -inset-6 rounded-full border-2 border-dashed border-emerald-500/35 pointer-events-none shadow-[0_0_20px_rgba(16,185,129,0.1)]" 
                 />
 
-                {/* 3rd Ring: Expanding Concentric Energy Wave pulses */}
                 <motion.div 
                   animate={{ scale: [1, 1.3, 1.6], opacity: [0.35, 0.15, 0] }} 
                   transition={{ duration: 3.5, repeat: Infinity, ease: "easeOut" }}
                   className="absolute -inset-14 rounded-full border border-emerald-500/20 pointer-events-none" 
                 />
-                
-                <motion.div 
-                  animate={{ scale: [1, 1.25, 1.5], opacity: [0.3, 0.1, 0] }} 
-                  transition={{ duration: 3.5, delay: 1.75, repeat: Infinity, ease: "easeOut" }}
-                  className="absolute -inset-14 rounded-full border border-emerald-500/15 pointer-events-none" 
-                />
 
-                {/* Central CPU Processor Node */}
                 <div className="relative w-18 h-18 rounded-full bg-gradient-to-tr from-emerald-500/30 to-teal-500/15 border-2 border-emerald-500/50 flex items-center justify-center shadow-[0_0_35px_rgba(16,185,129,0.35)]">
                   <Cpu className="w-9 h-9 text-emerald-400 animate-pulse" />
                   <div className="absolute inset-0 rounded-full border-2 border-emerald-500/50 animate-ping opacity-25" />
@@ -352,28 +335,29 @@ const Slide4SuccessCases = () => {
                     key={idx} 
                     initial={{ opacity: 0, scale: 0.8 }}
                     whileInView={{ opacity: 1, scale: 1 }}
-                    transition={{ delay: 0.5 + (idx * 0.1), duration: 0.4 }}
-                    whileHover={{ scale: 1.08, backgroundColor: "rgba(16, 185, 129, 0.15)", borderColor: "rgba(16, 185, 129, 0.5)" }}
-                    className={`px-3.5 py-1.5 rounded-full card-glass border ${item.color} text-[10.5px] font-extrabold uppercase tracking-widest shadow-md transition-all duration-300 cursor-pointer`}
+                    transition={{ delay: 0.4 + (idx * 0.08), duration: 0.4 }}
+                    className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-emerald-500/5 border border-emerald-500/10"
                   >
-                    {item.text}
+                    <span className="w-1 h-1 rounded-full bg-emerald-400/80 animate-pulse" />
+                    <span className={`text-[10px] font-extrabold uppercase tracking-widest ${item.color}`}>
+                      {item.text}
+                    </span>
                   </motion.div>
                 ))}
               </div>
 
-              {/* GLASSY CALLOUT CONTAINER */}
+              {/* GLASSY CALLOUT CONTAINER (BORDERLESS LEFT LINE ACCENT) */}
               <motion.div 
                 initial={{ opacity: 0, y: 15 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: 1.0, duration: 0.6 }}
-                className="card-glass p-3.5 px-5 rounded-2xl border border-emerald-500/30 bg-emerald-500/[0.02] shadow-xl w-full relative overflow-hidden group hover:border-emerald-500/50 transition-all duration-300"
+                className="relative pl-5 py-2 mt-4 max-w-md w-full border-l-2 border-emerald-500/40 bg-emerald-500/[0.02]"
               >
-                <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-gradient-to-b from-emerald-400 via-teal-500 to-blue-500" />
-                <h4 className="text-xs font-black text-emerald-300 uppercase tracking-widest mb-1.5 pl-2.5 flex items-center gap-2">
-                  <span className="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
+                <h4 className="text-xs font-black text-emerald-400 uppercase tracking-widest mb-1.5 flex items-center gap-2">
+                  <span className="inline-block w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
                   {t("slide4SuccessCases.block2_callout_title")}
                 </h4>
-                <p className="text-[11.5px] text-white/85 font-semibold leading-relaxed pl-2.5">
+                <p className="text-xs text-white/80 font-semibold leading-relaxed">
                   {t("slide4SuccessCases.block2_callout_text")}
                 </p>
               </motion.div>
@@ -382,162 +366,127 @@ const Slide4SuccessCases = () => {
 
           {/* BLOCK 3: RESULTADOS MEDIBLES (Right Column) */}
           <motion.div
-            initial={{ opacity: 0, x: 80, filter: "blur(8px)" }}
+            initial={{ opacity: 0, x: 50, filter: "blur(8px)" }}
             whileInView={{ opacity: 1, x: 0, filter: "blur(0px)" }}
-            transition={{ duration: 0.9, delay: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="md:col-span-2 lg:col-span-1 card-glass border border-white/5 rounded-[2.5rem] p-6 md:p-8 flex flex-col justify-between min-h-[400px] lg:min-h-[460px] hover:border-emerald-500/30 hover:shadow-[0_0_40px_rgba(16,185,129,0.05)] transition-all duration-500"
+            transition={{ duration: 0.9, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
+            className="md:col-span-2 lg:col-span-1 flex flex-col justify-between py-4"
           >
-            <div className="mb-5 border-b border-white/10 pb-4 flex items-center gap-3">
-              <div className="w-11 h-11 rounded-xl bg-emerald-500/10 flex items-center justify-center border border-emerald-500/25 shadow-[0_0_15px_rgba(16,185,129,0.15)]">
-                <TrendingUp className="w-5.5 h-5.5 text-emerald-400" />
-              </div>
-              <h3 className="text-xl font-black text-white uppercase tracking-wider">
-                {t("slide4SuccessCases.block3_title")}
-              </h3>
+            <div className="mb-6 flex items-center gap-3">
+              <div className="w-1.5 h-1.5 rounded-full bg-teal-500 animate-pulse shadow-[0_0_8px_rgba(20,184,166,0.8)]" />
+              <span className="text-[11px] font-black uppercase tracking-[0.25em] text-teal-400">
+                03. {t("slide4SuccessCases.block3_title")}
+              </span>
             </div>
 
-            <div className="flex-1 flex flex-col justify-between gap-5">
-              
-              {/* 3 Main Percentage KPIs with Delayed Sequence */}
-              <div className="grid grid-cols-3 gap-3.5">
-                {/* KPI 1: Contactability */}
-                <motion.div 
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 1.1, duration: 0.6, ease: "easeOut" }}
-                  className="card-glass p-3.5 rounded-2xl border border-white/10 hover:border-emerald-500/40 hover:bg-emerald-500/[0.01] transition-all duration-300 flex flex-col justify-between min-h-[125px] shadow-md"
-                >
-                  <div className="flex items-center justify-between">
-                    <PhoneCall className="w-4.5 h-4.5 text-emerald-400" />
-                    <div className="flex items-baseline text-emerald-400">
-                      <CountUp value={84} decimals={0} isSpanish={isSpanish} delay={1.3} className="text-2xl md:text-3xl font-black text-white tracking-tight" />
-                      <span className="text-xs font-black ml-0.5">%</span>
-                    </div>
+            {/* 3 Main Percentage KPIs with Delayed Sequence */}
+            <div className="space-y-6 flex-1 flex flex-col justify-center">
+              {/* KPI 1: Contactability */}
+              <div className="space-y-1.5">
+                <div className="flex items-baseline justify-between">
+                  <span className="text-sm font-bold text-white uppercase tracking-wider">{t("slide4SuccessCases.kpi1_title")}</span>
+                  <div className="flex items-baseline text-emerald-400 font-black">
+                    <CountUp value={84} decimals={0} isSpanish={isSpanish} delay={1.3} className="text-3xl font-black tracking-tight" />
+                    <span className="text-sm ml-0.5">%</span>
                   </div>
-                  <div className="mt-3">
-                    <h4 className="text-[10px] font-black text-white/95 uppercase tracking-tight leading-tight">
-                      {t("slide4SuccessCases.kpi1_title")}
-                    </h4>
-                    <p className="text-[9px] text-white/50 leading-tight mt-1 font-medium">
-                      {t("slide4SuccessCases.kpi1_desc")}
-                    </p>
-                  </div>
-                </motion.div>
-
-                {/* KPI 2: Conversion */}
-                <motion.div 
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 1.3, duration: 0.6, ease: "easeOut" }}
-                  className="card-glass p-3.5 rounded-2xl border border-white/10 hover:border-emerald-500/40 hover:bg-emerald-500/[0.01] transition-all duration-300 flex flex-col justify-between min-h-[125px] shadow-md"
-                >
-                  <div className="flex items-center justify-between">
-                    <GitMerge className="w-4.5 h-4.5 text-emerald-400" />
-                    <div className="flex items-baseline text-emerald-400">
-                      <CountUp value={68} decimals={0} isSpanish={isSpanish} delay={1.5} className="text-2xl md:text-3xl font-black text-white tracking-tight" />
-                      <span className="text-xs font-black ml-0.5">%</span>
-                    </div>
-                  </div>
-                  <div className="mt-3">
-                    <h4 className="text-[10px] font-black text-white/95 uppercase tracking-tight leading-tight">
-                      {t("slide4SuccessCases.kpi2_title")}
-                    </h4>
-                    <p className="text-[9px] text-white/50 leading-tight mt-1 font-medium">
-                      {t("slide4SuccessCases.kpi2_desc")}
-                    </p>
-                  </div>
-                </motion.div>
-
-                {/* KPI 3: Effectiveness */}
-                <motion.div 
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 1.5, duration: 0.6, ease: "easeOut" }}
-                  className="card-glass p-3.5 rounded-2xl border border-white/10 hover:border-emerald-500/40 hover:bg-emerald-500/[0.01] transition-all duration-300 flex flex-col justify-between min-h-[125px] shadow-md"
-                >
-                  <div className="flex items-center justify-between">
-                    <Zap className="w-4.5 h-4.5 text-emerald-400" />
-                    <div className="flex items-baseline text-emerald-400">
-                      <CountUp value={76} decimals={0} isSpanish={isSpanish} delay={1.7} className="text-2xl md:text-3xl font-black text-white tracking-tight" />
-                      <span className="text-xs font-black ml-0.5">%</span>
-                    </div>
-                  </div>
-                  <div className="mt-3">
-                    <h4 className="text-[10px] font-black text-white/95 uppercase tracking-tight leading-tight">
-                      {t("slide4SuccessCases.kpi3_title")}
-                    </h4>
-                    <p className="text-[9px] text-white/50 leading-tight mt-1 font-medium">
-                      {t("slide4SuccessCases.kpi3_desc")}
-                    </p>
-                  </div>
-                </motion.div>
+                </div>
+                <div className="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
+                  <motion.div
+                    initial={{ width: 0 }}
+                    whileInView={{ width: "84%" }}
+                    transition={{ duration: 1.5, delay: 1.3, ease: "easeOut" }}
+                    className="h-full bg-gradient-to-r from-emerald-500 to-teal-400 rounded-full shadow-[0_0_10px_rgba(16,185,129,0.5)]"
+                  />
+                </div>
+                <span className="text-[11px] text-white/50 block font-medium leading-normal">{t("slide4SuccessCases.kpi1_desc")}</span>
               </div>
 
-              {/* 3 Secondary Supporting indicators with staggered entries */}
-              <div className="grid grid-cols-3 gap-3.5 border-t border-white/10 pt-5 pb-1">
-                {/* Support KPI 1: Assigned clients */}
-                <motion.div 
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ delay: 1.8, duration: 0.5 }}
-                  className="flex items-center gap-2.5 group cursor-pointer"
-                >
-                  <div className="w-8.5 h-8.5 rounded-lg bg-emerald-500/10 flex items-center justify-center shrink-0 border border-emerald-500/20 group-hover:bg-emerald-500/25 transition-all duration-300">
-                    <Users className="w-4.5 h-4.5 text-emerald-400" />
+              {/* KPI 2: Conversion */}
+              <div className="space-y-1.5">
+                <div className="flex items-baseline justify-between">
+                  <span className="text-sm font-bold text-white uppercase tracking-wider">{t("slide4SuccessCases.kpi2_title")}</span>
+                  <div className="flex items-baseline text-emerald-400 font-black">
+                    <CountUp value={68} decimals={0} isSpanish={isSpanish} delay={1.5} className="text-3xl font-black tracking-tight" />
+                    <span className="text-sm ml-0.5">%</span>
                   </div>
-                  <div className="min-w-0">
-                    <div className="text-xs md:text-sm font-black text-white flex items-baseline leading-none">
-                      <span>+</span>
-                      <CountUp value={5000} decimals={0} isSpanish={isSpanish} delay={1.9} className="font-black text-white" />
-                    </div>
-                    <span className="text-[9px] font-bold text-white/40 uppercase tracking-tight leading-none block mt-2 truncate group-hover:text-white/60 transition-colors">
-                      {t("slide4SuccessCases.support_kpi1_title")}
-                    </span>
-                  </div>
-                </motion.div>
-
-                {/* Support KPI 2: Recovered capital */}
-                <motion.div 
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ delay: 2.0, duration: 0.5 }}
-                  className="flex items-center gap-2.5 group cursor-pointer"
-                >
-                  <div className="w-8.5 h-8.5 rounded-lg bg-emerald-500/10 flex items-center justify-center shrink-0 border border-emerald-500/20 group-hover:bg-emerald-500/25 transition-all duration-300">
-                    <DollarSign className="w-4.5 h-4.5 text-emerald-400" />
-                  </div>
-                  <div className="min-w-0">
-                    <div className="text-xs md:text-sm font-black text-white flex items-baseline leading-none">
-                      <span>$</span>
-                      <CountUp value={443.5} decimals={1} isSpanish={isSpanish} delay={2.1} className="font-black text-white" />
-                      <span className="text-[10px] font-black ml-0.5">M</span>
-                    </div>
-                    <span className="text-[9px] font-bold text-white/40 uppercase tracking-tight leading-none block mt-2 truncate group-hover:text-white/60 transition-colors">
-                      {t("slide4SuccessCases.support_kpi2_title")}
-                    </span>
-                  </div>
-                </motion.div>
-
-                {/* Support KPI 3: Juridical scale */}
-                <motion.div 
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ delay: 2.2, duration: 0.5 }}
-                  className="flex items-center gap-2.5 group cursor-pointer"
-                >
-                  <div className="w-8.5 h-8.5 rounded-lg bg-emerald-500/10 flex items-center justify-center shrink-0 border border-emerald-500/20 group-hover:bg-emerald-500/25 transition-all duration-300">
-                    <Scale className="w-4.5 h-4.5 text-emerald-400" />
-                  </div>
-                  <div className="min-w-0">
-                    <div className="text-xs md:text-sm font-black text-white flex items-baseline leading-none">
-                      <CountUp value={12} decimals={0} isSpanish={isSpanish} delay={2.3} className="font-black text-white" />
-                    </div>
-                    <span className="text-[9px] font-bold text-white/40 uppercase tracking-tight leading-none block mt-2 truncate group-hover:text-white/60 transition-colors">
-                      {t("slide4SuccessCases.support_kpi3_title")}
-                    </span>
-                  </div>
-                </motion.div>
+                </div>
+                <div className="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
+                  <motion.div
+                    initial={{ width: 0 }}
+                    whileInView={{ width: "68%" }}
+                    transition={{ duration: 1.5, delay: 1.5, ease: "easeOut" }}
+                    className="h-full bg-gradient-to-r from-emerald-500 to-teal-400 rounded-full shadow-[0_0_10px_rgba(16,185,129,0.5)]"
+                  />
+                </div>
+                <span className="text-[11px] text-white/50 block font-medium leading-normal">{t("slide4SuccessCases.kpi2_desc")}</span>
               </div>
+
+              {/* KPI 3: Effectiveness */}
+              <div className="space-y-1.5">
+                <div className="flex items-baseline justify-between">
+                  <span className="text-sm font-bold text-white uppercase tracking-wider">{t("slide4SuccessCases.kpi3_title")}</span>
+                  <div className="flex items-baseline text-emerald-400 font-black">
+                    <CountUp value={76} decimals={0} isSpanish={isSpanish} delay={1.7} className="text-3xl font-black tracking-tight" />
+                    <span className="text-sm ml-0.5">%</span>
+                  </div>
+                </div>
+                <div className="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
+                  <motion.div
+                    initial={{ width: 0 }}
+                    whileInView={{ width: "76%" }}
+                    transition={{ duration: 1.5, delay: 1.7, ease: "easeOut" }}
+                    className="h-full bg-gradient-to-r from-emerald-500 to-teal-400 rounded-full shadow-[0_0_10px_rgba(16,185,129,0.5)]"
+                  />
+                </div>
+                <span className="text-[11px] text-white/50 block font-medium leading-normal">{t("slide4SuccessCases.kpi3_desc")}</span>
+              </div>
+            </div>
+
+            {/* 3 Secondary Supporting indicators with staggered entries */}
+            <div className="grid grid-cols-3 gap-2 border-t border-white/10 pt-6 mt-8">
+              <motion.div 
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 1.8, duration: 0.5 }}
+                className="text-center group cursor-pointer"
+              >
+                <span className="text-[10px] font-black text-white/40 uppercase tracking-widest leading-none block mt-1 transition-colors group-hover:text-white/60">
+                  {t("slide4SuccessCases.support_kpi1_title")}
+                </span>
+                <div className="text-xl md:text-2xl font-black text-white flex items-baseline justify-center leading-none mt-2">
+                  <span>+</span>
+                  <CountUp value={5000} decimals={0} isSpanish={isSpanish} delay={1.9} />
+                </div>
+              </motion.div>
+
+              <motion.div 
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 2.0, duration: 0.5 }}
+                className="text-center border-l border-white/10 group cursor-pointer"
+              >
+                <span className="text-[10px] font-black text-white/40 uppercase tracking-widest leading-none block mt-1 transition-colors group-hover:text-white/60">
+                  {t("slide4SuccessCases.support_kpi2_title")}
+                </span>
+                <div className="text-xl md:text-2xl font-black text-emerald-400 flex items-baseline justify-center leading-none mt-2">
+                  <span>$</span>
+                  <CountUp value={443.5} decimals={1} isSpanish={isSpanish} delay={2.1} />
+                  <span className="text-xs font-black ml-0.5">M</span>
+                </div>
+              </motion.div>
+
+              <motion.div 
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 2.2, duration: 0.5 }}
+                className="text-center border-l border-white/10 group cursor-pointer"
+              >
+                <span className="text-[10px] font-black text-white/40 uppercase tracking-widest leading-none block mt-1 transition-colors group-hover:text-white/60">
+                  {t("slide4SuccessCases.support_kpi3_title")}
+                </span>
+                <div className="text-xl md:text-2xl font-black text-white flex items-baseline justify-center leading-none mt-2">
+                  <CountUp value={12} decimals={0} isSpanish={isSpanish} delay={2.3} />
+                </div>
+              </motion.div>
             </div>
           </motion.div>
 
@@ -548,7 +497,7 @@ const Slide4SuccessCases = () => {
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.4, duration: 0.8 }}
-          className="w-full text-center mt-8 z-10 flex flex-col items-center"
+          className="w-full text-center mt-10 z-10 flex flex-col items-center"
         >
           <p className="text-base md:text-lg font-black text-emerald-400 tracking-wide uppercase">
             {t("slide4SuccessCases.closing_phrase")}
