@@ -52,6 +52,7 @@ export const translations = {
       core_services: "Core Services",
       capabilities: "Capabilities",
       services: {
+        portfolio_collection: "Debt Collection (Administrative, Pre-legal & Legal)",
         appointments: "Appointment Scheduling",
         customer_service: "Customer Service",
         remote_sales: "Remote Sales",
@@ -265,6 +266,7 @@ export const translations = {
       core_services: "Servicios Core",
       capabilities: "Capacidades",
       services: {
+        portfolio_collection: "Gestión de cobro de cartera (administrativa, pre-jurídica y jurídica)",
         appointments: "Agendamiento de Citas",
         customer_service: "Servicio al Cliente",
         remote_sales: "Ventas Remotas",

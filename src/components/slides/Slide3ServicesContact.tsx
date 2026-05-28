@@ -8,6 +8,7 @@ const Slide3ServicesContact = () => {
   const { t } = useLanguage();
 
   const coreServices = [
+    t("slide3Contact.services.portfolio_collection"),
     t("slide3Contact.services.appointments"),
     t("slide3Contact.services.customer_service"),
     t("slide3Contact.services.remote_sales")
