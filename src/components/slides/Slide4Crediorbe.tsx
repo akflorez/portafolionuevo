@@ -97,15 +97,58 @@ const Slide4Crediorbe = () => {
 
   return (
     <SlideLayout bgImage={analysisBg} overlayStrong>
+      
+      {/* Background watermark of the logo (floating slowly with low opacity) */}
+      <motion.div
+        animate={{
+          y: [0, 15, 0],
+          rotate: [0, 1.5, 0]
+        }}
+        transition={{
+          duration: 18,
+          repeat: Infinity,
+          ease: "easeInOut"
+        }}
+        className="absolute right-[5%] bottom-[8%] w-[25rem] h-[25rem] md:w-[35rem] md:h-[35rem] opacity-[0.015] md:opacity-[0.025] pointer-events-none z-0"
+      >
+        <img 
+          src="/CrediOrbe.webp" 
+          alt="" 
+          className="w-full h-full object-contain filter invert dark:invert-0" 
+        />
+      </motion.div>
+
       <div className="flex-1 flex flex-col md:flex-row items-center justify-center px-12 md:px-20 gap-8 md:gap-16 z-20 w-full max-w-[130rem] mx-auto py-16 md:py-24 overflow-y-auto md:overflow-hidden h-full">
         
-        {/* Left Column — Title and Description */}
+        {/* Left Column — Brand, Title and Description */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
           className="flex-1 flex flex-col justify-center max-w-2xl text-left"
         >
+          {/* Floating Premium Brand Seal */}
+          <motion.div
+            animate={{
+              y: [0, -8, 0],
+            }}
+            transition={{
+              duration: 5,
+              repeat: Infinity,
+              ease: "easeInOut"
+            }}
+            initial={{ scale: 0.9, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            viewport={{ once: true }}
+            className="w-44 h-18 bg-white/5 backdrop-blur-md rounded-2xl border border-white/10 flex items-center justify-center p-4 shadow-[0_10px_30px_rgba(0,0,0,0.12)] mb-8 card-glass select-none hover:shadow-[0_15px_35px_rgba(16,185,129,0.1)] transition-all duration-500"
+          >
+            <img 
+              src="/CrediOrbe.webp" 
+              alt="CREDIORBE Logo" 
+              className="max-w-[90%] max-h-[85%] object-contain filter brightness-110 drop-shadow-[0_2px_6px_rgba(0,0,0,0.15)] dark:brightness-100" 
+            />
+          </motion.div>
+
           <p className="text-emerald-500 font-bold uppercase tracking-widest mb-4">
             {t("slide4Crediorbe.tagline")}
           </p>
