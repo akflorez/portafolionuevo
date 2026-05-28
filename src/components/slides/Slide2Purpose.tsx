@@ -34,38 +34,42 @@ const Slide2Purpose = () => {
           transition={{ duration: 1 }}
           className="max-w-5xl"
         >
-          <p className="text-emerald-500 font-bold uppercase tracking-widest mb-3 text-xs">{t("slide2.essence")}</p>
-          <h2 className="text-5xl font-black text-white mb-6 leading-tight">
+          <div className="inline-block px-5 py-2 bg-emerald-500/10 rounded-full border border-emerald-500/20 mb-4 shadow-[0_0_20px_rgba(16,185,129,0.15)]">
+            <p className="text-emerald-400 font-extrabold uppercase tracking-[0.3em] text-xs leading-none">
+              {t("slide2.essence")}
+            </p>
+          </div>
+          <h2 className="text-6xl md:text-7xl font-black text-white mb-8 leading-tight tracking-tight uppercase">
             {t("slide2.title_main")} <span className="text-gradient-green">{t("slide2.title_gradient")}</span>
           </h2>
           
-          <div className="space-y-4 mb-10">
-            <p className="text-xl text-white/95 font-semibold leading-relaxed max-w-4xl">
+          <div className="space-y-6 mb-12">
+            <p className="text-2xl md:text-3xl text-white/95 font-bold leading-relaxed max-w-5xl">
               {t("slide2.p1")}
             </p>
-            <p className="text-base text-white/80 font-medium leading-relaxed max-w-4xl">
+            <p className="text-lg md:text-xl text-white/80 font-semibold leading-relaxed max-w-5xl">
               {t("slide2.p2")}
             </p>
-            <p className="text-base text-white/80 font-medium leading-relaxed max-w-4xl">
+            <p className="text-lg md:text-xl text-white/80 font-semibold leading-relaxed max-w-5xl">
               {t("slide2.p3")}
             </p>
           </div>
         </motion.div>
-
-        <div className="grid grid-cols-3 gap-6">
+ 
+        <div className="grid grid-cols-3 gap-8">
           {pillars.map((pillar, index) => (
             <motion.div
               key={pillar.title}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 * index }}
-              className="card-glass p-6 rounded-3xl border border-white/10 hover:border-emerald-500/30 transition-all group"
+              className="card-glass p-8 rounded-3xl border border-white/10 hover:border-emerald-500/30 transition-all group"
             >
-              <div className="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center mb-4 group-hover:bg-emerald-500/20 transition-all">
-                <pillar.icon className="w-6 h-6 text-emerald-500" />
+              <div className="w-14 h-14 rounded-2xl bg-emerald-500/10 flex items-center justify-center mb-5 group-hover:bg-emerald-500/20 transition-all">
+                <pillar.icon className="w-7 h-7 text-emerald-500 animate-pulse" />
               </div>
-              <h3 className="text-lg font-bold text-white mb-2">{pillar.title}</h3>
-              <p className="text-sm text-white/70 font-medium leading-relaxed">{pillar.desc}</p>
+              <h3 className="text-xl md:text-2xl font-black text-white mb-3 uppercase tracking-tight">{pillar.title}</h3>
+              <p className="text-base md:text-lg text-white/70 font-semibold leading-relaxed">{pillar.desc}</p>
             </motion.div>
           ))}
         </div>

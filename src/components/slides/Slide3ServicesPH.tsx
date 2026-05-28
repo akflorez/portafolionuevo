@@ -28,36 +28,36 @@ const Slide3ServicesPH = () => {
               <div className="w-14 h-14 rounded-2xl bg-emerald-500/20 flex items-center justify-center border border-emerald-500/20 shadow-lg shadow-emerald-500/10">
                 <Home className="w-7 h-7 text-emerald-400" />
               </div>
-              <p className="text-emerald-500 font-bold uppercase tracking-[0.3em] text-xs font-black">
+              <p className="text-emerald-500 font-black uppercase tracking-[0.3em] text-sm">
                 {t("slide3PH.tagline")}
               </p>
             </div>
-            <h2 className="text-5xl font-black text-white leading-tight mb-4 tracking-tighter">
+            <h2 className="text-6xl md:text-7xl font-black text-white leading-tight mb-4 tracking-tighter uppercase">
               {t("slide3PH.title_main")} <br />
               <span className="text-gradient-green">{t("slide3PH.title_gradient")}</span>
             </h2>
-            <p className="text-base text-white/85 font-medium max-w-3xl leading-relaxed">
+            <p className="text-lg md:text-xl text-white/90 font-semibold max-w-3xl leading-relaxed">
               {t("slide3PH.desc")}
             </p>
           </div>
-
+ 
           {/* 2-Column Checklist */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3">
-            <div className="space-y-3">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+            <div className="space-y-4">
               {firstCol.map((item) => (
-                <div key={item} className="flex items-start gap-3 group">
-                  <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0 mt-1" />
-                  <span className="text-sm text-white/95 group-hover:text-white transition-colors font-semibold leading-snug">
+                <div key={item} className="flex items-start gap-3.5 group">
+                  <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0 mt-1 animate-pulse" />
+                  <span className="text-base md:text-lg text-white group-hover:text-emerald-300 transition-colors font-bold leading-snug">
                     {item}
                   </span>
                 </div>
               ))}
             </div>
-            <div className="space-y-3">
+            <div className="space-y-4">
               {secondCol.map((item) => (
-                <div key={item} className="flex items-start gap-3 group">
-                  <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0 mt-1" />
-                  <span className="text-sm text-white/95 group-hover:text-white transition-colors font-semibold leading-snug">
+                <div key={item} className="flex items-start gap-3.5 group">
+                  <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0 mt-1 animate-pulse" />
+                  <span className="text-base md:text-lg text-white group-hover:text-emerald-300 transition-colors font-bold leading-snug">
                     {item}
                   </span>
                 </div>

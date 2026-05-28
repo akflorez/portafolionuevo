@@ -54,19 +54,19 @@ const Slide3ServicesBPO = () => {
           className="text-center mb-10"
         >
           <div className="flex items-center justify-center gap-4 mb-4">
-            <div className="w-12 h-12 rounded-xl bg-emerald-500/20 flex items-center justify-center shadow-lg shadow-emerald-500/10 border border-emerald-500/20">
-              <Users className="w-6 h-6 text-emerald-500" />
+            <div className="w-14 h-14 rounded-2xl bg-emerald-500/20 flex items-center justify-center shadow-lg shadow-emerald-500/10 border border-emerald-500/20 animate-pulse">
+              <Users className="w-7 h-7 text-emerald-500" />
             </div>
-            <p className="text-emerald-500 font-black uppercase tracking-[0.4em] text-xs">Operaciones de Alto Impacto</p>
+            <p className="text-emerald-500 font-black uppercase tracking-[0.4em] text-sm">Operaciones de Alto Impacto</p>
           </div>
-          <h2 className="text-4xl font-black text-white leading-tight mb-4 tracking-tighter shadow-noir">
+          <h2 className="text-5xl md:text-6xl font-black text-white leading-tight mb-4 tracking-tighter shadow-noir uppercase">
             Gestión BPO <span className="text-gradient-green">& BPS 360</span>
           </h2>
-          <p className="text-base text-white/50 font-light max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-white/90 font-semibold max-w-4xl mx-auto leading-relaxed">
             Optimizamos la recuperación de cartera y la gestión de procesos operativos mediante estrategias segmentadas y talento humano especializado.
           </p>
         </motion.div>
-
+ 
         <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
           {services.map((service, index) => (
             <motion.div
@@ -79,17 +79,17 @@ const Slide3ServicesBPO = () => {
             >
               <div className="absolute -inset-0.5 bg-gradient-to-b from-emerald-500/20 to-transparent rounded-[2rem] blur opacity-0 group-hover:opacity-100 transition duration-500"></div>
               <div className="relative h-full p-6 card-glass border border-white/10 rounded-[2rem] flex flex-col items-center text-center transition-all duration-500 group-hover:bg-emerald-500/5 group-hover:border-emerald-500/30">
-                <div className="w-16 h-16 rounded-xl bg-emerald-500/10 flex items-center justify-center mb-6 group-hover:bg-emerald-500 group-hover:text-noir transition-all duration-500">
-                  <service.icon className="w-8 h-8 group-hover:scale-110 transition-transform" />
+                <div className="w-18 h-18 rounded-xl bg-emerald-500/10 flex items-center justify-center mb-6 group-hover:bg-emerald-500 group-hover:text-noir transition-all duration-500">
+                  <service.icon className="w-9 h-9 group-hover:scale-110 transition-transform" />
                 </div>
-                <h3 className="text-lg font-black text-white mb-2 leading-tight uppercase tracking-tight">
+                <h3 className="text-xl md:text-2xl font-black text-white mb-2 leading-tight uppercase tracking-tight">
                   {service.title}
                 </h3>
-                <p className="text-[10px] text-emerald-400 font-black uppercase tracking-widest mb-3">
+                <p className="text-xs md:text-sm text-emerald-400 font-black uppercase tracking-widest mb-3">
                   {service.subtitle}
                 </p>
                 <div className="h-px w-8 bg-emerald-500/30 mb-3 group-hover:w-16 transition-all" />
-                <p className="text-xs text-white/40 group-hover:text-white/70 transition-colors leading-relaxed">
+                <p className="text-sm md:text-base text-white/90 group-hover:text-emerald-300 transition-colors leading-relaxed font-semibold">
                   {service.desc}
                 </p>
               </div>

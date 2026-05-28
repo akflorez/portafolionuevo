@@ -47,17 +47,17 @@ const Slide3Services360 = () => {
           className="text-center mb-12"
         >
           <div className="flex items-center justify-center gap-4 mb-4">
-            <div className="w-12 h-12 rounded-xl bg-emerald-500/20 flex items-center justify-center border border-emerald-500/20 shadow-lg shadow-emerald-500/10">
-              <Infinity className="w-6 h-6 text-emerald-400 animate-pulse" />
+            <div className="w-14 h-14 rounded-2xl bg-emerald-500/20 flex items-center justify-center border border-emerald-500/20 shadow-lg shadow-emerald-500/10">
+              <Infinity className="w-7 h-7 text-emerald-400 animate-pulse" />
             </div>
-            <p className="text-emerald-400 font-black uppercase tracking-[0.4em] text-[10px] drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)]">
+            <p className="text-emerald-400 font-black uppercase tracking-[0.4em] text-sm drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)]">
               {t("slide3360.tagline")}
             </p>
           </div>
-          <h2 className="text-5xl font-black text-white mb-4 uppercase tracking-tight leading-none drop-shadow-[0_4px_12px_rgba(0,0,0,0.9)]">
+          <h2 className="text-6xl md:text-7xl font-black text-white mb-6 uppercase tracking-tight leading-none drop-shadow-[0_4px_12px_rgba(0,0,0,0.9)]">
             {t("slide3360.title_main")} <span className="text-gradient-green">{t("slide3360.title_gradient")}</span>
           </h2>
-          <p className="text-base text-white font-medium max-w-3xl mx-auto leading-relaxed drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
+          <p className="text-lg md:text-xl text-white font-bold max-w-4xl mx-auto leading-relaxed drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
             {t("slide3360.desc")}
           </p>
         </motion.div>
@@ -77,19 +77,19 @@ const Slide3Services360 = () => {
               <div className="relative h-full p-8 card-glass border border-white/5 rounded-[2.5rem] flex flex-col items-center text-center transition-all duration-500 group-hover:bg-emerald-500/5 group-hover:border-emerald-500/30">
                 
                 {/* Icon Wrapper */}
-                <div className="w-20 h-20 rounded-2xl bg-emerald-500/10 flex items-center justify-center mb-6 group-hover:bg-emerald-500 group-hover:text-noir transition-all duration-500 shadow-xl border border-white/5">
-                  <pillar.icon className="w-10 h-10 text-emerald-400 group-hover:text-noir group-hover:scale-110 transition-all duration-500" />
+                <div className="w-24 h-24 rounded-[2rem] bg-emerald-500/10 flex items-center justify-center mb-6 group-hover:bg-emerald-500 group-hover:text-noir transition-all duration-500 shadow-xl border border-white/5">
+                  <pillar.icon className="w-11 h-11 text-emerald-400 group-hover:text-noir group-hover:scale-110 transition-all duration-500" />
                 </div>
 
                 {/* Title */}
-                <h3 className="text-xl font-bold text-white mb-3 uppercase tracking-tight">
+                <h3 className="text-2xl md:text-3xl font-black text-white mb-3 uppercase tracking-tight">
                   {pillar.title}
                 </h3>
 
                 <div className="h-px w-8 bg-emerald-500/30 mb-4 group-hover:w-16 transition-all duration-500" />
 
                 {/* Description */}
-                <p className="text-sm text-white/70 group-hover:text-white/90 transition-colors leading-relaxed font-light">
+                <p className="text-base md:text-lg text-white/90 group-hover:text-emerald-300 transition-colors leading-relaxed font-semibold">
                   {pillar.desc}
                 </p>
 
