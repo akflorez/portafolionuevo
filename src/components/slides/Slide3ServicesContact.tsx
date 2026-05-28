@@ -37,7 +37,7 @@ const Slide3ServicesContact = () => {
               </div>
               <p className="text-emerald-500 font-black uppercase tracking-[0.3em] text-sm">{t("slide3Contact.strategic_comm")}</p>
             </div>
-            <h2 className="text-6xl md:text-7xl font-black text-white leading-tight mb-4 tracking-tighter uppercase">
+            <h2 className="text-5xl md:text-6xl font-black text-white leading-tight mb-4 tracking-tighter uppercase">
               {t("slide3Contact.title_main")} <br />
               <span className="text-gradient-green">{t("slide3Contact.title_gradient")}</span>
             </h2>
