@@ -232,10 +232,10 @@ const Slide4SuccessCases = () => {
         >
           {/* "Casos de éxito" badge was removed per user request */}
           
-          <h2 className="text-4xl md:text-6xl font-black text-white mt-2 mb-4 tracking-tight uppercase leading-none">
+          <h2 className="text-5xl md:text-7xl font-black text-white mt-2 mb-4 tracking-tight uppercase leading-none">
             {t("slide4SuccessCases.concept")}
           </h2>
-          <p className="text-base md:text-lg text-white/80 max-w-3xl mx-auto font-semibold leading-relaxed">
+          <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto font-semibold leading-relaxed">
             {t("slide4SuccessCases.subtitle")}
           </p>
         </motion.div>
@@ -252,7 +252,7 @@ const Slide4SuccessCases = () => {
           >
             <div className="mb-6 flex items-center gap-3">
               <div className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse shadow-[0_0_8px_rgba(59,130,246,0.8)]" />
-              <span className="text-[11px] font-black uppercase tracking-[0.25em] text-blue-400">
+              <span className="text-xs md:text-sm font-black uppercase tracking-[0.25em] text-blue-400">
                 01. {t("slide4SuccessCases.block1_title")}
               </span>
             </div>
@@ -271,10 +271,10 @@ const Slide4SuccessCases = () => {
                     <item.icon className={`w-5.5 h-5.5 ${item.color}`} />
                   </div>
                   <div className="flex flex-col">
-                    <span className="text-base font-bold text-white group-hover:text-blue-400 transition-colors leading-tight">
+                    <span className="text-lg md:text-xl font-bold text-white group-hover:text-blue-400 transition-colors leading-tight">
                       {item.text}
                     </span>
-                    <span className="text-[10px] font-medium text-white/40 uppercase tracking-widest mt-1">
+                    <span className="text-xs font-medium text-white/40 uppercase tracking-widest mt-1">
                       {idx === 0 ? "Filtros demográficos" : idx === 1 ? "Multicanalidad activa" : idx === 2 ? "Trazabilidad completa" : "Algoritmos predictivos"}
                     </span>
                   </div>
@@ -292,7 +292,7 @@ const Slide4SuccessCases = () => {
           >
             <div className="w-full mb-6 flex items-center justify-center gap-3">
               <div className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse shadow-[0_0_8px_rgba(16,185,129,0.8)]" />
-              <span className="text-[11px] font-black uppercase tracking-[0.25em] text-emerald-400">
+              <span className="text-xs md:text-sm font-black uppercase tracking-[0.25em] text-emerald-400">
                 02. {t("slide4SuccessCases.block2_title")}
               </span>
             </div>
@@ -325,7 +325,7 @@ const Slide4SuccessCases = () => {
                   <Cpu className="w-9 h-9 text-emerald-400 animate-pulse" />
                   <div className="absolute inset-0 rounded-full border-2 border-emerald-500/50 animate-ping opacity-25" />
                 </div>
-                <span className="text-[10px] font-black text-emerald-400 uppercase tracking-[0.25em] mt-3.5">AI Engine Core</span>
+                <span className="text-xs font-black text-emerald-400 uppercase tracking-[0.25em] mt-3.5">AI Engine Core</span>
               </div>
 
               {/* SURROUNDING ACTIVE PILLS */}
@@ -339,7 +339,7 @@ const Slide4SuccessCases = () => {
                     className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-emerald-500/5 border border-emerald-500/10"
                   >
                     <span className="w-1 h-1 rounded-full bg-emerald-400/80 animate-pulse" />
-                    <span className={`text-[10px] font-extrabold uppercase tracking-widest ${item.color}`}>
+                    <span className={`text-xs font-extrabold uppercase tracking-widest ${item.color}`}>
                       {item.text}
                     </span>
                   </motion.div>
@@ -353,11 +353,11 @@ const Slide4SuccessCases = () => {
                 transition={{ delay: 1.0, duration: 0.6 }}
                 className="relative pl-5 py-2 mt-4 max-w-md w-full border-l-2 border-emerald-500/40 bg-emerald-500/[0.02]"
               >
-                <h4 className="text-xs font-black text-emerald-400 uppercase tracking-widest mb-1.5 flex items-center gap-2">
+                <h4 className="text-sm font-black text-emerald-400 uppercase tracking-widest mb-1.5 flex items-center gap-2">
                   <span className="inline-block w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
                   {t("slide4SuccessCases.block2_callout_title")}
                 </h4>
-                <p className="text-xs text-white/80 font-semibold leading-relaxed">
+                <p className="text-sm text-white/80 font-semibold leading-relaxed">
                   {t("slide4SuccessCases.block2_callout_text")}
                 </p>
               </motion.div>
@@ -373,7 +373,7 @@ const Slide4SuccessCases = () => {
           >
             <div className="mb-6 flex items-center gap-3">
               <div className="w-1.5 h-1.5 rounded-full bg-teal-500 animate-pulse shadow-[0_0_8px_rgba(20,184,166,0.8)]" />
-              <span className="text-[11px] font-black uppercase tracking-[0.25em] text-teal-400">
+              <span className="text-xs md:text-sm font-black uppercase tracking-[0.25em] text-teal-400">
                 03. {t("slide4SuccessCases.block3_title")}
               </span>
             </div>
@@ -383,10 +383,10 @@ const Slide4SuccessCases = () => {
               {/* KPI 1: Contactability */}
               <div className="space-y-1.5">
                 <div className="flex items-baseline justify-between">
-                  <span className="text-sm font-bold text-white uppercase tracking-wider">{t("slide4SuccessCases.kpi1_title")}</span>
+                  <span className="text-base md:text-lg font-bold text-white uppercase tracking-wider">{t("slide4SuccessCases.kpi1_title")}</span>
                   <div className="flex items-baseline text-emerald-400 font-black">
-                    <CountUp value={68} decimals={0} isSpanish={isSpanish} delay={1.3} className="text-3xl font-black tracking-tight" />
-                    <span className="text-sm ml-0.5">%</span>
+                    <CountUp value={68} decimals={0} isSpanish={isSpanish} delay={1.3} className="text-4xl md:text-5xl font-black tracking-tight" />
+                    <span className="text-base ml-0.5">%</span>
                   </div>
                 </div>
                 <div className="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
@@ -397,16 +397,16 @@ const Slide4SuccessCases = () => {
                     className="h-full bg-gradient-to-r from-emerald-500 to-teal-400 rounded-full shadow-[0_0_10px_rgba(16,185,129,0.5)]"
                   />
                 </div>
-                <span className="text-[11px] text-white/50 block font-medium leading-normal">{t("slide4SuccessCases.kpi1_desc")}</span>
+                <span className="text-xs md:text-sm text-white/50 block font-medium leading-normal">{t("slide4SuccessCases.kpi1_desc")}</span>
               </div>
 
               {/* KPI 2: Conversion */}
               <div className="space-y-1.5">
                 <div className="flex items-baseline justify-between">
-                  <span className="text-sm font-bold text-white uppercase tracking-wider">{t("slide4SuccessCases.kpi2_title")}</span>
+                  <span className="text-base md:text-lg font-bold text-white uppercase tracking-wider">{t("slide4SuccessCases.kpi2_title")}</span>
                   <div className="flex items-baseline text-emerald-400 font-black">
-                    <CountUp value={84} decimals={0} isSpanish={isSpanish} delay={1.5} className="text-3xl font-black tracking-tight" />
-                    <span className="text-sm ml-0.5">%</span>
+                    <CountUp value={84} decimals={0} isSpanish={isSpanish} delay={1.5} className="text-4xl md:text-5xl font-black tracking-tight" />
+                    <span className="text-base ml-0.5">%</span>
                   </div>
                 </div>
                 <div className="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
@@ -417,16 +417,16 @@ const Slide4SuccessCases = () => {
                     className="h-full bg-gradient-to-r from-emerald-500 to-teal-400 rounded-full shadow-[0_0_10px_rgba(16,185,129,0.5)]"
                   />
                 </div>
-                <span className="text-[11px] text-white/50 block font-medium leading-normal">{t("slide4SuccessCases.kpi2_desc")}</span>
+                <span className="text-xs md:text-sm text-white/50 block font-medium leading-normal">{t("slide4SuccessCases.kpi2_desc")}</span>
               </div>
 
               {/* KPI 3: Effectiveness */}
               <div className="space-y-1.5">
                 <div className="flex items-baseline justify-between">
-                  <span className="text-sm font-bold text-white uppercase tracking-wider">{t("slide4SuccessCases.kpi3_title")}</span>
+                  <span className="text-base md:text-lg font-bold text-white uppercase tracking-wider">{t("slide4SuccessCases.kpi3_title")}</span>
                   <div className="flex items-baseline text-emerald-400 font-black">
-                    <CountUp value={76} decimals={0} isSpanish={isSpanish} delay={1.7} className="text-3xl font-black tracking-tight" />
-                    <span className="text-sm ml-0.5">%</span>
+                    <CountUp value={76} decimals={0} isSpanish={isSpanish} delay={1.7} className="text-4xl md:text-5xl font-black tracking-tight" />
+                    <span className="text-base ml-0.5">%</span>
                   </div>
                 </div>
                 <div className="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
@@ -437,7 +437,7 @@ const Slide4SuccessCases = () => {
                     className="h-full bg-gradient-to-r from-emerald-500 to-teal-400 rounded-full shadow-[0_0_10px_rgba(16,185,129,0.5)]"
                   />
                 </div>
-                <span className="text-[11px] text-white/50 block font-medium leading-normal">{t("slide4SuccessCases.kpi3_desc")}</span>
+                <span className="text-xs md:text-sm text-white/50 block font-medium leading-normal">{t("slide4SuccessCases.kpi3_desc")}</span>
               </div>
             </div>
 
@@ -449,12 +449,12 @@ const Slide4SuccessCases = () => {
                 transition={{ delay: 1.8, duration: 0.5 }}
                 className="text-center group cursor-pointer"
               >
-                <span className="text-[10px] font-black text-white/40 uppercase tracking-widest leading-none block mt-1 transition-colors group-hover:text-white/60">
+                <span className="text-[11px] md:text-xs font-black text-white/40 uppercase tracking-widest leading-none block mt-1 transition-colors group-hover:text-white/60">
                   {t("slide4SuccessCases.support_kpi1_title")}
                 </span>
-                <div className="text-xl md:text-2xl font-black text-white flex items-baseline justify-center leading-none mt-2">
-                  <span>+</span>
-                  <CountUp value={5000} decimals={0} isSpanish={isSpanish} delay={1.9} />
+                <div className="text-2xl md:text-3xl font-black text-white flex items-baseline justify-center leading-none mt-2">
+                  <span className="text-lg md:text-xl mr-0.5 text-white/70">+</span>
+                  <CountUp value={8000} decimals={0} isSpanish={isSpanish} delay={1.9} />
                 </div>
               </motion.div>
 
@@ -464,13 +464,13 @@ const Slide4SuccessCases = () => {
                 transition={{ delay: 2.0, duration: 0.5 }}
                 className="text-center border-l border-white/10 group cursor-pointer"
               >
-                <span className="text-[10px] font-black text-white/40 uppercase tracking-widest leading-none block mt-1 transition-colors group-hover:text-white/60">
+                <span className="text-[11px] md:text-xs font-black text-white/40 uppercase tracking-widest leading-none block mt-1 transition-colors group-hover:text-white/60">
                   {t("slide4SuccessCases.support_kpi2_title")}
                 </span>
-                <div className="text-sm md:text-base font-black text-emerald-400 flex items-baseline justify-center leading-none mt-2.5">
-                  <span className="text-[10px] font-bold mr-0.5 text-white/60">{isSpanish ? "Aprox. $" : "Approx. $"}</span>
-                  <CountUp value={1500} decimals={0} isSpanish={isSpanish} delay={2.1} className="text-lg md:text-xl font-black text-emerald-400" />
-                  <span className="text-[10px] font-bold ml-1 text-white/60">{isSpanish ? "Mil Millones" : "Billion"}</span>
+                <div className="text-base md:text-lg font-black text-emerald-400 flex items-baseline justify-center leading-none mt-2.5">
+                  <span className="text-[11px] font-bold mr-0.5 text-white/60">{isSpanish ? "Aprox. $" : "Approx. $"}</span>
+                  <CountUp value={1500} decimals={0} isSpanish={isSpanish} delay={2.1} className="text-xl md:text-2xl font-black text-emerald-400" />
+                  <span className="text-[11px] font-bold ml-1 text-white/60">{isSpanish ? "Mil Millones" : "Billion"}</span>
                 </div>
               </motion.div>
 
@@ -480,11 +480,12 @@ const Slide4SuccessCases = () => {
                 transition={{ delay: 2.2, duration: 0.5 }}
                 className="text-center border-l border-white/10 group cursor-pointer"
               >
-                <span className="text-[10px] font-black text-white/40 uppercase tracking-widest leading-none block mt-1 transition-colors group-hover:text-white/60">
+                <span className="text-[11px] md:text-xs font-black text-white/40 uppercase tracking-widest leading-none block mt-1 transition-colors group-hover:text-white/60">
                   {t("slide4SuccessCases.support_kpi3_title")}
                 </span>
-                <div className="text-xl md:text-2xl font-black text-white flex items-baseline justify-center leading-none mt-2">
-                  <CountUp value={12} decimals={0} isSpanish={isSpanish} delay={2.3} />
+                <div className="text-2xl md:text-3xl font-black text-white flex items-baseline justify-center leading-none mt-2">
+                  <span className="text-lg md:text-xl mr-0.5 text-white/70">+</span>
+                  <CountUp value={400} decimals={0} isSpanish={isSpanish} delay={2.3} />
                 </div>
               </motion.div>
             </div>

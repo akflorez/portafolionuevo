@@ -211,7 +211,7 @@ export const translations = {
       concept: "Smart Portfolio Operations",
       subtitle: "Data, artificial intelligence, and human talent connected for a more efficient, measurable, and strategic management.",
       block1_title: "Portfolio Base",
-      block1_item1: "+5,000 assigned clients",
+      block1_item1: "+8,000 assigned clients",
       block1_item2: "Contact channels",
       block1_item3: "Management history",
       block1_item4: "Segmentation",
@@ -233,7 +233,7 @@ export const translations = {
       support_kpi1_title: "Assigned clients",
       support_kpi2_val: "$443.5 M",
       support_kpi2_title: "Recovered capital",
-      support_kpi3_title: "Attorneys for lawsuits",
+      support_kpi3_title: "Monthly lawsuits (overdue >120 days)",
       closing_phrase: "Data that connects. Management that converts. Results that are measured.",
       footnote: "Internal performance indicators for portfolio management. Results may vary based on operational strategy, data quality, and portfolio behavior."
     }
@@ -448,7 +448,7 @@ export const translations = {
       concept: "Operación inteligente de cartera",
       subtitle: "Datos, inteligencia artificial y talento humano conectados para una gestión más eficiente, medible y estratégica.",
       block1_title: "Base de Cartera",
-      block1_item1: "+5.000 clientes asignados",
+      block1_item1: "+8.000 clientes asignados",
       block1_item2: "Canales de contacto",
       block1_item3: "Historial de gestión",
       block1_item4: "Segmentación",
@@ -470,7 +470,7 @@ export const translations = {
       support_kpi1_title: "Clientes asignados",
       support_kpi2_val: "$443,5 M",
       support_kpi2_title: "Capital recaudado",
-      support_kpi3_title: "Abogados para demandas",
+      support_kpi3_title: "Demandas mensuales (mora >120 días)",
       closing_phrase: "Datos que conectan. Gestión que convierte. Resultados que se miden.",
       footnote: "Indicadores internos de seguimiento para la gestión de cartera. Los resultados pueden variar según la estrategia operativa, la calidad de la información y el comportamiento del portafolio."
     }
